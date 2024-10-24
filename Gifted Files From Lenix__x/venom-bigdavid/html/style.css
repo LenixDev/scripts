@@ -1,0 +1,111 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    box-sizing: border-box;
+    /* font-weight: 400; */
+    /* background-color: rgba(0, 0, 0, 0.169); */
+    font-family: sans-serif;
+    overflow: hidden; /* Hide scrollbars */
+
+}
+
+.continer{
+    
+    /* background-color: rgb(53, 53, 53); */
+    position: absolute;
+    top:58%;
+    width: 88%;
+    left: 10%;
+    height: 50%;
+
+}
+.continer-name{
+    padding:10px;
+}
+.continer-name-span{
+    font-size: 14px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 1px;
+    background-color: black;
+}
+
+/* slash */
+.continer-slash{
+    border-radius: 50%;
+    position:relative;
+    width: 15%; height:2px;
+    background: #ffffff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.continer-slash:before, .continer-slash:after{
+    content: '';
+    position: absolute;
+}
+.continer-slash:before{
+    top: 0; left: 0;
+    /* border-left: 99px solid #fff; */
+    border-bottom: 99px solid transparent;
+}
+.continer-slash:after{
+    bottom: 0; right: 0;
+    /* border-right: 99px solid #fff; */
+    border-top: 99px solid transparent;
+}
+/* //  slash//*/
+
+.hero-p{
+    margin: 10px;
+}
+
+
+
+
+
+/* hero button */
+
+.hero{
+    display: flex;
+    flex-flow: wrap;
+    height: 100%;
+    /* background-color: #232323; */
+}
+
+.hero-button{
+    display: flex;
+    margin: 10px;
+    flex-flow: wrap;
+    width: 23.5%;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    text-align: start;
+    background-color: rgba(0, 0, 0, 0.289);
+    transition: 0.5s;
+    border-radius: 2.5px;
+    cursor: pointer;
+}
+.hero-button-text{
+    /* background-color: aqua; */
+}
+.hero-button:hover{
+    background-color: #00FFCE;
+    box-shadow: 0px 0px 100px #00FFCE;
+}
+.hero-button-p{
+    /* background-color: rgb(27, 16, 2); */
+    width: 250px;
+    /* padding: 10px; */
+    margin-top: 10px;
+}
+#hero-button-img{
+    padding: 5px 5px;
+    /* background-color: #D38807; */
+}
+.continer-name-text{
+    display: flex;
+}
+/* // hero button // */
