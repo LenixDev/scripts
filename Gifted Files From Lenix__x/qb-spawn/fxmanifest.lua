@@ -1,32 +1,19 @@
 fx_version 'cerulean'
 game 'gta5'
-
-description 'QB-Spawn'
-version '1.2.0'
-
 shared_scripts {
-    '@qb-core/shared/locale.lua',
-    'locales/en.lua',
-    'locales/*.lua',
-    'config.lua',
-    '@qb-apartments/config.lua',
-}
-
-client_script 'client.lua'
-
-server_scripts {
-    '@oxmysql/lib/MySQL.lua',
-    'server.lua'
-}
-
+	'config.lua',
+	'@qb-apartments/config.lua'
+} 
+escrow_ignore 'config.lua'
+client_script 'c.lua'
+server_script 's.lua'
 ui_page 'html/index.html'
-
 files {
-    'html/index.html',
-    'html/style.css',
-    'html/vue.js',
-    'html/reset.css'
+	'html/index.html',
+	'html/style.css',
+	'html/index.js',
+    'html/files/*.png',
+    'html/files/*.jpg',
+	'html/fonts/*.otf',
+	'html/fonts/*.ttf'
 }
-
-lua54 'yes'
-server_scripts { '@mysql-async/lib/MySQL.lua' }server_scripts { '@mysql-async/lib/MySQL.lua' }server_scripts { '@mysql-async/lib/MySQL.lua' }
