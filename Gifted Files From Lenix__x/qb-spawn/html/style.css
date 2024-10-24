@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@600&display=swap');
+
+#app {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+.spawn-locations {
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    min-width: 35vh;
+    width: fit-content;
+    max-width: 35vh;
+    top: 10vh;
+    right: 10vh;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.089) 0%, rgba(77, 79, 87, 0.977) 100%);
+    border-radius: 3px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+    padding: 30px;
+    cursor: default;
+    transition: 300ms;
+}
+
+.location {
+    width: 100%;
+    margin-bottom: 15px;
+    transition: 200ms;
+    border-radius: 3vh;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 0.15rem;
+    border-color: rgba(0, 0, 255, 0.925);
+}
+
+.v-btn.location:hover {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.089) 0%, rgba(0, 255, 205, 0.877) 100%) !important;
+    transform: translateY(-0.5rem);
+    transition: 0.3s;
+}
+
+.v-btn.location:active {
+    transform: translateY(0.3rem);
+    box-shadow: 0 0 0.3rem 0.5rem cyan;
+}
+
+.v-btn.location .v-btn__content,
+.v-btn.submit-spawn .v-btn__content {
+    font-size: 1.4vh!important;
+    font-weight: 600!important;
+    color: white!important;
+}
+
+.v-btn.location.selected {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.089) 0%, rgba(0, 255, 205, 0.877) 100%) !important;
+}
+
+.submit-spawn {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.089) 0%, rgba(255, 255, 255, 0.877) 100%) !important;
+    width: 100%;
+    margin-top: 1.5vh;
+    transition: 0.2s;
+    border-radius: 3vh;
+    cursor: pointer;
+}
+
+.submit-spawn:hover {
+    transform: translateY(-0.3rem);
+    transition: 0.3s;
+}
+
+.submit-spawn:active {
+    transform: translateY(0.1rem);
+    box-shadow: 0 0 0.3rem 0.3rem #fff;
+}
+
+.spawn_locations-header {
+    width: 100%;
+    transition: 0.2s;
+    margin-bottom: 20.5px;
+}
+
+.spawn_locations-header > p {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-weight: bold;
+    position: relative;
+    color: #ededed;
+    text-align: center;
+    font-size: 2vh;
+}
+
+
+.slide-top-fade-enter-active {
+    transition: all 0.3s ease-out;
+}
+.slide-top-fade-leave-active {
+    transition: all 0.5s cubic-bezier(1, 0.7, 0.9, 1);
+}
+.slide-top-fade-enter-from,
+.slide-top-fade-leave-to {
+    transform: translateY(-10%);
+    opacity: 0!important;
+}
