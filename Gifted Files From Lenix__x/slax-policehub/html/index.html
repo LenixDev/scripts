@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gang list</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome Pro -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <!-- Js Links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lalezar&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container" id="idcontainer">
+        <div class="hub">
+            <div class="boxOptions" id="Settings">
+                <i class="icon fa-solid fa-bars"></i>
+            </div>
+            <div class="boxOptions" id="nambrpolice">
+                <span class="nambrpolice">5</span>
+            </div>
+            <span class="policehub">State Police (S.A.S.P)</span>
+            <div class="ofiro">
+                <div class="Playrbox" id="officer-C411">
+                    <i class="fa-solid fa-circle"></i>
+                    <span class="callsin-namepolice">458 Carlos Santiago</span>
+                    <span class="radio">1</span>
+                    <i class="icon2 fa-solid fa-signal-stream"></i>
+                    <i class="icon2 fa-solid fa-location-dot" id="position"></i>
+                </div>
+            </div>
+
+            <div class="Hoverd">
+                <img class="IMG" src="https://cdn.discordapp.com/avatars/1198349413781884993/7aa291465d993f86331d3cc043a842a5.webp">
+                <div class="dropdown">
+                    <span class="droptxt">On Duty</span>
+                    <i class="icon fa-solid fa-user-shield"></i>
+                    <input type="checkbox" class="checkbox" id="duty">
+                    <label class="switch" for="duty">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="dropdown">
+                    <span class="droptxt">Dispatch</span>
+                    <i class="icon fa-solid fa-user-headset"></i>
+                    <input type="checkbox" class="checkbox" id="dispatch">
+                    <label class="switch" for="dispatch">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="dropdown" id="ChangeSign">
+                    <span class="droptxt">Edit Callsign</span>
+                    <i class="icon fa-solid fa-user-pen"></i>
+                </div>
+                <div class="dropdown" style="background: none; border:unset;" id="input">
+                    <input id="newsign" placeholder="New Sign Here" type="name" cols="30" rows="10"
+                        class="callsigninput" spellcheck="true" required></input>
+                    <div class="confirm"><span style="left: 0.8vh; top: 0.2vh;">Confirm</span></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
