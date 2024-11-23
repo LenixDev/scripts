@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.0.0/css/pro.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Ovo&family=Press+Start+2P&family=Source+Sans+Pro&family=VT323&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div class="app" id="app">
+        <div class="meow">
+            <div class="meow-firstsection">                
+                <div class="circle-container">
+                    <div class="circle-text">Officers</div>
+                    <div id="count" style="font-size: 1.34vh; font-weight: bolder;" class="circle">11</div>
+                </div>
+    
+                <div class="circle-container">
+                    <div class="circle-text">Settings</div>
+                    <div id="settings" class="circle"><i class="fa-sharp fa-solid fa-bars-sort"></i></div>
+                </div>
+    
+                <div class="circle-container">
+                    <div class="circle-text">Sign In</div>
+                    <div id="cduty" class="circle"><i class="fa-duotone fa-clipboard"></i></div>
+                </div>
+    
+                <div class="circle-container">
+                    <div class="circle-text">Break</div>
+                    <div id="cbreak" class="circle"><i class="fa-sharp fa-solid fa-circle-pause"></i></div>
+                </div>
+                <div class="circle-container">
+                    <div class="circle-text">Dispatch</div>
+                    <div id="cdispatch" class="circle"><i class="fa-duotone fa-user-police-tie"></i></div>
+                </div>
+    
+                <div class="circle-container">
+                    <div class="circle-text">Commander</div>
+                    <div id="ccommander" class="circle"><i class="fa-solid fa-siren"></i></div>
+                </div>
+    
+                <div class="circle-container">
+                    <div class="circle-text">Change CallSign</div>
+                    <div id="changecallsign" class="circle"><i class="fa-duotone fa-pen-to-square"></i></div>
+                </div>
+                <div class="meow-secondsection">
+                    
+                    <div class="circle-container">
+                        <div class="circle-text">Filter</div>
+                        <div id="FilterMenu" class="circle"><i class="fa-solid fa-arrow-down-a-z"></i></div>
+                    </div>
+
+                    <div class="circle-container">
+                        <div class="circle-text">Show Commanders</div>
+                        <div id="FilterMenuCommanders" class="circle"><i class="fa-solid fa-siren"></i></div>
+                    </div>
+
+                    <div class="circle-container">
+                        <div class="circle-text">Show Dispatch</div>
+                        <div id="FilterMenuDispatch" class="circle"><i class="fa-duotone fa-user-police-tie"></i></div>
+                    </div>
+
+                    
+                    <div class="circle-container">
+                        <div class="circle-text">Show Break Officers</div>
+                        <div id="FilterMenuBreak" class="circle"><i class="fa-sharp fa-solid fa-circle-pause"></i></div>
+                    </div>
+
+                    <div class="circle-container">
+                        <div class="circle-text">Show On Duty Officers</div>
+                        <div id="FilterMenuOnDuty" class="circle"><i class="fa-duotone fa-clipboard"></i></div>
+                    </div>
+
+                    <div class="circle-container">
+                        <div class="circle-text">Show Off Duty Officers</div>
+                        <div id="FilterMenuOffDuty" class="circle"><i class="fa-duotone fa-clipboard"></i></div>
+                    </div>
+
+
+                    <div class="circle-container">
+                        <div class="circle-text">Show All Officers</div>
+                        <div id="FilterMenuShowEveryone" class="circle circle-active"><i class="fa-solid fa-user-group"></i></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="main-title" class="title"><div class="title-text">Police List</div></div>
+        <div class="main-officers-container">
+            <div id="commanders" class="officers"></div>
+            <div id="dispatch" class="officers"></div>
+            <div id="duty" class="officers"></div>
+            <div id="break" class="officers"></div>
+            <div id="offduty" class="officers"></div>
+            <div id="everyone" class="officers"></div>
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>
