@@ -1,0 +1,45 @@
+@keyframes wave
+    0%
+        transform: translateX(220%) translateY(-60%)
+    50%
+        transform: translateX(-90%) translateY(-20%)
+    100%
+        transform: translateX(220%) translateY(-40%)
+
+.hexagon-container
+    position: relative
+    width: 38px
+    height: 44px
+    .icon
+        display: flex
+        align-items: center
+        justify-content: center
+        z-index: 3
+    .hexagon
+        scale: 1.10
+        z-index: 1
+        height: 44px
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%)
+    .small-hexagon
+        z-index: 2
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        clip-path: polygon(50% 12%, 88% 30%, 88% 70%, 50% 88%, 12% 70%, 12% 30%)
+        box-shadow: 0 0 50px 0px, inset 0 0 5px 0
+    .inherit
+        position: absolute
+        bottom: 4.5px
+        max-height: 35px
+        width: 100%
+        border-radius: 10%
+        &.anim::after
+            content: ''
+            position: absolute
+            top: 0
+            width: 80%
+            height: 55%
+            border-radius: 60%
+            animation: wave 5s linear infinite
