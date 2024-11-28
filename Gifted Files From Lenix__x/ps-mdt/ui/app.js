@@ -89,30 +89,28 @@ function getFormattedDate(date, prefomattedDate = false, hideYear = false) {
 }
 
 var quotes = [
-  'Project Sloth On Top!',
-  'A Discord rewrite fixes everything...',
-  'Does anyone even read these?',
-  'The best way to predict your future is to create it.',
-  'Believe you can and you\'re halfway there.',
-  'In three words I can sum up everything I\'ve learned about life: it goes on.',
-  'The only way to do great work is to love what you do.',
-  'Success is not final, failure is not fatal: it is the courage to continue that counts.',
-  'Life is 10% what happens to us and 90% how we react to it.',
-  'The only true wisdom is in knowing you know nothing.',
-  'If you want to live a happy life, tie it to a goal, not to people or things.',
-  'Happiness is not something ready-made. It comes from your own actions.',
-  'The greatest glory in living lies not in never falling, but in rising every time we fall.',
-  'The only thing necessary for the triumph of evil is for good men to do nothing.',
-  'It does not matter how slowly you go as long as you do not stop.',
-  'The best time to plant a tree was 20 years ago. The second best time is now.',
-  'Believe in yourself and all that you are. Know that there is something inside you that is greater than any obstacle.',
-  'Don\'t watch the clock; do what it does. Keep going.',
-  'You miss 100% of the shots you don\'t take.',
-  'You can\'t go back and change the beginning, but you can start where you are and change the ending.',
-  'It\'s not the years in your life that count. It\'s the life in your years.',
-  'The greatest glory in living lies not in never falling, but in rising every time we fall.',
-  'The two most important days in your life are the day you are born and the day you find out why.',
-  'Success is not how high you have climbed, but how you make a positive difference to the world.',
+  'هل يقرأ أحد هذه؟',
+  'أفضل طريقة للتنبؤ بمستقبلك هي أن تخلقه.',
+  'صدق أنك تستطيع وأنت في نصف الطريق.',
+  'في ثلاث كلمات أستطيع أن ألخص كل ما تعلمته عن الحياة: إنها تستمر.',
+  'الطريقة الوحيدة للقيام بعمل عظيم هي أن تحب ما تفعله.',
+  'النجاح ليس نهائيًا، والفشل ليس مميتًا: الشجاعة في الاستمرار هي ما يهم.',
+  'الحياة 10% مما يحدث لنا و90% كيفية ردنا عليها.',
+  'الحكمة الحقيقية هي في معرفة أنك لا تعرف شيئًا.',
+  'إذا كنت تريد أن تعيش حياة سعيدة، اربطها بهدف، وليس بالأشخاص أو الأشياء.',
+  'السعادة ليست شيئًا جاهزًا، إنها تأتي من أفعالك الخاصة.',
+  'أعظم مجد في الحياة لا يكمن في عدم السقوط، بل في النهوض في كل مرة نسقط فيها.',
+  'الشيء الوحيد اللازم لانتصار الشر هو أن يفعل الرجال الطيبون لا شيء.',
+  'لا يهم كم بطيئًا تذهب طالما أنك لا تتوقف.',
+  'أفضل وقت لزراعة شجرة كان منذ 20 عامًا. ثاني أفضل وقت هو الآن.',
+  'صدق في نفسك وكل ما أنت عليه. اعلم أن هناك شيئًا بداخلك أعظم من أي عقبة.',
+  'لا تراقب الساعة؛ افعل كما تفعل. استمر.',
+  'أنت تخسر 100% من الفرص التي لا تأخذها.',
+  'لا يمكنك العودة وتغيير البداية، ولكن يمكنك البدء من حيث أنت وتغيير النهاية.',
+  'ليس عدد السنوات في حياتك التي تهم، بل الحياة في سنواتك.',
+  'أعظم مجد في الحياة لا يكمن في عدم السقوط، بل في النهوض في كل مرة نسقط فيها.',
+  'أهم يومين في حياتك هما اليوم الذي ولدت فيه واليوم الذي اكتشفت فيه لماذا.',
+  'النجاح ليس في مدى ارتفاعك، بل في كيفية إحداث فرق إيجابي في العالم.'
 ]
 
 function randomizeQuote() {
@@ -256,13 +254,13 @@ $(document).ready(() => {
     $(".convictions-holder").empty();
     $(".profile-incidents-holder").empty();
 
-    let licencesHTML = '<div style="color: #fff; text-align:center;">No Licenses</div>';
-    let tagsHTML = '<div style="color: #fff; text-align:center;">No Tags</div>';
-    let convHTML = '<div style="color: #fff; text-align:center;">Clean Record</div>';
-    let incidentsHTML = '<div style="color: #fff; text-align:center;">No Incidents</div>';
-    let vehHTML = '<div style="color: #fff; text-align:center;">No Vehicles</div>';
-    let galleryHTML = '<div style="color: #fff; text-align:center;">No Photos</div>';
-    let propertyHTML = '<div style="color: #fff; text-align:center;">No Properties</div>';
+    let licencesHTML = '<div style="color: #fff; text-align:center;"لا يوجد رخص</div>';
+    let tagsHTML = '<div style="color: #fff; text-align:center;">لا يوجد إضافات</div>';
+    let convHTML = '<div style="color: #fff; text-align:center;">سجل نظيف</div>';
+    let incidentsHTML = '<div style="color: #fff; text-align:center;">لا يوجد قضية</div>';
+    let vehHTML = '<div style="color: #fff; text-align:center;">لا يوجد مركبات</div>';
+    let galleryHTML = '<div style="color: #fff; text-align:center;">لا يوجد صور</div>';
+    let propertyHTML = '<div style="color: #fff; text-align:center;">لا يوجد ملكيات</div>';
 
     // convert key value pair object of licenses to array
     let licenses = Object.entries(result.licences);
@@ -417,7 +415,7 @@ $(document).ready(() => {
         {
           className: "remove-bulletin",
           icon: "fas fa-times",
-          text: "Remove Item",
+          text: "حذف",
           info: $(this).data("id"),
           status: $(this).data("title"),
         },
@@ -536,7 +534,7 @@ $(document).ready(() => {
         $(".tags-holder")
           .find("span.tag-input, div.tag")
           .each(function () {
-          if ($(this).text() != "" && $(this).text() != "No Tags") {
+          if ($(this).text() != "" && $(this).text() != "لا إضافات") {
             tags.push($(this).text());
           }
         });
@@ -671,16 +669,16 @@ $(document).ready(() => {
             .each(function (index) {
               if ($(this).data("id") == cid) {
                 if ($(this).hasClass("green-tag")) {
-                  if ($(this).text() == "Guilty") {
+                  if ($(this).text() == "مذنب") {
                     guilty = true;
                   }
-                  if ($(this).text() == "Warrant") {
+                  if ($(this).text() == "مطلوب") {
                     warrant = true;
                   }
-                  if ($(this).text() == "Processed") {
+                  if ($(this).text() == "تم التعالم") {
                     processed = true;
                   }
-                  if ($(this).text() == "Associated") {
+                  if ($(this).text() == "متورط") {
                     isassociated = true;
                   }
                 }
@@ -769,25 +767,20 @@ $(document).ready(() => {
     function () {
       let template = `
       <div style="color: white;">
-          <p><strong>📝 Summary:</strong></p>
-          <p><em>[Insert Report Summary Here]</em></p>
-          <p>&nbsp;</p>
-          <p><strong>🧍 Hostage:</strong> [Name Here]</p>
-          <p>&nbsp;</p>
-          <p><strong>🗄️ Evidence Location:</strong> Stash # | Drawer #</p>
-          <p>&nbsp;</p>
-          <p><strong>🔪 Weapons/Items Confiscated:</strong></p>
-          <p><em>· [Insert List Here]</em></p>
-          <p>&nbsp;</p>
+          <p><strong>:📝 ملخص</strong></p>
+          <p><em>[أدخل ملخص التقرير هنا]</em></p>
+          <p><strong>:🧍 الرهينة</strong> [إسمه]</p>
+          <p><strong>:🗄️ موقع الأدلة</strong> رقم الدرج#</p>
+          <p><strong>:🔪 الأسلحة/الأشياء المصادرة</strong></p>
+          <p><em>· [ضع الأشياء]</em></p>
+          <p><strong style="background-color: var(--color-1);">:💸 الغرامة</strong></p>
           <p>-----</p>
-          <p><strong style="background-color: var(--color-1);">💸 Fine:</strong></p>
-          <p>&nbsp;</p>
-          <p><strong>⌚ Sentence:</strong></p>
+          <p><strong>:⌚ المحكومية</strong></p>
           <p>-----</p>
       </div>
   `;
       $("#manage-incidents-title-input").val(
-        "Name - Charge - " + $(".date").html()
+        "التهمة - الغرامة - " + $(".date").html()
       );
       $(".manage-incidents-reports-content").trumbowyg({
         changeActiveDropdownIcon: true,
@@ -825,7 +818,7 @@ $(document).ready(() => {
       $(".associated-incidents-tags-holder").html("");
 
       $(".manage-incidents-editing-title").html(
-        "You are currently creating a new Incident"
+        "انت تقوم الأن بإنشاء قضية جديدة"
       );
       $(".manage-incidents-editing-title").data("id", 0);
 
@@ -903,7 +896,7 @@ $(document).ready(() => {
       {
         className: "search-vehicle",
         icon: "fas fa-car",
-        text: "Search Vehicle",
+        text: "بحث عن مركبة",
         info: $(this).data("plate"),
         status: "",
       },
@@ -927,7 +920,7 @@ $(document).ready(() => {
       {
         className: "make-waypoint",
         icon: "fas fa-map-pin",
-        text: "Make Waypoint",
+        text: "إضافة تحديد موقع",
         info: $(this).data("location"),
         status: "",
       },
@@ -963,21 +956,21 @@ $(document).ready(() => {
         {
           className: "remove-image",
           icon: "fas fa-times",
-          text: "Remove Image",
+          text: "حذف الصورة",
           info: $(this).attr("src"),
           status: "",
         },
         {
           className: "expand-image",
           icon: "fas fa-expand",
-          text: "Expand Image",
+          text: "تكبير الصورة",
           info: $(this).attr("src"),
           status: $(this).css("filter"),
         },
         {
           className: "copy-image-link",
           icon: "fa-regular fa-copy",
-          text: "Copy Image Link",
+          text: "نسخ رابط الصورة",
           info: $(this).attr("src"),
           status: $(this).css("filter"),
         },
@@ -1013,7 +1006,7 @@ $(document).ready(() => {
         {
           className: "revoke-licence",
           icon: "fas fa-times",
-          text: "Revoke License",
+          text: "إزالة الترخيص",
           info: info,
           status: status,
         },
@@ -1023,7 +1016,7 @@ $(document).ready(() => {
         {
           className: "give-licence",
           icon: "fas fa-check",
-          text: "Give License",
+          text: "منح الرخصة",
           info: info,
           status: status,
         },
@@ -1511,21 +1504,21 @@ $(document).ready(() => {
         {
           className: "remove-image-incident",
           icon: "fas fa-times",
-          text: "Remove Image",
+          text: "حذف الصورة",
           info: $(this).attr("src"),
           status: "",
         },
         {
           className: "expand-image",
           icon: "fas fa-expand",
-          text: "Expand Image",
+          text: "تكبير الصورة",
           info: $(this).attr("src"),
           status: $(this).css("filter"),
         },
         {
           className: "copy-image-link",
           icon: "fa-regular fa-copy",
-          text: "Copy Image Link",
+          text: "نسخ رابط الصورة",
           info: $(this).attr("src"),
           status: $(this).css("filter"),
         },
@@ -1716,7 +1709,7 @@ $(document).ready(() => {
       {
         className: "bolo-delete",
         icon: "fas fa-times",
-        text: "Delete Bolo",
+        text: "حذف التعميم",
         info: $(this).data("id"),
         status: "",
       },
@@ -1726,7 +1719,7 @@ $(document).ready(() => {
         {
           className: "bolo-delete",
           icon: "fas fa-times",
-          text: "Delete Check-In",
+          text: "حذف",
           info: $(this).data("id"),
           status: "",
         },
@@ -1742,7 +1735,7 @@ $(document).ready(() => {
         {
           className: "add-charge",
           icon: "fas fa-check",
-          text: "Modify Charges",
+          text: "تعديل الغرامة",
           info: $(this).data("name"),
           status: "",
         },
@@ -1854,7 +1847,7 @@ $(document).ready(() => {
       let args = [
           {
             className: "incidents-remove-tag",
-            text: "Remove Tag",
+            text: "إزالة الإضافة",
             info: descr,
             status: "",
           },
@@ -1888,21 +1881,21 @@ $(document).ready(() => {
         {
           className: "bolo-remove-image",
           icon: "fas fa-times",
-          text: "Remove Image",
+          text: "حذف الصورة",
           info: $(this).attr("src"),
           status: "",
         },
         {
           className: "expand-image",
           icon: "fas fa-expand",
-          text: "Expand Image",
+          text: "تكبير الصورة",
           info: $(this).attr("src"),
           status: $(this).css("filter"),
         },
         {
           className: "copy-image-link",
           icon: "fa-regular fa-copy",
-          text: "Copy Image Link",
+          text: "نسخ رابط الصورة",
           info: $(this).attr("src"),
           status: $(this).css("filter"),
         },
@@ -2026,7 +2019,7 @@ $(document).ready(() => {
         {
           className: "associated-incidents-remove-tag",
           icon: "fas fa-times",
-          text: "Remove Tag",
+          text: "إزالة الإضافة",
           info: $(this).html(),
           status: $(this).data("id"),
         },
@@ -2079,24 +2072,24 @@ $(document).ready(() => {
             <div class="associated-incidents-user-container" data-id="${$(this).data("cid")}">
                 <div class="associated-incidents-user-title">${$(this).data("info")}</div>
                 <div class="associated-incidents-user-tags-holder">
-                    <div class="associated-incidents-user-tag red-tag" data-id="${$(this).data("cid")}">Warrant</div>
-                    <div class="associated-incidents-user-tag red-tag" data-id="${$(this).data("cid")}">Guilty</div>
-                    <div class="associated-incidents-user-tag red-tag" data-id="${$(this).data("cid")}">Processed</div>
-                    <div class="associated-incidents-user-tag red-tag" data-id="${$(this).data("cid")}">Associated</div>
+                    <div class="associated-incidents-user-tag red-tag" data-id="${$(this).data("cid")}">مطلوب</div>
+                    <div class="associated-incidents-user-tag red-tag" data-id="${$(this).data("cid")}">مذنب</div>
+                    <div class="associated-incidents-user-tag red-tag" data-id="${$(this).data("cid")}">تم التعامل</div>
+                    <div class="associated-incidents-user-tag red-tag" data-id="${$(this).data("cid")}">متورط</div>
                 </div>
-                <div class="modify-charges-label"><span class="fas fa-solid fa-info"></span> Right click below to add and/or modify charges.</div>
+                <div class="modify-charges-label"><span class="fas fa-solid fa-info"></span> انقر بزر الماوس الأيمن أدناه لإضافة و/أو تعديل الرسوم</div>
                 <div class="associated-incidents-user-holder" data-name="${$(this).data("cid")}"></div>
-                <div class="manage-incidents-title-tag" data-id="${$(this).data("cid")}">Recommended Fine</div>
+                <div class="manage-incidents-title-tag" data-id="${$(this).data("cid")}">الغرامة المقترحة</div>
                 <div class="associated-incidents-fine-input" data-id="${$(this).data("cid")}"><img src="img/h7S5f9J.webp"> <input disabled placeholder="0" class="fine-recommended-amount" id="fine-recommended-amount" data-id="${$(this).data("cid")}" type="number"></div>
-                <div class="manage-incidents-title-tag" data-id="${$(this).data("cid")}">Recommended Sentence</div>
+                <div class="manage-incidents-title-tag" data-id="${$(this).data("cid")}">المدة المقترحة</div>
                 <div class="associated-incidents-sentence-input" data-id="${$(this).data("cid")}"><img src="img/9Xn6xXK.webp"> <input disabled placeholder="0" class="sentence-recommended-amount" id="sentence-recommended-amount" data-id="${$(this).data("cid")}" type="number"></div>
-                <div class="manage-incidents-title-tag" data-id="${$(this).data("cid")}">Fine</div>
+                <div class="manage-incidents-title-tag" data-id="${$(this).data("cid")}">الغرامة</div>
                 <div class="associated-incidents-fine-input" data-id="${$(this).data("cid")}"><img src="img/h7S5f9J.webp"> <input placeholder="Enter fine here..." value="0" class="fine-amount" data-id="${$(this).data("cid")}" type="number"></div>
-                <div class="manage-incidents-title-tag" data-id="${$(this).data("cid")}">Sentence</div>
+                <div class="manage-incidents-title-tag" data-id="${$(this).data("cid")}">المدة</div>
                 <div class="associated-incidents-sentence-input" data-id="${$(this).data("cid")}"><img src="img/9Xn6xXK.webp"> <input placeholder="Enter months here..." value="0" class="sentence-amount" data-id="${$(this).data("cid")}" type="number"></div>
                 <div class="associated-incidents-controls" data-id="${$(this).data("cid")}">
-                    <div id="jail-button" class="control-button" data-id="${$(this).data("cid")}"><span class="fa-solid fa-building-columns" style="margin-top: 3.5px;"></span> Jail</div>
-                    <div id="fine-button" class="control-button" data-id="${$(this).data("cid")}"><span class="fa-solid fa-file-invoice-dollar" style="margin-top: 3.5px;"></span> Fine</div>
+                    <div id="jail-button" class="control-button" data-id="${$(this).data("cid")}"><span class="fa-solid fa-building-columns" style="margin-top: 3.5px;"></span> سجن</div>
+                    <div id="fine-button" class="control-button" data-id="${$(this).data("cid")}"><span class="fa-solid fa-file-invoice-dollar" style="margin-top: 3.5px;"></span> مخالفة</div>
                     ${canSendToCommunityService ? `<div id="community-service-button" class="control-button" data-id="${$(this).data("cid")}"> <span class="fa-solid fa-person-digging" style="margin-top: 3.5px;"></span>Community Service</div>` : ''}
                 </div>
             </div>
@@ -2120,7 +2113,7 @@ $(document).ready(() => {
       {
         className: "incidents-remove-tag",
         icon: "fas fa-times",
-        text: "Remove Tag",
+        text: "إزالة الإضافة",
         info: $(this).html(),
         status: "",
       },
@@ -2145,7 +2138,7 @@ $(document).ready(() => {
         {
           className: "remove-tag",
           icon: "fas fa-times",
-          text: "Remove Tag",
+          text: "إزالة الإضافة",
           info: $(this).html(),
           status: "",
         },
@@ -2188,7 +2181,7 @@ $(document).ready(() => {
       {
         className: "incidents-remove-normal-tag",
         icon: "fas fa-times",
-        text: "Remove Tag",
+        text: "إزالة الإضافة",
         info: $(this).html(),
         status: "",
       },
@@ -2399,21 +2392,21 @@ $(document).ready(() => {
         {
           className: "reports-remove-image",
           icon: "fas fa-times",
-          text: "Remove Image",
+          text: "حذف الصورة",
           info: $(this).attr("src"),
           status: "",
         },
         {
           className: "expand-image",
           icon: "fas fa-expand",
-          text: "Expand Image",
+          text: "تكبير الصورة",
           info: $(this).attr("src"),
           status: $(this).css("filter"),
         },
         {
           className: "copy-image-link",
           icon: "fa-regular fa-copy",
-          text: "Copy Image Link",
+          text: "نسخ رابط الصورة",
           info: $(this).attr("src"),
           status: $(this).css("filter"),
         },
@@ -2860,7 +2853,7 @@ $(document).ready(() => {
           {
             className: "mark-stolen",
             icon: "fas fa-check",
-            text: "Mark as Stolen",
+            text: "وضع علامة مسروقة",
             info: plate,
             status: "",
           },
@@ -2870,7 +2863,7 @@ $(document).ready(() => {
           {
             className: "remove-stolen",
             icon: "fas fa-times",
-            text: "Remove Code 5 Status",
+            text: "إزالة علامة مسروقة",
             info: plate,
             status: "",
           },
@@ -3018,7 +3011,7 @@ $(document).ready(() => {
           {
             className: "impound-vehicle",
             icon: "fas fa-check",
-            text: "State Impound",
+            text: "حالة الحجز",
             info: plate,
             status: "",
           },
@@ -3028,14 +3021,14 @@ $(document).ready(() => {
           {
             className: "remove-impound",
             icon: "fas fa-times",
-            text: "Unimpound Vehicle",
+            text: "فك من الحجز",
             info: plate,
             status: "",
           },
           {
             className: "status-impound",
             icon: "fas fa-info-circle",
-            text: "View Impound Status",
+            text: "إطلاع على حالة الحجز",
             info: plate,
             status: "",
           },
@@ -3273,7 +3266,7 @@ $(document).ready(() => {
       {
         className: "view-incident2",
         icon: "fas fa-search",
-        text: `View Incident #${$(this).data("id")}`,
+        text: `عرض القضية #${$(this).data("id")}`,
         info: $(this).data("id"),
         status: "",
       },
@@ -3320,14 +3313,14 @@ $(document).ready(() => {
       {
         className: "view-profile",
         icon: "far fa-eye",
-        text: "View Profile",
+        text: "عرض الملف الشخصي",
         info: $(this).data("cid"),
         status: "",
       },
       {
         className: "view-incident",
         icon: "fas fa-search",
-        text: `View Incident #${$(this).data("id")}`,
+        text: `عرض القضية #${$(this).data("id")}`,
         info: $(this).data("id"),
         status: "",
       },
@@ -3403,28 +3396,28 @@ $(document).ready(() => {
         {
           className: "toggle-duty",
           icon: "fas fa-thumbtack",
-          text: "Toggle Duty",
+          text: "تسجيل دخول/خروج",
           info: cid,
           status: "",
         },
         {
           className: "set-callsign",
           icon: "far fa-id-badge",
-          text: "Set Callsign",
+          text: "ظبط رقم الوحدة",
           info: cid,
           status: "",
         },
         {
           className: "set-radio",
           icon: "fas fa-broadcast-tower",
-          text: "Set Radio",
+          text: "ظبط التردد",
           info: cid,
           status: "",
         },
         {
           className: "set-waypoint",
           icon: "fas fa-map-marker-alt",
-          text: "Set Waypoint",
+          text: "تحديد موقع",
           info: cid,
           status: "",
         },
@@ -3514,21 +3507,21 @@ $(document).ready(() => {
             {
               className: "attached-units",
               icon: "fas fa-link",
-              text: "Attached Units",
+              text: "الوحدات المشاركة",
               info: callId,
               status: "",
             },
             {
               className: "Set-Waypoint",
               icon: "fas fa-map-marker-alt",
-              text: "Set Waypoint",
+              text: "تحديد الموقع",
               info: callId,
               status: "",
             },
             {
               className: "remove-blip",
               icon: "fa-solid fa-circle-minus",
-              text: "Remove Blip",
+              text: "مسح التحديد",
               info: callId,
               status: "",
             },
@@ -3538,21 +3531,21 @@ $(document).ready(() => {
             {
               className: "attached-units",
               icon: "fas fa-link",
-              text: "Attached Units",
+              text: "الوحدات المشاركة",
               info: callId,
               status: "",
             },
             {
               className: "Set-Waypoint",
               icon: "fas fa-map-marker-alt",
-              text: "Set Waypoint",
+              text: "تحديد الموقع",
               info: callId,
               status: "",
             },
             {
               className: "remove-blip",
               icon: "fa-solid fa-circle-minus",
-              text: "Remove Blip",
+              text: "مسح التحديد",
               info: callId,
               status: "",
             },
@@ -3596,7 +3589,7 @@ $(document).ready(() => {
           {
             className: "set-waypoint",
             icon: "fas fa-map-marker-alt",
-            text: "Set Waypoint",
+            text: "تحديد الموقع",
             info: cid,
             status: "",
           },
@@ -3632,7 +3625,7 @@ $(document).ready(() => {
         {
           className: "dispatch-reply",
           icon: "fas fa-reply",
-          text: "Reply",
+          text: "الرد",
           info: mySubString,
           status: "",
         },
@@ -3984,28 +3977,28 @@ $(document).ready(() => {
           } else if (sentJob == "doc") {
             applyCustomTheme(customThemes.doc)
           }
-        $(".bolo-nav-item").html("BOLOs");
-        $(".bolos-search-title").html("Bolos");
-        $("#bolos-search-input").attr("placeholder", "Search Bolo...");
-        $(".manage-bolos-title").html("Manage Bolo");
+        $(".bolo-nav-item").html("التعميمات");
+        $(".bolos-search-title").html("التعميمات");
+        $("#bolos-search-input").attr("placeholder", "البحث عن تعميم");
+        $(".manage-bolos-title").html("إدارة تعميم");
         $(".manage-bolos-editing-title").html(
-          "You are currently creating a new BOLO"
+          "انت الأن تقوم بتعديل تعميم"
         );
-        $(".boloplate-title").html("Plate");
-        $(".boloowner-title").html("Owner");
-        $(".boloindividual-title").html("Individual");
-        $("#boloplate").attr("placeholder", "Place plate here...");
+        $(".boloplate-title").html("اللوحة");
+        $(".boloowner-title").html("المالك");
+        $(".boloindividual-title").html("التعميم");
+        $("#boloplate").attr("placeholder", "ضع اللوحة هنا");
         $("#bolodetail").attr(
           "placeholder",
-          "Bolo detail goes here..."
+          "التعميم يكون هنا"
         );
         $("#boloowner").attr(
           "placeholder",
-          "Place vehicle owner here..."
+          "ضع معلومات المالك هنا"
         );
         $("#boloindividual").attr(
           "placeholder",
-          "Place invidivual here..."
+          "ضع التعميم هنا"
         );
         $("#home-warrants-container").fadeIn(0);
         $("#home-reports-container").fadeOut(0);
@@ -4016,15 +4009,15 @@ $(document).ready(() => {
         $(".weapons-nav-item").show()
         $(".cams-nav-item").show();
         $(".map-nav-item").show();
-        $(".dispatch-title-ofsomesort").html("Dispatch");
+        $(".dispatch-title-ofsomesort").html("مركز العمليات");
         $(".dispatch-comms-container").fadeIn(0);
         $(".manage-profile-name-input-1").attr("readonly", true);
         $(".manage-profile-name-input-2").attr("readonly", true);
         $("#reports-officers-involved-tag-title").html(
-          "Officers Involved"
+          "الوحدات المشاركة"
         );
         $("#bolos-officers-involved-tag-title").html(
-          "Officers Involved"
+          "الوحدات المشاركة"
         );
         $(".roster-iframe").attr("src", rosterLink);
         $(".sop-iframe").attr("src", sopLink);
@@ -4659,7 +4652,7 @@ window.addEventListener("message", function (event) {
           {
             className: "incidents-delete",
             icon: "fas fa-times",
-            text: "Delete Incidents",
+            text: "حذف قضية",
             info: $(this).data("id"),
             status: "",
           },
@@ -4782,7 +4775,7 @@ window.addEventListener("message", function (event) {
       if (PoliceJobs[playerJob] !== undefined || AmbulanceJobs[playerJob] !== undefined) {
         $(".manage-incidents-title-holder").prepend(
           `
-            <div class="manage-incidents-title">Manage Incident</div>
+            <div class="manage-incidents-title">إدارة القضية</div>
             <div class="manage-incidents-create"> <span class="fas fa-plus" style="margin-top: 3.5px;"></span></div>
             <div class="manage-incidents-save"><span class="fas fa-save" style="margin-top: 3.5px;"></span></div>
             `
@@ -4792,7 +4785,7 @@ window.addEventListener("message", function (event) {
       } else if (DojJobs[playerJob] !== undefined) {
         $(".manage-incidents-title-holder").prepend(
           `
-            <div class="manage-incidents-title">Manage Incident</div>
+            <div class="manage-incidents-title">إدارة القضية</div>
             `
         );
         $(".manage-incidents-title").css("width", "95%");
@@ -4827,17 +4820,17 @@ window.addEventListener("message", function (event) {
         // If the associated field is not checked, then populate the recommended fine and sentence fields
         const associatedIncidentsContainer = (value.associated != 1) && `
           <div class="associated-incidents-user-holder" data-name="${cid}" ></div>
-          <div class="manage-incidents-title-tag" data-id="${cid}">Recommended Fine</div>
+          <div class="manage-incidents-title-tag" data-id="${cid}">الغرامة المقترحة</div>
           <div class="associated-incidents-fine-input" data-id="${cid}"><img src="img/h7S5f9J.webp"> <input placeholder="0" disabled class="fine-recommended-amount" id="fine-recommended-amount" data-id="${cid}" type="number"></div>
-          <div class="manage-incidents-title-tag" data-id="${cid}">Recommended Sentence</div>
+          <div class="manage-incidents-title-tag" data-id="${cid}">المدة المقترحة</div>
           <div class="associated-incidents-sentence-input" data-id="${cid}"><img src="img/9Xn6xXK.webp"> <input placeholder="0" disabled class="sentence-recommended-amount" id="sentence-recommended-amount" data-id="${cid}" type="number"></div>
-          <div class="manage-incidents-title-tag" data-id="${cid}">Fine</div>
+          <div class="manage-incidents-title-tag" data-id="${cid}">الغرامة</div>
           <div class="associated-incidents-fine-input" data-id="${cid}"><img src="img/h7S5f9J.webp"> <input placeholder="Enter fine here..." value="0" class="fine-amount" data-id="${cid}" type="number"></div>
-          <div class="manage-incidents-title-tag" data-id="${cid}">Sentence</div>
+          <div class="manage-incidents-title-tag" data-id="${cid}">المدة</div>
           <div class="associated-incidents-sentence-input" data-id="${cid}"><img src="img/9Xn6xXK.webp"> <input placeholder="Enter months here..." value="0" class="sentence-amount" data-id="${cid}" type="number"></div>
           <div class="associated-incidents-controls" data-id="${cid}">
-            <div id="jail-button" class="control-button" data-id="${cid}"><span class="fa-solid fa-building-columns" style="margin-top: 3.5px;"></span> Jail</div>
-            <div id="fine-button" class="control-button" data-id="${cid}"><span class="fa-solid fa-file-invoice-dollar" style="margin-top: 3.5px;"></span> Fine</div>
+            <div id="jail-button" class="control-button" data-id="${cid}"><span class="fa-solid fa-building-columns" style="margin-top: 3.5px;"></span> سجن</div>
+            <div id="fine-button" class="control-button" data-id="${cid}"><span class="fa-solid fa-file-invoice-dollar" style="margin-top: 3.5px;"></span> غرامة</div>
             ${canSendToCommunityService ? `<div id="community-service-button" class="control-button" data-id="${cid}"> <span class="fa-solid fa-person-digging" style="margin-top: 3.5px;"></span>Community Service</div>` : ''}
           </div>
         `;
@@ -4846,12 +4839,12 @@ window.addEventListener("message", function (event) {
           `<div class="associated-incidents-user-container" data-id="${cid}">
               <div class="associated-incidents-user-title">${value.name} (#${cid})</div>
               <div class="associated-incidents-user-tags-holder">
-                  <div class="associated-incidents-user-tag ${warrantTag}" data-id="${cid}">Warrant</div>
-                  <div class="associated-incidents-user-tag ${guiltyTag}" data-id="${cid}">Guilty</div>
-                  <div class="associated-incidents-user-tag ${processedTag}" data-id="${cid}">Processed</div>
-                  <div class="associated-incidents-user-tag ${associatedTag}" data-id="${cid}">Associated</div>
+                  <div class="associated-incidents-user-tag ${warrantTag}" data-id="${cid}">مطلوب</div>
+                  <div class="associated-incidents-user-tag ${guiltyTag}" data-id="${cid}">مذنب</div>
+                  <div class="associated-incidents-user-tag ${processedTag}" data-id="${cid}">تم التعامل</div>
+                  <div class="associated-incidents-user-tag ${associatedTag}" data-id="${cid}">متورط</div>
               </div>
-              <div class="modify-charges-label"><span class="fas fa-solid fa-info"></span> Right click below to add and/or modify charges.</div>
+              <div class="modify-charges-label"><span class="fas fa-solid fa-info"></span> انقر بزر الماوس الأيمن أدناه لإضافة و/أو تعديل الرسوم</div>
               ${associatedIncidentsContainer}
           </div>`
         );
@@ -5057,7 +5050,7 @@ window.addEventListener("message", function (event) {
           {
             className: "reports-delete",
             icon: "fas fa-times",
-            text: "Delete Report",
+            text: "حذق تقرير",
             info: $(this).data("id"),
             status: "",
           },
@@ -5210,7 +5203,7 @@ window.addEventListener("message", function (event) {
           {
             className: "weapons-delete",
             icon: "fas fa-times",
-            text: "Delete Weapon Info",
+            text: "حذف معلومات السلاح",
             info: $(this).data("id"),
             status: "",
           },

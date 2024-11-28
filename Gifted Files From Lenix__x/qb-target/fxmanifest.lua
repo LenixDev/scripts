@@ -1,37 +1,26 @@
 fx_version 'cerulean'
 game 'gta5'
+lua54 'yes'
+use_experimental_fxv2_oal 'yes'
+author 'BerkieB & Lenix__x'
+description 'Allows players to interact with various objects and entities in the world'
+version '5.5.0'
 
 ui_page 'html/index.html'
 
-files {
-	'stream/*.ytd',
-	'html/css/*.svg',
-	'html/*.html',
-	'html/css/*.css',
-	'html/js/*.js',
-	'compat/qb-target.lua',
-}
-
-lua54 'yes'
-use_fxv2_oal 'yes'
-
 client_scripts {
-	'compat/qb-target.lua',
 	'@PolyZone/client.lua',
 	'@PolyZone/BoxZone.lua',
 	'@PolyZone/EntityZone.lua',
 	'@PolyZone/CircleZone.lua',
 	'@PolyZone/ComboZone.lua',
-	'config.lua',
-	'bone.lua',
+	'init.lua',
 	'client.lua',
 }
 
-escrow_ignore {
-	'compat/qb-target.lua',
-	'config.lua',
-	'bone.lua',
-	'client.lua',
+files {
+	'data/*.lua',
+	'html/*.html',
+	'html/css/*.css',
+	'html/js/*.js'
 }
-
-dependency 'PolyZone'

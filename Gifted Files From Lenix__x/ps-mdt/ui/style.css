@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
 
 :root {
+    border-radius: 4px;
     --color-1: #1E3955;
     --color-2: #213F5F;
     --color-3: #2C537B;
@@ -14,26 +15,31 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    border-radius: 4px;
+    font-family: 'Cairo', sans-serif;
     overflow: hidden;
     display: none;
 }
 
 textarea {
-    font-family: 'Montserrat', sans-serif;
+    border-radius: 4px;
+    font-family: 'Cairo', sans-serif;
 }
 
 ::-webkit-scrollbar {
+    border-radius: 4px;
     width: 0px;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
+    border-radius: 4px;
   -webkit-appearance: none;
   margin: 0;
 }
 
 .dashboard-page-container  {
+    border-radius: 4px;
     background-color: var(--color-9);
     border-radius: 15px;
     position: absolute; 
@@ -45,12 +51,14 @@ input::-webkit-inner-spin-button {
 }
 
 .badge-logo {
+    border-radius: 4px;
     margin-left: 1vh;
     width: 12vh;
     height: 12vh;
 }
 
 .profile-page-container {
+    border-radius: 4px;
     background-color: var(--color-9);
     border-radius: 15px;
     position: absolute; 
@@ -62,6 +70,7 @@ input::-webkit-inner-spin-button {
 }
 
 .incidents-page-container {
+    border-radius: 4px;
     background-color: var(--color-9);
     border-radius: 15px;
     position: absolute; 
@@ -73,6 +82,7 @@ input::-webkit-inner-spin-button {
 }
 
 .bolos-page-container {
+    border-radius: 4px;
     background-color: var(--color-9);
     border-radius: 15px;
     position: absolute; 
@@ -84,6 +94,7 @@ input::-webkit-inner-spin-button {
 }
 
 .reports-page-container {
+    border-radius: 4px;
     background-color: var(--color-9);
     border-radius: 15px;
     position: absolute; 
@@ -95,6 +106,7 @@ input::-webkit-inner-spin-button {
 }
 
 .penalcode-page-container {
+    border-radius: 4px;
     background-color: var(--color-9);
     border-radius: 15px;
     position: absolute; 
@@ -106,6 +118,7 @@ input::-webkit-inner-spin-button {
 }
 
 .sop-page-container {
+    border-radius: 4px;
     background-color: var(--color-9);
     border-radius: 15px;
     position: absolute; 
@@ -117,6 +130,7 @@ input::-webkit-inner-spin-button {
 }
 
 .dmv-page-container {
+    border-radius: 4px;
     background-color: var(--color-9);
     border-radius: 15px;
     position: absolute; 
@@ -128,6 +142,7 @@ input::-webkit-inner-spin-button {
 }
 
 .weapons-page-container {
+    border-radius: 4px;
     background-color: var(--color-9);
     border-radius: 15px;
     position: absolute; 
@@ -139,6 +154,7 @@ input::-webkit-inner-spin-button {
 }
 
 .stafflogs-page-container  {
+    border-radius: 4px;
     background-color: var(--color-9);
     border-radius: 15px;
     position: absolute; 
@@ -151,6 +167,7 @@ input::-webkit-inner-spin-button {
 }
 
 .container-load {
+    border-radius: 4px;
     background-color: var(--color-9);
     border-radius: 15px;
     position: absolute; 
@@ -162,6 +179,7 @@ input::-webkit-inner-spin-button {
 }
 
 .header {
+    border-radius: 4px;
     height: 4vh;
     background-color: var(--color-1);
     border: 5px solid #393B39;
@@ -176,6 +194,7 @@ input::-webkit-inner-spin-button {
 }
 
 .header-left {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -184,11 +203,12 @@ input::-webkit-inner-spin-button {
 }
 
 .header-middle {
+    border-radius: 4px;
     background-color: var(--color-2);
     border-radius: 15px;
     border: 5px solid #393B39;
     width: fit-content;
-    height: 3.5vh;
+    height: 4.5vh;
     padding: 8px;
     padding-left: 20px;
     padding-right: 20px;
@@ -203,6 +223,7 @@ input::-webkit-inner-spin-button {
 }
 
 .header-right {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -212,6 +233,7 @@ input::-webkit-inner-spin-button {
 }
 
 .main-container {
+    border-radius: 4px;
     border-top: 5px solid var(--color-3);
     width: 100%;
     height: 86%;
@@ -221,6 +243,7 @@ input::-webkit-inner-spin-button {
 }
 
 .nav-menu {
+    border-radius: 4px;
     background-color: var(--color-1);
     border-right: 5px solid var(--color-3);
     min-width: 22.5vh;
@@ -232,23 +255,28 @@ input::-webkit-inner-spin-button {
 }
 
 .nav-item {
+    border-radius: 4px;
     background-color: var(--color-4);
-    margin-top: 10px;
+    margin: 10px 3px;
     padding: 10px;
     color: white;
     font-size: 18px;
     font-weight: bolder;
+    border-radius: 5px;
 }
 
 .nav-item:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .active-nav {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .warrants-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -260,6 +288,7 @@ input::-webkit-inner-spin-button {
 }
 
 .warrants-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -276,11 +305,13 @@ input::-webkit-inner-spin-button {
 }
 
 .fa-search {
+    border-radius: 4px;
     font-size: 15px;
     font-weight: normal;
 }
 
 .warrants-items {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -291,6 +322,7 @@ input::-webkit-inner-spin-button {
 }
 
 .warrants-item {
+    border-radius: 4px;
     background-color: var(--color-5);
     width: 100%;
     margin: auto;
@@ -301,10 +333,12 @@ input::-webkit-inner-spin-button {
 }
 
 .warrants-item:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .warrant-image {
+    border-radius: 4px;
     width: 9vh;
     height: 9vh;
     margin-left: 5px;
@@ -313,6 +347,7 @@ input::-webkit-inner-spin-button {
 }
 
 .warrant-title {
+    border-radius: 4px;
     font-size: 16px;
     font-weight: lighter;
     color: white;
@@ -320,11 +355,13 @@ input::-webkit-inner-spin-button {
 }
 
 .warrant-item-info {
+    border-radius: 4px;
     color: #cccccc;
     font-size: 12px;
 }
 
 .warrant-bottom-info {
+    border-radius: 4px;
     display: flex;
     margin-top: 1vh;
     margin-bottom: 0.75vh;
@@ -332,11 +369,13 @@ input::-webkit-inner-spin-button {
 }
 
 .warrant-id {
+    border-radius: 4px;
     color: white;
     font-size: 12px;
 }
 
 .warrant-expiry-date {
+    border-radius: 4px;
     color: white;
     font-size: 12px;
     margin: auto;
@@ -344,6 +383,7 @@ input::-webkit-inner-spin-button {
 }
 
 .quotes-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     width: 50vh;
@@ -356,6 +396,7 @@ input::-webkit-inner-spin-button {
 }
 
 .quote-title {
+    border-radius: 4px;
     font-size: 14px;
     background-color: var(--color-4);
     padding: 5px;
@@ -369,6 +410,7 @@ input::-webkit-inner-spin-button {
 }
 
 .quote {
+    border-radius: 4px;
     margin-right: 10px;
     margin-left: 10px;
     /* margin-bottom: 25px; */
@@ -382,12 +424,14 @@ input::-webkit-inner-spin-button {
 }
 
 .quote-span {
+    border-radius: 4px;
     margin: auto;
     color: white;
     font-size: 16px;
 }
 
 .bulletin-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -402,6 +446,7 @@ input::-webkit-inner-spin-button {
 }
 
 .bulletin-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -419,6 +464,7 @@ input::-webkit-inner-spin-button {
 }
 
 .bulletin-items-continer {
+    border-radius: 4px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -429,6 +475,7 @@ input::-webkit-inner-spin-button {
 }
 
 .bulletin-item {
+    border-radius: 4px;
     background-color: var(--color-5);
     width: 45vh;
     /* min-height: 7.7vh; */
@@ -440,10 +487,12 @@ input::-webkit-inner-spin-button {
 }
 
 .bulletin-item:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .bulletin-item-title {
+    border-radius: 4px;
     color: white;
     margin-left: 5px;
     font-size: 20px;
@@ -451,15 +500,18 @@ input::-webkit-inner-spin-button {
 }
 
 span.bulletin-item-title {
+    border-radius: 4px;
     outline: none;
     border: none;
 }
 
 span.bulletin-item-title[contenteditable]:empty::before {
+    border-radius: 4px;
     content: 'Enter Title';
 }
 
 .bulletin-item-info {
+    border-radius: 4px;
     color: #cccccc;
     font-size: 15px;
     margin-left: 5px;
@@ -470,15 +522,18 @@ span.bulletin-item-title[contenteditable]:empty::before {
 }
 
 span.bulletin-item-info {
+    border-radius: 4px;
     outline: none;
     border: none;
 }
 
 span.bulletin-item-info[contenteditable]:empty::before {
+    border-radius: 4px;
     content: 'Enter Bulletin Information';
 }
 
 .bulletin-bottom-info {
+    border-radius: 4px;
     display: flex;
     margin-left: 5px;
     margin-bottom: 0px;
@@ -488,18 +543,21 @@ span.bulletin-item-info[contenteditable]:empty::before {
 }
 
 .bulletin-date {
+    border-radius: 4px;
     margin: auto;
     margin-right: 5px;
     margin-bottom: 0px;
 }
 
 .bulletin-id {
+    border-radius: 4px;
     margin: auto;
     margin-left: 0px;
     margin-bottom: 0px;
 }
 
 .dispatch-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -512,6 +570,7 @@ span.bulletin-item-info[contenteditable]:empty::before {
 }
 
 .dispatch-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -528,6 +587,7 @@ span.bulletin-item-info[contenteditable]:empty::before {
 }
 
 .active-unit-title {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     font-size: 18px;
@@ -547,6 +607,7 @@ span.bulletin-item-info[contenteditable]:empty::before {
 }
 
 .active-unit-count {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     font-weight: bolder;
@@ -566,6 +627,7 @@ span.bulletin-item-info[contenteditable]:empty::before {
 }
 
 .calls-title {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     font-size: 18px;
@@ -585,34 +647,42 @@ span.bulletin-item-info[contenteditable]:empty::before {
 }
 
 #police-count {
+    border-radius: 4px;
     background-color: #093095;
 }
 
 #bcso-count {
+    border-radius: 4px;
 background-color: #cc7e25;;
 }
 
 #sasp-count {
+    border-radius: 4px;
 background-color: #2589cc;
 }
 
 #ems-count {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 #doj-count {
+    border-radius: 4px;
     background-color: #525252;
 }
 
 #doc-count {
+    border-radius: 4px;
     background-color: #7b25cc;
 }
 
 #pa-count {
+    border-radius: 4px;
     background-color: #008080;
 }
 
 .active-unit-list {
+    border-radius: 4px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -624,6 +694,7 @@ background-color: #2589cc;
 }
 
 .active-unit-item {
+    border-radius: 4px;
     padding-top: 7.5px;
     padding-bottom: 7.5px;
     padding-right: 10px;
@@ -636,6 +707,7 @@ background-color: #2589cc;
 }
 
 #draggedItem {
+    border-radius: 4px;
     position: absolute;
     z-index: 80;
     -webkit-transition: opacity 0.2s ease;
@@ -655,6 +727,7 @@ background-color: #2589cc;
 }
 
 .unit-status {
+    border-radius: 4px;
     width: fit-content;
     padding: 5px;
     padding-left: 15px;
@@ -670,14 +743,17 @@ background-color: #2589cc;
 }
 
 .green-status {
+    border-radius: 4px;
     background-color: #099517;
 }
 
 .yellow-status {
+    border-radius: 4px;
     background-color: #958F09;
 }
 
 .unit-job {
+    border-radius: 4px;
     width: fit-content;
     padding: 5px;
     padding-left: 15px;
@@ -693,22 +769,27 @@ background-color: #2589cc;
 }
 
 .unit-police {
+    border-radius: 4px;
     background-color: #093095;
 }
 
 .unit-ems {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 .unit-doc {
+    border-radius: 4px;
     background-color: #7b25cc;
 }
 
 .unit-pa {
+    border-radius: 4px;
     background-color: #008080;
 }
 
 .unit-name {
+    border-radius: 4px;
     margin: auto;
     margin-left: 10px;
     margin-right: 0px;
@@ -718,6 +799,7 @@ background-color: #2589cc;
 }
 
 .unit-radio {
+    border-radius: 4px;
     margin: auto;
     margin-right: 5px;
     font-size: 12px;
@@ -731,6 +813,7 @@ background-color: #2589cc;
 }
 
 .active-calls-list {
+    border-radius: 4px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -742,6 +825,7 @@ background-color: #2589cc;
 }
 
 .active-calls-item {
+    border-radius: 4px;
     height: fit-content;
     background-color: var(--color-5);
     display: flex;
@@ -750,6 +834,7 @@ background-color: #2589cc;
 }
 
 .active-call-inner-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -757,10 +842,12 @@ background-color: #2589cc;
 }
 
 .red-call {
+    border-radius: 4px;
     background-color: #381515;
 }
 
 .call-item-top {
+    border-radius: 4px;
     height: 50%;
     width: 100%;
     display: flex;
@@ -770,6 +857,7 @@ background-color: #2589cc;
 }
 
 .call-number {
+    border-radius: 4px;
     background-color: #950909;
     color: white;
     font-size: 15px;
@@ -785,6 +873,7 @@ background-color: #2589cc;
 }
 
 .call-code {
+    border-radius: 4px;
     background-color: #097C95;
     color: white;
     font-size: 15px;
@@ -800,6 +889,7 @@ background-color: #2589cc;
 }
 
 .call-title {
+    border-radius: 4px;
     color: white;
     font-size: 20px;
     font-weight: bolder;
@@ -814,6 +904,7 @@ background-color: #2589cc;
 }
 
 .call-radio {
+    border-radius: 4px;
     margin: auto;
     margin-left: auto;
     margin-right: .5vh;
@@ -828,6 +919,7 @@ background-color: #2589cc;
 }
 
 .call-item-bottom {
+    border-radius: 4px;
     height: fit-content;
     width: 100%;
     display: flex;
@@ -840,6 +932,7 @@ background-color: #2589cc;
 }
 
 .call-bottom-info {
+    border-radius: 4px;
     color: white;
     font-size: 15px;
     margin: auto;
@@ -851,6 +944,7 @@ background-color: #2589cc;
 }
 
 .dispatch-line {
+    border-radius: 4px;
     background-color: rgba(128, 128, 128, 0.1);
     height: 0.05vh;
     width: 100%;
@@ -859,14 +953,17 @@ background-color: #2589cc;
 }
 
 .call-bottom-info > .far {
+    border-radius: 4px;
     margin-right: .1vh;
 }
 
 .call-bottom-information {
+    border-radius: 4px;
     margin-top: 0.5vh;
 }
 
 .call-victim {
+    border-radius: 4px;
     color: white;
     font-size: 15px;
     margin: auto;
@@ -876,10 +973,12 @@ background-color: #2589cc;
 }
 
 a {
+    border-radius: 4px;
     text-decoration: none;
 }
 
 .profile-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -893,6 +992,7 @@ a {
 
 
 .profile-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -909,10 +1009,12 @@ a {
 }
 
 .profile-title:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .profile-search-input {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     padding-top: 10px;
@@ -928,6 +1030,7 @@ a {
 }
 
 #profile-search-input {
+    border-radius: 4px;
     outline: none;
     border: none;
     width: 95%;
@@ -938,10 +1041,12 @@ a {
 }
 
 #profile-search-input::placeholder {
+    border-radius: 4px;
     color: white;
 }
 
 .profile-items {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -953,6 +1058,7 @@ a {
 }
 
 .profile-item {
+    border-radius: 4px;
     background-color: var(--color-5);
     width: 100%;
     height: 12vh;
@@ -965,10 +1071,12 @@ a {
 }
 
 .profile-item:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .profile-image {
+    border-radius: 4px;
     width: 10vh;
     height: 10vh;
     margin-left: 10px;
@@ -978,6 +1086,7 @@ a {
 }
 
 .profile-item-title {
+    border-radius: 4px;
     font-size: 16px;
     font-weight: lighter;
     color: white;
@@ -985,6 +1094,7 @@ a {
 }
 
 .profile-tags {
+    border-radius: 4px;
     display: flex;
     overflow-x: auto;
     width: 100%;
@@ -993,6 +1103,7 @@ a {
 }
 
 .profile-criminal-tags {
+    border-radius: 4px;
     display: flex;
     overflow-x: auto;
     width: 100%;
@@ -1001,6 +1112,7 @@ a {
 }
 
 .profile-tag {
+    border-radius: 4px;
     margin: auto;
     margin-left: 0px;
     margin-right: 6px;
@@ -1015,17 +1127,20 @@ a {
 }
 
 .profile-bottom-info {
+    border-radius: 4px;
     display: flex;
     margin: auto;
     width: 100%;
 }
 
 .profile-id {
+    border-radius: 4px;
     color: white;
     font-size: 13px;
 }
 
 .manage-profile-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -1037,6 +1152,7 @@ a {
 }
 
 .manage-profile-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -1053,6 +1169,7 @@ a {
 }
 
 .manage-profile-editing-title {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     font-size: 15px;
@@ -1071,6 +1188,7 @@ a {
 }
 
 .manage-profile-save {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -1088,10 +1206,12 @@ a {
 }
 
 .manage-profile-save:hover {
+    border-radius: 4px;
     background-color: #1caa28;
 }
 
 .manage-profile-info-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: row;
     width: 95%;
@@ -1101,17 +1221,20 @@ a {
 }
 
 .manage-profile-pic {
+    border-radius: 4px;
     width: 45%;
     object-fit: cover;
 }
 
 .manage-profile-info-inner-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     width: 55%;
 }
 
 .manage-profile-citizenid {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 14px;
@@ -1119,6 +1242,7 @@ a {
 }
 
 .manage-profile-citizenid-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -1129,12 +1253,14 @@ a {
 }
 
 .manage-cid-pic {
+    border-radius: 4px;
     color: white;
     font-size: 16px;
     margin-left: 10px
 }
 
 .line {
+    border-radius: 4px;
     background-color: var(--color-3);
     height: 2px;
     margin-left: 10px;
@@ -1142,6 +1268,7 @@ a {
 }
 
 .manage-profile-name {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -1149,6 +1276,7 @@ a {
 }
 
 .manage-profile-name-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -1159,6 +1287,7 @@ a {
 }
 
 .manage-profile-dob {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -1166,6 +1295,7 @@ a {
 }
 
 .manage-profile-dob-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -1176,6 +1306,7 @@ a {
 }
 
 .manage-profile-fingerprint {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -1183,6 +1314,7 @@ a {
 }
 
 .manage-profile-fingerprint-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -1193,6 +1325,7 @@ a {
 }
 
 .manage-profile-phonenumber {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -1200,6 +1333,7 @@ a {
 }
 
 .manage-profile-phonenumber-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -1210,6 +1344,7 @@ a {
 }
 
 .manage-profile-job {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -1217,6 +1352,7 @@ a {
 }
 
 .manage-profile-job-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -1227,6 +1363,7 @@ a {
 }
 
 .manage-profile-url {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -1234,6 +1371,7 @@ a {
 }
 
 .manage-profile-url-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -1245,6 +1383,7 @@ a {
 }
 
 .manage-profile-info {
+    border-radius: 4px;
     width: 92.5%;
     margin: auto;
     margin-top: 10px;
@@ -1260,6 +1399,7 @@ a {
 }
 
 .manage-profile-active-warrant {
+    border-radius: 4px;
     display: none;
     margin: auto;
     padding: 8px;
@@ -1269,6 +1409,7 @@ a {
 }
 
 .manage-profile-right-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     height: 97.9%;
@@ -1279,6 +1420,7 @@ a {
 }
 
 .manage-profile-licenses-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     width: 100%;
     border: 2px solid var(--color-3);
@@ -1286,6 +1428,7 @@ a {
 }
 
 .license-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -1302,6 +1445,7 @@ a {
 }
 
 .licenses-holder {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     margin-top: 5px;
@@ -1310,6 +1454,7 @@ a {
 }
 
 .license-tag {
+    border-radius: 4px;
     display: inline-block;
     text-decoration: none;
     margin: auto;
@@ -1327,6 +1472,7 @@ a {
 }
 
 .manage-profile-tags-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     background-color: var(--color-1);
@@ -1340,6 +1486,7 @@ a {
 }
 
 .tags-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -1357,6 +1504,7 @@ a {
 }
 
 .tags-add-btn {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -1372,10 +1520,12 @@ a {
 }
 
 .tags-add-btn:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .tags-holder {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     margin-top: 5px;
@@ -1384,6 +1534,7 @@ a {
 }
 
 .tag {
+    border-radius: 4px;
     display: inline-block;
     text-decoration: none;
     margin: auto;
@@ -1403,10 +1554,12 @@ a {
 }
 
 span.tag-input[contenteditable]:empty::before {
-    content: 'Input Tag';
+    border-radius: 4px;
+    content: 'أدخل الإضافة';
 }
 
 .tag-input {
+    border-radius: 4px;
     display: inline-block;
     text-decoration: none;
     margin: auto;
@@ -1428,6 +1581,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-profile-vehs-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     background-color: var(--color-1);
@@ -1440,6 +1594,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .vehs-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -1456,6 +1611,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .vehs-holder {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     margin-top: 5px;
@@ -1464,6 +1620,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .veh-tag {
+    border-radius: 4px;
     display: inline-block;
     text-decoration: none;
     margin: auto;
@@ -1482,6 +1639,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-profile-houses-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     background-color: var(--color-1);
@@ -1494,6 +1652,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .houses-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -1510,6 +1669,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .houses-holder {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     margin-top: 5px;
@@ -1518,6 +1678,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .houses-tag {
+    border-radius: 4px;
     display: inline-block;
     text-decoration: none;
     margin: auto;
@@ -1536,6 +1697,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-profile-gallery-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     background-color: var(--color-1);
@@ -1547,6 +1709,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .gallery-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -1564,6 +1727,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .gallery-add-btn {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -1579,10 +1743,12 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .gallery-add-btn:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .gallery-inner-container {
+    border-radius: 4px;
     overflow: auto;
     white-space: nowrap;
     margin: auto;
@@ -1592,12 +1758,14 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .gallery-img {
+    border-radius: 4px;
     width: 10vh;
     filter: blur(5px);
     object-fit: cover;
 }
 
 .convictions-known, .incidents-known {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -1605,6 +1773,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .convictions-known-container, .incidents-known-container {
+    border-radius: 4px;
     background-color: var(--color-5);
     width: 95vh;
     height: 45vh;
@@ -1617,6 +1786,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .convictions-known-title, .incidents-known-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 20px;
@@ -1632,6 +1802,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .convictions-title {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     color: white;
@@ -1649,10 +1820,12 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .convictions-title:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .convictions-holder {
+    border-radius: 4px;
     overflow: scroll;
     max-height: 87%;
     margin: auto;
@@ -1662,6 +1835,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .profile-incidents-title {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     color: white;
@@ -1679,10 +1853,12 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .profile-incidents-title:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .profile-incidents-holder {
+    border-radius: 4px;
     overflow: scroll;
     max-height: 87%;
     margin: auto;
@@ -1692,16 +1868,19 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .incident-number {
+    border-radius: 4px;
     padding-right: 8px;
 }
 
 .incident-timestamp {
+    border-radius: 4px;
     color: #303030;
     font-size: 10px;
     font-weight: 500;
 }
 
 .loader {
+    border-radius: 4px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -1716,6 +1895,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .profile-loader {
+    border-radius: 4px;
     margin-top: 5vh;
     margin-left: auto;
     margin-right: auto;
@@ -1740,6 +1920,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .gallery-image-enlarged {
+    border-radius: 4px;
     width: 40vh;
     position: absolute;
     top: 20%;
@@ -1751,6 +1932,7 @@ span.tag-input[contenteditable]:empty::before {
 /* Context Menu */
 
 .contextmenu {
+    border-radius: 4px;
     position: absolute;
     width: fit-content;
     padding: 2px;
@@ -1767,6 +1949,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .contextmenu-item {
+    border-radius: 4px;
     display: block;
     position: relative;
     margin: 0;
@@ -1786,15 +1969,18 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .contextmenu-btn {
+    border-radius: 4px;
     outline: 0 none;
     text-decoration: none;
 }
 
 .contextmenu-text {
+    border-radius: 4px;
     margin-left: 5px;
 }
 
 .contextmenu-btn .fa {
+    border-radius: 4px;
     position: absolute;
     left: 8px;
     top: 50%;
@@ -1802,15 +1988,18 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .contextmenu-item-disabled {
+    border-radius: 4px;
     opacity: .5;
     pointer-events: none;
 }
 
 .contextmenu-item-disabled .contextmenu-btn {
+    border-radius: 4px;
     cursor: default;
 }
 
 .contextmenu-item-submenu::after {
+    border-radius: 4px;
     content: "";
     position: absolute;
     right: 6px;
@@ -1821,57 +2010,70 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .contextmenu-item-submenu:hover::after {
+    border-radius: 4px;
     border-left-color: #fff;
 }
 
 .contextmenu-show,
 .contextmenu-item:hover > .contextmenu {
+    border-radius: 4px;
     opacity: 1;
     transform: translate(0, 0) scale(1);
     pointer-events: auto;
 }
 
 .contextmenu-item:hover > .contextmenu {
+    border-radius: 4px;
     transition-delay: 300ms;
 }
 
 .revoke-licence:hover {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 .give-licence:hover {
+    border-radius: 4px;
     background-color: #099517;
 }
 
 .remove-image:hover {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 .expand-image:hover {
+    border-radius: 4px;
     background-color: #099517;
 }
 
 .copy-image-link:hover {
+    border-radius: 4px;
     background-color: #099517;
 }
 
 .view-incident:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .view-incident2:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .make-waypoint:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .view-profile:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .gallery-upload-input {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     padding-top: 10px;
@@ -1887,6 +2089,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 #gallery-upload-input {
+    border-radius: 4px;
     outline: none;
     border: none;
     width: 95%;
@@ -1897,10 +2100,12 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 #gallery-upload-input::placeholder {
+    border-radius: 4px;
     color: white;
 }
 
 .penalcode-embed {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -1912,6 +2117,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .penalcode-embed iframe {
+    border-radius: 4px;
     height: 96.5%;
     width: 98%;
     margin: auto;
@@ -1920,6 +2126,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .sop-embed {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -1931,6 +2138,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .sop-embed iframe {
+    border-radius: 4px;
     height: 96.5%;
     width: 98%;
     margin: auto;
@@ -1939,6 +2147,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .incidents-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -1950,6 +2159,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .incidents-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -1966,10 +2176,12 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .incidents-title:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .incidents-search-input {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     padding-top: 10px;
@@ -1985,6 +2197,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 #incidents-search-input {
+    border-radius: 4px;
     outline: none;
     border: none;
     width: 95%;
@@ -1995,10 +2208,12 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 #incidents-search-input::placeholder {
+    border-radius: 4px;
     color: white;
 }
 
 .incidents-items {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -2010,6 +2225,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .incidents-item {
+    border-radius: 4px;
     background-color: var(--color-5);
     width: 100%;
     height: 5.5vh;
@@ -2022,10 +2238,12 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .incidents-item:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .incidents-top-holder {
+    border-radius: 4px;
     width: 100%;
     height: 50%;
     display: flex;
@@ -2033,6 +2251,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .incidents-item-title {
+    border-radius: 4px;
     font-size: 14px;
     font-weight: lighter;
     color: white;
@@ -2046,6 +2265,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .incedent-report-name {
+    border-radius: 4px;
     font-size: 14px;
     font-weight: lighter;
     color: white;
@@ -2055,6 +2275,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .incidents-bottom-holder {
+    border-radius: 4px;
     width: 100%;
     height: 50%;
     display: flex;
@@ -2063,6 +2284,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .incedent-report-id {
+    border-radius: 4px;
     font-size: 14px;
     font-weight: lighter;
     color: white;
@@ -2072,6 +2294,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .incedent-report-time-ago {
+    border-radius: 4px;
     font-size: 14px;
     font-weight: lighter;
     color: white;
@@ -2081,6 +2304,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -2094,6 +2318,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -2112,10 +2337,12 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-title:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .manage-incidents-create {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -2135,10 +2362,12 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-create:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .manage-incidents-save {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -2156,10 +2385,12 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-save:hover {
+    border-radius: 4px;
     background-color: #1caa28;
 }
 
 .manage-incidents-title-tag {
+    border-radius: 4px;
     font-size: 16px;
     font-weight: lighter;
     color: white;
@@ -2171,6 +2402,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-title-input {
+    border-radius: 4px;
     color: white;
     font-weight: lighter;
     width: 95%;
@@ -2183,6 +2415,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-title-input input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 5px;
@@ -2194,6 +2427,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-reports-content {
+    border-radius: 4px;
     width: 91%;
     margin: auto;
     margin-top: 10px;
@@ -2210,6 +2444,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-tags-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     border: 2px solid var(--color-3);
@@ -2226,6 +2461,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-tags-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -2243,10 +2479,12 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-tags-add-btn:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .manage-incidents-tags-add-btn {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -2264,6 +2502,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-tags-holder {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     margin-top: 10px;
@@ -2274,6 +2513,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-tag {
+    border-radius: 4px;
     display: inline-block;
     text-decoration: none;
     margin: auto;
@@ -2293,6 +2533,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-officers-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     border: 2px solid var(--color-3);
@@ -2309,6 +2550,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-officers-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -2326,6 +2568,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-officers-add-btn {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -2343,10 +2586,12 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-officers-add-btn:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .manage-incidents-officers-holder {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     margin-top: 10px;
@@ -2357,6 +2602,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-civilians-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     border: 2px solid var(--color-3);
@@ -2373,6 +2619,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-civilians-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -2390,6 +2637,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-civilians-add-btn {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -2407,10 +2655,12 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-civilians-add-btn:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .manage-incidents-civilians-holder {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     margin-top: 10px;
@@ -2421,6 +2671,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-evidence-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     border: 2px solid var(--color-3);
@@ -2437,6 +2688,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-evidence-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -2454,6 +2706,7 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-evidence-add-btn {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -2471,10 +2724,12 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-evidence-add-btn:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .manage-incidents-evidence-holder {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     margin-top: 10px;
@@ -2485,15 +2740,18 @@ span.tag-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-evidence {
+    border-radius: 4px;
     width: 10vh;
     filter: blur(5px);
 }
 
 span.tag-incident-input[contenteditable]:empty::before {
-    content: 'Input Tag';
+    border-radius: 4px;
+    content: 'أدخل الإضافة';
 }
 
 .tag-incident-input {
+    border-radius: 4px;
     display: inline-block;
     text-decoration: none;
     margin: auto;
@@ -2514,6 +2772,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -2526,6 +2785,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -2542,10 +2802,12 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-title:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .associated-incidents-tags-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     border: 2px solid var(--color-3);
@@ -2562,6 +2824,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-tags-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -2579,10 +2842,12 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-tags-add-btn:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .associated-incidents-tags-add-btn {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -2600,6 +2865,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-tags-holder {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     margin-top: 10px;
@@ -2610,6 +2876,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-tag {
+    border-radius: 4px;
     display: inline-block;
     text-decoration: none;
     margin: auto;
@@ -2628,6 +2895,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .incidents-upload-input {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     padding-top: 10px;
@@ -2643,6 +2911,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 #incidents-upload-input {
+    border-radius: 4px;
     outline: none;
     border: none;
     width: 95%;
@@ -2653,16 +2922,19 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 #incidents-upload-input::placeholder {
+    border-radius: 4px;
     color: white;
 }
 
 .incidents-img {
+    border-radius: 4px;
     width: 10vh;
     filter: blur(5px);
     object-fit: cover;
 }
 
 .bulletin-add-btn {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -2678,10 +2950,12 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .bulletin-add-btn:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .associated-incidents-user-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     border: 2px solid var(--color-3);
@@ -2698,6 +2972,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-user-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -2714,6 +2989,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-user-tags-holder {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     margin-top: 10px;
@@ -2727,6 +3003,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .modify-charges-label {
+    border-radius: 4px;
     color: white;
     font-size: 13px;
     font-weight: bolder;
@@ -2741,6 +3018,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-user-tag {
+    border-radius: 4px;
     text-decoration: none;
     margin-top: auto;
     margin-bottom: auto;
@@ -2758,6 +3036,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-user-holder {
+    border-radius: 4px;
     padding: 10px;
     overflow: auto;
     margin: auto;
@@ -2770,6 +3049,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-user {
+    border-radius: 4px;
     display: inline-block;
     text-decoration: none;
     margin: auto;
@@ -2789,6 +3069,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-fine-input {
+    border-radius: 4px;
     color: white;
     font-weight: lighter;
     width: 95%;
@@ -2801,6 +3082,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-fine-input input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 5px;
@@ -2812,6 +3094,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-sentence-input {
+    border-radius: 4px;
     color: white;
     font-weight: lighter;
     width: 95%;
@@ -2824,6 +3107,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-sentence-input input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 5px;
@@ -2835,6 +3119,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .associated-incidents-controls {
+    border-radius: 4px;
     justify-content: inherit;
     width: 90%;
     margin-top: 5px;
@@ -2842,6 +3127,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .control-button {
+    border-radius: 4px;
     text-align: center;
     background-color: var(--color-4);
     border: 2px solid var(--color-3);
@@ -2850,15 +3136,18 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .control-button span {
+    border-radius: 4px;
     padding-right: 8px;
 }
 
 .control-button:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
     cursor: pointer;
 }
 
 .incidents-person-search {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -2867,6 +3156,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .incidents-person-search-container {
+    border-radius: 4px;
     background-color: var(--color-5);
     width: 95vh;
     height: 45vh;
@@ -2878,6 +3168,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .incidents-person-search-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 20px;
@@ -2893,6 +3184,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .incidents-person-search-name-title {
+    border-radius: 4px;
     width: 95%;
     margin: auto;
     margin-top: 10px;
@@ -2904,6 +3196,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .incidents-person-search-name-input {
+    border-radius: 4px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     outline: none;
@@ -2917,6 +3210,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .incidents-person-search-holder {
+    border-radius: 4px;
     overflow: auto;
     height: 30vh;
     width: 95%;
@@ -2926,6 +3220,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .incidents-person-search-item {
+    border-radius: 4px;
     width: 100%;
     height: 12.5vh;
     display: flex;
@@ -2933,10 +3228,12 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .incidents-person-search-item:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .incidents-person-search-item-pfp {
+    border-radius: 4px;
     width: 11vh;
     height: 11vh;
     margin-top: auto;
@@ -2945,6 +3242,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .incidents-person-search-item-right {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -2956,6 +3254,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .incidents-person-search-item-right-cid-title {
+    border-radius: 4px;
     width: 100%;
     margin: auto;
     margin-top: 0px;
@@ -2967,6 +3266,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .incidents-person-search-item-right-cid-input {
+    border-radius: 4px;
     width: 100%;
     margin: auto;
     margin-top: 5px;
@@ -2980,6 +3280,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .incidents-person-search-item-right-name-title {
+    border-radius: 4px;
     width: 100%;
     margin: auto;
     margin-top: auto;
@@ -2991,6 +3292,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .incidents-person-search-item-right-name-input {
+    border-radius: 4px;
     width: 100%;
     margin: auto;
     margin-top: 5px;
@@ -3003,6 +3305,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .bolos-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -3014,6 +3317,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .bolos-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -3030,10 +3334,12 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .bolos-title:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .bolos-search-input {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     padding-top: 10px;
@@ -3049,6 +3355,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 #bolos-search-input {
+    border-radius: 4px;
     outline: none;
     border: none;
     width: 95%;
@@ -3059,10 +3366,12 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 #bolos-search-input::placeholder {
+    border-radius: 4px;
     color: white;
 }
 
 .bolos-items {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -3074,6 +3383,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .bolos-item {
+    border-radius: 4px;
     background-color: var(--color-5);
     width: 100%;
     height: 5.5vh;
@@ -3086,6 +3396,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -3099,6 +3410,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -3118,6 +3430,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-title-tag {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -3135,12 +3448,14 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-title:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 
 
 .manage-bolos-create {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -3159,10 +3474,12 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-create:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .manage-bolos-input-tag {
+    border-radius: 4px;
     font-size: 16px;
     font-weight: lighter;
     color: white;
@@ -3174,6 +3491,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-input-title {
+    border-radius: 4px;
     color: white;
     font-weight: lighter;
     width: 95%;
@@ -3186,6 +3504,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-input-title input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 5px;
@@ -3197,6 +3516,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-input-plate {
+    border-radius: 4px;
     color: white;
     font-weight: lighter;
     width: 95%;
@@ -3209,6 +3529,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-input-plate input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 5px;
@@ -3220,6 +3541,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-input-owner {
+    border-radius: 4px;
     color: white;
     font-weight: lighter;
     width: 95%;
@@ -3232,6 +3554,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-input-owner input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 5px;
@@ -3243,6 +3566,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-input-individual {
+    border-radius: 4px;
     color: white;
     font-weight: lighter;
     width: 95%;
@@ -3255,6 +3579,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-input-individual input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 5px;
@@ -3266,6 +3591,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-save {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -3283,10 +3609,12 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-save:hover {
+    border-radius: 4px;
     background-color: #1caa28;
 }
 
 .manage-bolos-new {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -3303,10 +3631,12 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-new:hover {
+    border-radius: 4px;
     background-color: #aa1c1c;
 }
 
 .manage-bolos-reports-content {
+    border-radius: 4px;
     width: 91%;
     margin: auto;
     margin-top: 15px;
@@ -3322,6 +3652,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-right-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     height: 95.7%;
@@ -3332,6 +3663,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-tags-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     background-color: var(--color-1);
@@ -3342,6 +3674,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-gallery-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     background-color: var(--color-1);
@@ -3353,6 +3686,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-tags-holder {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     width: 95%;
@@ -3361,6 +3695,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-officers-tags-holder {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     width: 95%;
@@ -3370,6 +3705,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .officers-add-btn {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -3385,10 +3721,12 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .officers-add-btn:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .manage-officers-tags-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     background-color: var(--color-1);
@@ -3400,6 +3738,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .bolo-item {
+    border-radius: 4px;
     background-color: var(--color-5);
     width: 100%;
     margin: auto;
@@ -3411,10 +3750,12 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .bolo-item:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .bolo-top-holder {
+    border-radius: 4px;
     width: 100%;
     height: 50%;
     display: flex;
@@ -3422,6 +3763,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .bolo-item-title {
+    border-radius: 4px;
     font-size: 14px;
     font-weight: lighter;
     color: white;
@@ -3431,6 +3773,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .bolo-report-name {
+    border-radius: 4px;
     font-size: 14px;
     font-weight: lighter;
     color: white;
@@ -3440,6 +3783,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .bolo-bottom-holder {
+    border-radius: 4px;
     width: 100%;
     height: 50%;
     display: flex;
@@ -3448,6 +3792,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .bolo-report-id {
+    border-radius: 4px;
     font-size: 14px;
     font-weight: lighter;
     color: white;
@@ -3457,6 +3802,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .bolo-report-time-ago {
+    border-radius: 4px;
     font-size: 14px;
     font-weight: lighter;
     color: white;
@@ -3466,6 +3812,7 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .bolos-search-refresh {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -3482,10 +3829,12 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .bolos-search-refresh:hover {
+    border-radius: 4px;
     background-color: #aa891c;
 }
 
 .bolos-search-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -3504,10 +3853,12 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .bolos-search-title:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .manage-bolos-tags-add-btn {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -3523,14 +3874,17 @@ span.tag-incident-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-tags-add-btn:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 span.tag-bolo-input[contenteditable]:empty::before {
-    content: 'Input Tag';
+    border-radius: 4px;
+    content: 'أدخل الإضافة';
 }
 
 .tag-bolo-input {
+    border-radius: 4px;
     display: inline-block;
     text-decoration: none;
     margin: auto;
@@ -3552,10 +3906,12 @@ span.tag-bolo-input[contenteditable]:empty::before {
 }
 
 span.officer-tag-bolo-input[contenteditable]:empty::before {
-    content: 'Input Tag';
+    border-radius: 4px;
+    content: 'أدخل الإضافة';
 }
 
 .officer-tag-bolo-input {
+    border-radius: 4px;
     display: inline-block;
     text-decoration: none;
     margin: auto;
@@ -3577,6 +3933,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .bolo-gallery-add-btn {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -3592,10 +3949,12 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .bolo-gallery-add-btn:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .bolo-gallery-upload-input {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     padding-top: 10px;
@@ -3611,6 +3970,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 #bolo-gallery-upload-input {
+    border-radius: 4px;
     outline: none;
     border: none;
     width: 95%;
@@ -3621,16 +3981,19 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 #bolo-gallery-upload-input::placeholder {
+    border-radius: 4px;
     color: white;
 }
 
 .bolo-img {
+    border-radius: 4px;
     width: 10vh;
     filter: blur(5px);
     object-fit: cover;
 }
 
 .bolo-gallery-inner-container {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     margin-top: 10px;
@@ -3641,6 +4004,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-bolos-editing-title {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     font-size: 15px;
@@ -3659,6 +4023,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -3670,14 +4035,17 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 #home-reports-container {
+    border-radius: 4px;
     height: 50%;
 }
 
 #home-warrants-container {
+    border-radius: 4px;
     height: 50%;
 }
 
 .dispatch-comms-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -3689,6 +4057,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -3705,10 +4074,12 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-title:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .reports-search-input {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     padding-top: 10px;
@@ -3724,6 +4095,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 #reports-search-input {
+    border-radius: 4px;
     outline: none;
     border: none;
     width: 95%;
@@ -3734,10 +4106,12 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 #reports-search-input::placeholder {
+    border-radius: 4px;
     color: white;
 }
 
 .reports-items {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -3749,16 +4123,19 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .dispatch-item {
+    border-radius: 4px;
     height: auto;
     padding: auto;
     margin-top: 1vh;
 }
 
 .dispatch-item:hover {
+    border-radius: 4px;
     background-color: var(--color-7);
 }
 
 .dispatch-items {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -3769,6 +4146,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .dispatch-message-profilepic {
+    border-radius: 4px;
     width: 2.8vh;
     height: 2.8vh;
     object-fit: cover;
@@ -3777,6 +4155,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .dispatch-item-info {
+    border-radius: 4px;
     float:left;
     font-size: 14px;
     font-weight: bold;
@@ -3785,82 +4164,102 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .dispatch-info-job-lspd {
+    border-radius: 4px;
     color: #2554cc;
 }
 
 .dispatch-info-job-bcso {
+    border-radius: 4px;
     color: #cc7e25;
 }
 
 .dispatch-info-job-sast {
+    border-radius: 4px;
     color: #2589cc;
 }
 
 .dispatch-info-job-sasp {
+    border-radius: 4px;
     color: #2589cc;
 }
 
 .dispatch-info-job-doc {
+    border-radius: 4px;
     color: #7b25cc;
 }
 
 .dispatch-info-job-sapr {
+    border-radius: 4px;
     color: #5acc25;
 }
 
 .dispatch-info-job-pa {
+    border-radius: 4px;
     color: #008080;
 }
 
 .dispatch-info-job-ambulance {
+    border-radius: 4px;
     color: #cc2525;
 }
 
 .dispatch-info-job-doj {
+    border-radius: 4px;
     color: #FFEAB9;
 }
 
 .active-info-job-lspd {
+    border-radius: 4px;
     background-color: #2554cc;
 }
 
 .active-info-job-bcso {
+    border-radius: 4px;
     background-color: #cc7e25;
 }
 
 .active-info-job-sast {
+    border-radius: 4px;
     background-color: #2589cc;
 }
 
 .active-info-job-sasp {
+    border-radius: 4px;
     background-color: #2589cc;
 }
 
 .active-info-job-doc {
+    border-radius: 4px;
     background-color: #7b25cc;
 }
 
 .active-info-job-sapr {
+    border-radius: 4px;
     background-color: #5acc25;
 }
 
 .active-info-job-pa {
+    border-radius: 4px;
     background-color: #008080;
 }
 
 .active-info-job-ambulance {
+    border-radius: 4px;
     background-color: #cc2525;
 }
 
 .active-info-job-doj {
+    border-radius: 4px;
     background-color: #525252;
 }
 
 .active-info-job-unk {
+    border-radius: 4px;
     background-color: #6E707C;
 }
 
 .dispatch-item-message {
+    border-radius: 4px;
     float:left;
     font-size: 14px;
     font-weight: lighter;
@@ -3873,19 +4272,23 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .dispatch-item-msg {
+    border-radius: 4px;
     padding-left: 2.8vh;
     padding-bottom: 0vh;
 }
 
 .dispatch-item-msg:hover {
+    border-radius: 4px;
     background-color: var(--color-7);
 }
 
 .dispatch-item-grid {
+    border-radius: 4px;
     display:grid;
 }
 
 .dispatch-input {
+    border-radius: 4px;
     min-width: 90%;
     max-width: 90%;
     min-height: 0.1vh;
@@ -3898,10 +4301,12 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .dispatch-input:focus {
+    border-radius: 4px;
     outline:none!important;
 }
 
 .reports-search-refresh {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -3918,10 +4323,12 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-search-refresh:hover {
+    border-radius: 4px;
     background-color: #aa891c;
 }
 
 .dispatch-comms-refresh {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -3938,10 +4345,12 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .dispatch-comms-refresh:hover {
+    border-radius: 4px;
     background-color: #aa891c;
 }
 
 .reports-search-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -3960,10 +4369,12 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-search-title:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .manage-reports-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -3977,6 +4388,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -3996,6 +4408,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-title-tag {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -4013,12 +4426,14 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-title:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 
 
 .manage-reports-create {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -4037,10 +4452,12 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-create:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .manage-reports-input-tag {
+    border-radius: 4px;
     font-size: 16px;
     font-weight: lighter;
     color: white;
@@ -4052,6 +4469,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-input-title {
+    border-radius: 4px;
     color: white;
     font-weight: lighter;
     width: 95%;
@@ -4064,6 +4482,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-input-title input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 5px;
@@ -4075,6 +4494,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-input-type {
+    border-radius: 4px;
     color: white;
     font-weight: lighter;
     width: 95%;
@@ -4087,6 +4507,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-input-type input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 5px;
@@ -4098,6 +4519,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-input-owner {
+    border-radius: 4px;
     color: white;
     font-weight: lighter;
     width: 95%;
@@ -4110,6 +4532,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-input-owner input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 5px;
@@ -4121,6 +4544,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-input-individual {
+    border-radius: 4px;
     color: white;
     font-weight: lighter;
     width: 95%;
@@ -4133,6 +4557,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-input-individual input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 5px;
@@ -4144,6 +4569,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-save {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -4162,10 +4588,12 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-save:hover {
+    border-radius: 4px;
     background-color: #1caa28;
 }
 
 .manage-reports-new {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -4183,30 +4611,37 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-new:hover {
+    border-radius: 4px;
     background-color: #aa1c1c;
 }
 
 .incidents-remove-normal-tag:hover {
+    border-radius: 4px;
     background-color: #aa1c1c;
 }
 
 .incidents-remove-normal-civ:hover {
+    border-radius: 4px;
     background-color: #aa1c1c;
 }
 
 .incidents-remove-tag:hover {
+    border-radius: 4px;
     background-color: #aa1c1c;
 }
 
 .incidents-remove-officer-tag:hover {
+    border-radius: 4px;
     background-color: #aa1c1c;
 }
 
 .remove-tag:hover {
+    border-radius: 4px;
     background-color: #aa1c1c;
 }
 
 .manage-reports-editing-title {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     font-size: 15px;
@@ -4226,6 +4661,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-reports-content {
+    border-radius: 4px;
     width: 91%;
     margin: auto;
     margin-top: 15px;
@@ -4241,6 +4677,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-right-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     height: 95.7%;
@@ -4251,6 +4688,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-tags-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     background-color: var(--color-1);
@@ -4261,6 +4699,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-gallery-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     background-color: var(--color-1);
@@ -4272,6 +4711,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-tags-holder {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     width: 95%;
@@ -4280,6 +4720,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-officers-tags-holder {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     width: 95%;
@@ -4289,6 +4730,8 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-officers-add-btn {
+    border-radius: 4px;
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -4304,10 +4747,12 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-officers-add-btn:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .reports-officers-tags-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     background-color: var(--color-1);
@@ -4319,6 +4764,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-gallery-add-btn {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -4334,10 +4780,12 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-gallery-add-btn:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .reports-gallery-upload-input {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     padding-top: 10px;
@@ -4353,6 +4801,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 #reports-gallery-upload-input {
+    border-radius: 4px;
     outline: none;
     border: none;
     width: 95%;
@@ -4363,16 +4812,19 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 #reports-gallery-upload-input::placeholder {
+    border-radius: 4px;
     color: white;
 }
 
 .reports-img {
+    border-radius: 4px;
     width: 10vh;
     filter: blur(5px);
     object-fit: cover;
 }
 
 .reports-gallery-inner-container {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     margin-top: 10px;
@@ -4383,6 +4835,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-tags-add-btn {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -4398,10 +4851,12 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .manage-reports-tags-add-btn:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .reports-civilians-tags-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     background-color: var(--color-1);
@@ -4413,6 +4868,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-civilians-add-btn {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -4428,10 +4884,12 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-civilians-add-btn:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .reports-civilians-tags-holder {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     width: 95%;
@@ -4441,6 +4899,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-item {
+    border-radius: 4px;
     background-color: var(--color-5);
     width: 100%;
     margin: auto;
@@ -4452,10 +4911,12 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-item:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .reports-top-holder {
+    border-radius: 4px;
     width: 100%;
     height: 50%;
     display: flex;
@@ -4463,6 +4924,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-item-title {
+    border-radius: 4px;
     font-size: 14px;
     font-weight: lighter;
     color: white;
@@ -4476,6 +4938,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-report-name {
+    border-radius: 4px;
     font-size: 14px;
     font-weight: lighter;
     color: white;
@@ -4485,6 +4948,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-bottom-holder {
+    border-radius: 4px;
     width: 100%;
     height: 50%;
     display: flex;
@@ -4493,6 +4957,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-report-id {
+    border-radius: 4px;
     font-size: 14px;
     font-weight: lighter;
     color: white;
@@ -4502,6 +4967,7 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 .reports-report-time-ago {
+    border-radius: 4px;
     font-size: 14px;
     font-weight: lighter;
     color: white;
@@ -4511,10 +4977,12 @@ span.officer-tag-bolo-input[contenteditable]:empty::before {
 }
 
 span.tag-reports-input[contenteditable]:empty::before {
-    content: 'Input Tag';
+    border-radius: 4px;
+    content: 'أدخل الإضافة';
 }
 
 .tag-reports-input {
+    border-radius: 4px;
     display: inline-block;
     text-decoration: none;
     margin: auto;
@@ -4537,6 +5005,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 
 
 .dmv-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -4548,6 +5017,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .dmv-search-refresh {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -4564,10 +5034,12 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .dmv-search-refresh:hover {
+    border-radius: 4px;
     background-color: #aa891c;
 }
 
 .dmv-search-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -4584,10 +5056,12 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .dmv-search-title:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .dmv-search-input {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     padding-top: 10px;
@@ -4603,6 +5077,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 #dmv-search-input {
+    border-radius: 4px;
     outline: none;
     border: none;
     width: 95%;
@@ -4613,10 +5088,12 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 #dmv-search-input::placeholder {
+    border-radius: 4px;
     color: white;
 }
 
 .dmv-items {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -4628,6 +5105,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-information-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -4640,6 +5118,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-information-save {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -4657,14 +5136,17 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-information-save:hover {
+    border-radius: 4px;
     background-color: #1caa28;
 }
 
 .add-charge:hover {
+    border-radius: 4px;
     background-color: #1caa28;
 }
 
 .vehicle-information-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -4683,6 +5165,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .dmv-item {
+    border-radius: 4px;
     background-color: var(--color-5);
     width: 100%;
     height: 9vh;
@@ -4695,10 +5178,12 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .dmv-item:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .dmv-image {
+    border-radius: 4px;
     width: 7vh;
     height: 7vh;
     margin-left: 10px;
@@ -4708,6 +5193,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .dmv-item-title {
+    border-radius: 4px;
     font-size: 16px;
     font-weight: lighter;
     color: white;
@@ -4715,6 +5201,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .dmv-tags {
+    border-radius: 4px;
     display: flex;
     overflow-x: auto;
     width: 98%;
@@ -4723,6 +5210,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .dmv-tag {
+    border-radius: 4px;
     margin: auto;
     margin-left: 0px;
     margin-right: 6px;
@@ -4737,17 +5225,20 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .dmv-bottom-info {
+    border-radius: 4px;
     display: flex;
     margin: auto;
     width: 100%;
 }
 
 .dmv-id {
+    border-radius: 4px;
     color: white;
     font-size: 13px;
 }
 
 .vehicle-info-stuff {
+    border-radius: 4px;
     display: flex;
     flex-direction: row;
     width: 95%;
@@ -4757,18 +5248,21 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-image {
+    border-radius: 4px;
     width: 444px;
     height: 269px;
     object-fit: cover;
 }
 
 .vehicle-info-inner-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     width: 55%;
 }
 
 .vehicle-info-plate {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -4776,6 +5270,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-plate-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -4787,6 +5282,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-owner {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -4794,6 +5290,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-owner-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -4805,6 +5302,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-class {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -4812,6 +5310,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-class-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -4823,6 +5322,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-model {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -4830,6 +5330,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-model-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -4841,6 +5342,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-imageurl {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -4848,6 +5350,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-imageurl-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -4859,12 +5362,14 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-icon {
+    border-radius: 4px;
     color: white;
     font-size: 16px;
     margin-left: 10px
 }
 
 .vehicle-info-line {
+    border-radius: 4px;
     background-color: var(--color-3);
     height: 2px;
     margin-left: 10px;
@@ -4872,6 +5377,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-tags-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     border: 2px solid var(--color-3);
@@ -4888,6 +5394,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-tags-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -4904,10 +5411,12 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-tags-add-btn:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .vehicle-info-tags-add-btn {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -4924,6 +5433,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-tags-holder {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     margin-top: 7px;
@@ -4934,6 +5444,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-tag {
+    border-radius: 4px;
     display: inline-block;
     text-decoration: none;
     margin: auto;
@@ -4953,13 +5464,14 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-content {
+    border-radius: 4px;
     width: 93%;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 0px;
     border: none;
     outline: none;
-    min-height: 26.9vh;
+    min-height: 21.9vh;
     resize: none;
     background-color: var(--color-5);
     color: white;
@@ -4968,6 +5480,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-tags {
+    border-radius: 4px;
     display: flex;
     overflow-x: auto;
     width: 98%;
@@ -4976,6 +5489,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-tag {
+    border-radius: 4px;
     display: inline-block;
     text-decoration: none;
     margin: auto;
@@ -4996,6 +5510,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .stafflogs-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -5009,6 +5524,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .stafflogs-box {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     height: 80.7vh;
@@ -5020,12 +5536,14 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .stafflogs-box > p {
+    border-radius: 4px;
     color: white;
     font-size: 1.3vh;
     padding-left: 1vh;
 }
 
 .stafflogs-box-title {
+    border-radius: 4px;
     align-self: center;
     background-color: var(--color-4);
     color: white;
@@ -5046,6 +5564,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .leaderboard-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -5059,6 +5578,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .leaderboard-box {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     height: 80.7vh;
@@ -5070,6 +5590,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .leaderboard-box-test {
+    border-radius: 4px;
     margin: 0; 
     padding-top:0.8vh;
     color: white;
@@ -5078,6 +5599,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .leaderboard-title {
+    border-radius: 4px;
     align-self: center;
     background-color: var(--color-4);
     color: white;
@@ -5100,16 +5622,19 @@ span.tag-reports-input[contenteditable]:empty::before {
 /* Vehicle Colors :( so long lol */
 
 .black-color {
+    border-radius: 4px;
     background-color: #0e0e0e;
     color: white;
 }
 
 .darksilver-color {
+    border-radius: 4px;
     background-color: #333333;
     color: white;
 }
 
 .silver-color {
+    border-radius: 4px;
     background-color: #333333;
     color: white;
 }
@@ -5117,11 +5642,13 @@ span.tag-reports-input[contenteditable]:empty::before {
 .bluesilver-color { background-color: #c4d4e0; }
 
 .matteblack-color {
+    border-radius: 4px;
     background-color: #141414;
     color: white;
 }
 
 .gray-color {
+    border-radius: 4px;
     background-color: #808080;
     color: white;
 }
@@ -5189,66 +5716,82 @@ span.tag-reports-input[contenteditable]:empty::before {
 .tan-color { background-color: #c3b492; }
 
 .reports-remove-image:hover {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 .bolo-remove-image:hover {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 .incidents-delete:hover {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 .bolo-delete:hover {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 .weapons-delete:hover {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 .reports-delete:hover {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 .remove-bulletin:hover {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 .search-vehicle:hover {
+    border-radius: 4px;
     background-color: #956E09;
 }
 
 .mark-code-5:hover {
+    border-radius: 4px;
     background-color: #0B9509;
 }
 
 .remove-code-5:hover {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 .mark-stolen:hover {
+    border-radius: 4px;
     background-color: #0B9509;
 }
 
 .remove-stolen:hover {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 .toggle-duty:hover {
+    border-radius: 4px;
     background-color: #956E09;
 }
 
 .set-callsign:hover {
+    border-radius: 4px;
     background-color: #0B9509;
 }
 
 .set-radio:hover {
+    border-radius: 4px;
     background-color: #09956b;
 }
 
 .incidents-ghost-holder {
+    border-radius: 4px;
     overflow: auto;
     max-height: 80vh;
     margin-top: 10px;
@@ -5256,6 +5799,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .incidents-charges-table {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -5265,6 +5809,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .incidents-charges-table-container {
+    border-radius: 4px;
     background-color: var(--color-5);
     width: 155vh;
     height: 85vh;
@@ -5276,6 +5821,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .incidents-charges-title-container {
+    border-radius: 4px;
     width: 95%;
     height: 11vh;
     background-color: var(--color-4);
@@ -5288,6 +5834,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .incidents-charges-title {
+    border-radius: 4px;
     color: white;
     margin: auto;
     text-align: center;
@@ -5298,11 +5845,13 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .incidents-charges-title span {
+    border-radius: 4px;
     color: #B4A684;
     font-size: 19px;
 }
 
 .incidents-charges-title-description {
+    border-radius: 4px;
     color: white;
     margin: auto;
     background-color: var(--color-5);
@@ -5314,6 +5863,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .manage-incidents-editing-title {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     font-size: 15px;
@@ -5333,6 +5883,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 
 
 .current-charges-container {
+    border-radius: 4px;
     width: 95%;
     border: 2px solid var(--color-4);
     margin: auto;
@@ -5342,6 +5893,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .current-charges-inner-container {
+    border-radius: 4px;
     background-color: var(--color-4);
     width: 35vh;
     height: fit-content;
@@ -5353,6 +5905,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .current-charges-title {
+    border-radius: 4px;
     color: white;
     font-size: 19px;
     font-weight: bolder;
@@ -5363,6 +5916,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 #current-charges-holder {
+    border-radius: 4px;
     display: flex;
     margin: auto;
     width: 110vh;
@@ -5372,6 +5926,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .current-charges-tag {
+    border-radius: 4px;
     display: inline-block;
     text-decoration: none;
     margin: auto;
@@ -5393,6 +5948,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .offenses-title-container {
+    border-radius: 4px;
     width: fit-content;
     height: fit-content;
     background-color: var(--color-4);
@@ -5404,6 +5960,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .offenses-title {
+    border-radius: 4px;
     color: white;
     padding: .7vh;
     padding-right: 3vh;
@@ -5412,6 +5969,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .offenses-prepend-holder {
+    border-radius: 4px;
     width: 95%;
     background-color: var(--color-4);
     margin: auto;
@@ -5426,6 +5984,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .offense-item {
+    border-radius: 4px;
     background-color: #0B9509;
     border: 1.5px solid black;
     height: 5.0vh;
@@ -5438,11 +5997,13 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .offense-item:hover {
+    border-radius: 4px;
     transform: scale(1.02);
     transition: all 0.15s ease-in-out;
 }
 
 .offense-item-offense {
+    border-radius: 4px;
     margin: auto;
     margin-left: .5vh;
     margin-top: .5vh;
@@ -5452,6 +6013,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .offfense-item-name {
+    border-radius: 4px;
     margin: auto;
     margin-right: .5vh;
     margin-top: .5vh;
@@ -5461,6 +6023,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .offense-item-id {
+    border-radius: 4px;
     margin: auto;
     margin-left: .5vh;
     margin-bottom: .5vh;
@@ -5470,6 +6033,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .offfense-item-months {
+    border-radius: 4px;
     margin: auto;
     margin-right: .5vh;
     margin-bottom: .5vh;
@@ -5479,6 +6043,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .offenses-main-container {
+    border-radius: 4px;
     overflow: auto;
     margin: auto;
     margin-top: 1vh;
@@ -5487,6 +6052,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .callsign-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -5495,6 +6061,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .radio-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -5503,6 +6070,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .radio-inner-container {
+    border-radius: 4px;
     background-color: var(--color-5);
     width: 30vh;
     height: 17.5vh;
@@ -5514,6 +6082,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .radio-title {
+    border-radius: 4px;
     color: white;
     font-size: 2vh;
     font-weight: bold;
@@ -5523,6 +6092,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .radio-input {
+    border-radius: 4px;
     width: 20vh;
     margin: auto;
     margin-top: 1.5vh;
@@ -5537,6 +6107,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .radio-buttons {
+    border-radius: 4px;
     width: 20vh;
     margin: auto;
     margin-top: 1.5vh;
@@ -5545,6 +6116,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .radio-cancel {
+    border-radius: 4px;
     color: white;
     padding: .5vh;
     padding-left: 1vh;
@@ -5556,10 +6128,12 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .radio-cancel:hover {
+    border-radius: 4px;
     background-color: #f18f1e;
 }
 
 .radio-submit {
+    border-radius: 4px;
     color: white;
     padding: .5vh;
     padding-left: 1vh;
@@ -5571,10 +6145,12 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .radio-submit:hover {
+    border-radius: 4px;
     background-color: #15ac12;
 }
 
 .callsign-inner-container {
+    border-radius: 4px;
     background-color: var(--color-5);
     width: 30vh;
     height: 17.5vh;
@@ -5586,6 +6162,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .callsign-title {
+    border-radius: 4px;
     color: white;
     font-size: 2vh;
     font-weight: bold;
@@ -5595,6 +6172,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .callsign-input {
+    border-radius: 4px;
     width: 20vh;
     margin: auto;
     margin-top: 1.5vh;
@@ -5609,6 +6187,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .callsign-buttons {
+    border-radius: 4px;
     width: 20vh;
     margin: auto;
     margin-top: 1.5vh;
@@ -5617,6 +6196,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .callsign-cancel {
+    border-radius: 4px;
     color: white;
     padding: .5vh;
     padding-left: 1vh;
@@ -5628,10 +6208,12 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .callsign-cancel:hover {
+    border-radius: 4px;
     background-color: #f18f1e;
 }
 
 .callsign-submit {
+    border-radius: 4px;
     color: white;
     padding: .5vh;
     padding-left: 1vh;
@@ -5643,6 +6225,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .callsign-submit:hover {
+    border-radius: 4px;
     background-color: #15ac12;
 }
 
@@ -5650,18 +6233,22 @@ span.tag-reports-input[contenteditable]:empty::before {
 /* Keep At Bottom */
 
 .red-tag {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 .orange-tag {
+    border-radius: 4px;
     background-color: #956E09;
 }
 
 .green-tag {
+    border-radius: 4px;
     background-color: #0B9509;
 }
 
 .white-tag {
+    border-radius: 4px;
     display: inline-block;
     text-decoration: none;
     margin: auto;
@@ -5683,50 +6270,62 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .orange-penal-code {
+    border-radius: 4px;
     background-color: #D77A0D;
 }
 
 .green-penal-code {
+    border-radius: 4px;
     background-color: #0B9509;
 }
 
 .red-penal-code {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 .header-pin {
+    border-radius: 4px;
     padding-right: 5px;
 }
 
 .priority-1 {
+    border-radius: 4px;
     background-color: #bb0404;
 }
 
 .priority-2 {
+    border-radius: 4px;
     background-color: #ce7808;
 }
 
 .call-bottom-info > span {
+    border-radius: 4px;
     padding-right: 0.5vh;
 }
 
 .call-attach:hover {
+    border-radius: 4px;
     background-color: #1caa28;
 }
 
 .Set-Waypoint:hover {
+    border-radius: 4px;
     background-color: #f18f1e;
 }
 
 .call-detach:hover {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 .remove-blip:hover {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 .dispatch-attached-units {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -5734,14 +6333,17 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .active-unit-item:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .active-calls-item:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .dispatch-attached-units-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     width: 92vh;
     height: 46vh;
@@ -5755,6 +6357,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .dispatch-attached-units-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 20px;
@@ -5770,6 +6373,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .dispatch-attached-units-holder {
+    border-radius: 4px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -5781,6 +6385,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .dispatch-attached-unit-item {
+    border-radius: 4px;
     padding: 10px;
     height: 3vh;
     background-color: var(--color-5);
@@ -5790,18 +6395,22 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .attached-units:hover {
+    border-radius: 4px;
     background-color: rgb(156, 156, 156);
 }
 
 .Set-Dispatch-Waypoint:hover {
+    border-radius: 4px;
     background-color: #f18f1e;
 }
 
 .call-dispatch-detach:hover {
+    border-radius: 4px;
     background-color: #950909;
 }
 
 .incidents-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -5820,10 +6429,12 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .incidents-title:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .incidents-search-refresh {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -5840,10 +6451,12 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .incidents-search-refresh:hover {
+    border-radius: 4px;
     background-color: #aa891c;
 }
 
 .respond-calls {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -5852,6 +6465,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .respond-calls-container {
+    border-radius: 4px;
     background-color: var(--color-5);
     width: 70vh;
     min-height: 30vh;
@@ -5864,6 +6478,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .respond-calls-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 20px;
@@ -5879,6 +6494,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .respond-calls-input {
+    border-radius: 4px;
     width: 92.5%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -5895,15 +6511,18 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .respond-calls-input:focus {
+    border-radius: 4px;
     outline: solid 3px var(--color-4);
 }
 
 .respond-calls-responses {
+    border-radius: 4px;
     width: 95%;
     margin-left: 1.7vh
 }
 
 .respond-calls-response {
+    border-radius: 4px;
     color: #dadada;
     margin-top: 0.5vh;
     padding: 0.5vh;
@@ -5912,6 +6531,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .offenses-search-area {
+    border-radius: 4px;
     width: 95%;
     border: 2px solid var(--color-4);
     height: 3vh;
@@ -5920,6 +6540,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .offenses-search {
+    border-radius: 4px;
     background: transparent;
     border: none;
     outline: none;
@@ -5934,6 +6555,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .impound-form {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
 
@@ -5949,6 +6571,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .impound-form > form {
+    border-radius: 4px;
     position: absolute;
     left: 10%;  
     width: 73%;
@@ -5972,6 +6595,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .impound-form > form > i {
+    border-radius: 4px;
     position: absolute;
     color: white;
     font-size: 24px;
@@ -5980,6 +6604,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .impound-buttons {
+    border-radius: 4px;
     position: absolute;
     margin: auto;
     display: flex;
@@ -5989,6 +6614,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .impound-cancel {
+    border-radius: 4px;
     color: white;
     padding: .5vh;
     padding-left: 1vh;
@@ -6000,10 +6626,12 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .impound-cancel:hover {
+    border-radius: 4px;
     background-color: #f18f1e;
 }
 
 .impound-submit {
+    border-radius: 4px;
     color: white;
     padding: .5vh;
     padding-left: 1vh;
@@ -6016,33 +6644,41 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .impound-submit:hover {
+    border-radius: 4px;
     background-color: #15ac12;
 }
 
 .status-impound:hover {
+    border-radius: 4px;
     background-color: #ac8312;
 }
 
 .remove-impound:hover {
+    border-radius: 4px;
     background-color: #ac1212;
 }
 
 .impound-vehicle:hover {
+    border-radius: 4px;
     background-color: #12ac1f;
 }
 
 .impound-fee {
+    border-radius: 4px;
     color: white;
 }
 
 .dispatch-reply:hover {
+    border-radius: 4px;
     background-color: var(--color-1);
 }
 .display_hidden{
+    border-radius: 4px;
     display: none;
 }
 
 .cams-page-container {
+    border-radius: 4px;
     background-color: var(--color-9);
     border-radius: 15px;
     position: absolute; 
@@ -6055,6 +6691,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .cams-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -6068,6 +6705,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .cams-item {
+    border-radius: 4px;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-auto-flow: row;
@@ -6079,6 +6717,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .cams-items {
+    border-radius: 4px;
     background-color: var(--color-5);
     height: auto; 
     padding: 10px;
@@ -6092,6 +6731,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .cams-image {
+    border-radius: 4px;
     height:125px; 
     width: auto;
     margin: 10px;
@@ -6099,10 +6739,12 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .cams-items:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .weapons-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -6114,6 +6756,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapons-search-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -6130,10 +6773,12 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapons-search-title:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .weapons-search-input {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     padding-top: 10px;
@@ -6149,6 +6794,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 #weapons-search-input {
+    border-radius: 4px;
     outline: none;
     border: none;
     width: 95%;
@@ -6159,10 +6805,12 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 #weapons-search-input::placeholder {
+    border-radius: 4px;
     color: white;
 }
 
 .weapons-items {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -6174,6 +6822,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-information-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -6186,6 +6835,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-information-new {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -6203,10 +6853,12 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-information-new:hover {
+    border-radius: 4px;
     background-color: #aa1c1c;
 }
 
 .weapon-information-save {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -6224,10 +6876,12 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-information-save:hover {
+    border-radius: 4px;
     background-color: #1caa28;
 }
 
 .weapon-information-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -6246,6 +6900,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-info-stuff {
+    border-radius: 4px;
     display: flex;
     flex-direction: row;
     width: 95%;
@@ -6255,12 +6910,14 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-info-image {
+    border-radius: 4px;
     width: 444px;
     height: 269px;
     object-fit: cover;
 }
 
 .weapon-info-imageurl {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -6268,6 +6925,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-info-imageurl-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -6279,12 +6937,14 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-info-inner-container {
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
     width: 55%;
 }
 
 .weapon-info-serial {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -6292,6 +6952,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-info-serial-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -6303,12 +6964,14 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-info-icon {
+    border-radius: 4px;
     color: white;
     font-size: 16px;
     margin-left: 10px
 }
 
 .weapon-info-line {
+    border-radius: 4px;
     background-color: var(--color-3);
     height: 2px;
     margin-left: 10px;
@@ -6316,6 +6979,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-info-model {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -6323,6 +6987,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-info-model-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -6334,6 +6999,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-info-owner {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -6341,6 +7007,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-info-owner-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -6352,6 +7019,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-info-class {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -6359,6 +7027,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-info-class-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -6370,6 +7039,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-info-imageurl {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -6377,6 +7047,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-info-imageurl-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -6387,6 +7058,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapon-info-content {
+    border-radius: 4px;
     width: 93%;
     margin: auto;
     margin-top: 10px;
@@ -6402,6 +7074,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapons-item-title {
+    border-radius: 4px;
     font-size: 16px;
     font-weight: lighter;
     color: white;
@@ -6409,6 +7082,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapons-image {
+    border-radius: 4px;
     width: 7vh;
     height: 7vh;
     margin-left: 10px;
@@ -6418,6 +7092,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapons-item-title {
+    border-radius: 4px;
     font-size: 16px;
     font-weight: lighter;
     color: white;
@@ -6425,17 +7100,20 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapons-bottom-info {
+    border-radius: 4px;
     display: flex;
     margin: auto;
     width: 100%;
 }
 
 .weapons-id {
+    border-radius: 4px;
     color: white;
     font-size: 13px;
 }
 
 .weapons-item {
+    border-radius: 4px;
     background-color: var(--color-5);
     width: 100%;
     height: 9vh;
@@ -6448,10 +7126,12 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapons-item:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .weapons-image {
+    border-radius: 4px;
     width: 7vh;
     height: 7vh;
     margin-left: 10px;
@@ -6461,6 +7141,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .weapons-item-title {
+    border-radius: 4px;
     font-size: 16px;
     font-weight: lighter;
     color: white;
@@ -6468,6 +7149,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 .vehicle-info-points {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -6476,6 +7158,7 @@ span.tag-reports-input[contenteditable]:empty::before {
 }
 
 input[type="range"].vehicle-info-points-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -6486,6 +7169,7 @@ input[type="range"].vehicle-info-points-input {
 }
 
 input[type="range"].vehicle-info-points-input::-moz-range-thumb {
+    border-radius: 4px;
     box-shadow: none;
     border: 2px solid grey;
     height: 16px;
@@ -6495,6 +7179,7 @@ input[type="range"].vehicle-info-points-input::-moz-range-thumb {
 }
 
 input[type="range"].vehicle-info-points-input::-moz-range-track {
+    border-radius: 4px;
     width: 100%;
     height: 2px;
     box-shadow: none;
@@ -6504,6 +7189,7 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 }
 
 .manage-profile-apartment {
+    border-radius: 4px;
     color: white;
     margin-left: 10px;
     font-size: 15px;
@@ -6511,6 +7197,7 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 }
 
 .manage-profile-apartment-input {
+    border-radius: 4px;
     border: none;
     outline: none;
     margin-left: 2.5px;
@@ -6523,6 +7210,7 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 /* Charges Hover */
 
 .ccontextmenu {
+    border-radius: 4px;
     position: absolute;
     width: fit-content;
     padding: 2px;
@@ -6539,6 +7227,7 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 }
 
 .ccontextmenu-item {
+    border-radius: 4px;
     display: block;
     position: relative;
     margin: 0;
@@ -6562,11 +7251,13 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 }
 
 .ccontextmenu-text {
+    border-radius: 4px;
     outline: 0 none;
     text-decoration: none;
 }
 
 .ccontextmenu-text .fa {
+    border-radius: 4px;
     position: absolute;
     left: 8px;
     top: 50%;
@@ -6574,15 +7265,18 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 }
 
 .ccontextmenu-item-disabled {
+    border-radius: 4px;
     opacity: .5;
     pointer-events: none;
 }
 
 .ccontextmenu-item-disabled .ccontextmenu-text {
+    border-radius: 4px;
     cursor: default;
 }
 
 .ccontextmenu-item-submenu::after {
+    border-radius: 4px;
     content: "";
     position: absolute;
     right: 6px;
@@ -6593,11 +7287,13 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 }
 
 .ccontextmenu-item-submenu:hover::after {
+    border-radius: 4px;
     border-left-color: #fff;
 }
 
 .ccontextmenu-show,
 .ccontextmenu-item:hover > .ccontextmenu {
+    border-radius: 4px;
     opacity: 1;
     transform: translate(0, 0) scale(1);
     pointer-events: auto;
@@ -6605,6 +7301,7 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 }
 
 .map-page-container  {
+    border-radius: 4px;
     background-color: var(--color-9);
     border-radius: 15px;
     position: absolute; 
@@ -6616,6 +7313,7 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 }
 
 .calls-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -6627,6 +7325,7 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 }
 
 .calls-search-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -6643,10 +7342,12 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 }
 
 .calls-search-title:hover {
+    border-radius: 4px;
     background-color: var(--color-3);
 }
 
 .calls-search-input {
+    border-radius: 4px;
     background-color: var(--color-3);
     color: white;
     padding-top: 10px;
@@ -6662,6 +7363,7 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 }
 
 #calls-search-input {
+    border-radius: 4px;
     outline: none;
     border: none;
     width: 95%;
@@ -6672,10 +7374,12 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 }
 
 #calls-search-input::placeholder {
+    border-radius: 4px;
     color: white;
 }
 
 .map-container {
+    border-radius: 4px;
     background-color: var(--color-1);
     border: 2px solid var(--color-3);
     display: flex;
@@ -6688,6 +7392,7 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 }
 
 .map-clear {
+    border-radius: 4px;
     width: 13.7%;
     font-size: 15px;
     font-weight: lighter;
@@ -6706,10 +7411,12 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 }
 
 .map-clear:hover {
+    border-radius: 4px;
     background-color: #aa1c1c;
 }
 
 .map-title {
+    border-radius: 4px;
     background-color: var(--color-4);
     color: white;
     font-size: 18px;
@@ -6728,6 +7435,7 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 }
 
 .map-item {
+    border-radius: 4px;
     border: 2px solid var(--color-3);
     position: absolute;
     width: 58%;
@@ -6738,13 +7446,16 @@ input[type="range"].vehicle-info-points-input::-moz-range-track {
 }
 
 .leaflet-marker-pane {
+    border-radius: 4px;
 	z-index: 600;
 }
 
 .leaflet-tooltip-pane {
+    border-radius: 4px;
 	z-index: 650;
 }
 
 .leaflet-tooltip-right {
+    border-radius: 4px;
 	margin-left: 6px;
 }

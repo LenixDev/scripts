@@ -1,174 +1,157 @@
-function FadeIn(Object, Timeout) {
-    $(Object).fadeIn(Timeout).css('display', 'block');
-}
+document.addEventListener("DOMContentLoaded", function () {
+    const config = {
+        StandardEyeIcon: "fas fa-eye",
+        StandardColor: "white",
+        SuccessColor: "#00ffce",
+    };
 
-function FadeOut(Object, Timeout) {
-    $(Object).fadeOut(Timeout)
-    setTimeout(function(){
-        $(Object).css("display", "none");
-    }, Timeout)
-}
+    const targetEye = document.getElementById("target-eye");
+    const targetLabel = document.getElementById("target-label");
+    const TargetEyeStyleObject = targetEye.style;
 
-const Targeting = Vue.createApp({
-    data() {
-        return {
-            Show: false,
-            ChangeTextIconColor: false, // This is if you want to change the color of the icon next to the option text with the text color
-            StandardEyeIcon: 'https://media.discordapp.net/attachments/1231937897146351697/1259856201760641095/1234.png?ex=66b76405&is=66b61285&hm=b2c401f700f13172f39d3857d5d42888ef13e78d534c1a68785ff94cf7403b42&=&format=webp&quality=lossless', // Instead of icon it's using a image source found in HTML 
-            CurrentIcon: 'https://media.discordapp.net/attachments/1231937897146351697/1259856201760641095/1234.png?ex=66b76405&is=66b61285&hm=b2c401f700f13172f39d3857d5d42888ef13e78d534c1a68785ff94cf7403b42&=&format=webp&quality=lossless', // Instead of icon it's using a image source found in HTML
-            SuccessIcon: 'https://media.discordapp.net/attachments/1231937897146351697/1259856201760641095/1234.png?ex=66b76405&is=66b61285&hm=b2c401f700f13172f39d3857d5d42888ef13e78d534c1a68785ff94cf7403b42&=&format=webp&quality=lossless', // Instead of icon it's using a image source found in HTML
-            SuccessColor: "#10CC9F;",
-            StandardColor: "white",
-            TargetHTML: "",
-            TargetEyeStyleObject: {
-                color: "white", // This is the standardcolor, change this to the same as the StandardColor if you have changed it
-            },
-        }
-    },
-    destroyed() {
-        window.removeEventListener("message", this.messageListener);
-        window.removeEventListener("mousedown", this.mouseListener);
-        window.removeEventListener("keydown", this.keyListener);
-    },
-    mounted() {
-        this.messageListener = window.addEventListener("message", (event) => {
-            switch (event.data.response) {
-                case 'opencircle':
-                    let xx = event.data.post
-                    OpenCircle(xx.x, xx.y, xx.id)
-                    break;
-                case 'closecircle':
-                    FadeOut("#circle-"+event.data.post.id, 200)
-                    break;
-                case 'updatecircle':
-                    $("#circle-"+event.data.post.id).css('left', event.data.post.x*100+"%");
-                    $("#circle-"+event.data.post.id).css('right', (100 - event.data.post.x*100)+"%");
-                    $("#circle-"+event.data.post.id).css('top', event.data.post.y*100+"%");
-                    $("#circle-"+event.data.post.id).css('bottom',(100 - event.data.post.y*100)+"%");
-                    break;
-                case "openTarget":
-                    this.OpenTarget();
-                    break;
-                case "closeTarget":
-                    this.CloseTarget();
-                    break;
-                case "foundTarget":
-                    $('.hexagon').css('filter', 'drop-shadow(0vw 0vw .8vw #10CC9F)');
-                    $('.hexagon img').css('filter', 'drop-shadow(0vw 0vw .8vw #10CC9F)');
-                    $('#target-eye').css('filter', 'drop-shadow(0vw 0vw .8vw #10CC9F)');
-                    $('.alttakim img').css('top', '52.7vh');
-                    $('.alttakim img').css('opacity', '0.6');
-                    this.FoundTarget(event.data);
-                    break;
-                case "validTarget":
-                    this.ValidTarget(event.data);
-                    break;
-                case "leftTarget":
-                    $('.hexagon').css('filter', 'drop-shadow(0vw 0vw 0.0vw #10CC9F)');
-                    $('.hexagon img').css('filter', 'drop-shadow(0vw 0vw 0.0vw #10CC9F)');
-                    $('#target-eye').css('filter', 'drop-shadow(0vw 0vw 0.0vw #10CC9F)');
-                    $('.alttakim img').css('top', '51.7vh');
-                    $('.alttakim img').css('opacity', '0.0');
-                    this.LeftTarget();
-                    break;
-            }
-        });
+    function OpenTarget() {
+        targetLabel.textContent = "";
+        targetEye.style.display = "block";
+        targetEye.className = config.StandardEyeIcon;
+        TargetEyeStyleObject.color = config.StandardColor;
+    }
 
-        this.mouseListener = window.addEventListener("mousedown", (event) => {
-            let element = event.target;
-            let split = element.id.split("-");
-            if (split[0] === 'target' && split[1] !== 'eye') {
-                $.post(`https://qb-target/selectTarget`, JSON.stringify(Number(split[1]) + 1));
-                this.TargetHTML = "";
-                this.Show = false;
-            }
+    function CloseTarget() {
+        targetLabel.textContent = "";
+        targetEye.style.display = "none";
+    }
 
-            if (event.button == 2) {
-                this.CloseTarget();
-                $.post(`https://qb-target/closeTarget`);
-            }
-        });
-
-        this.keyListener = window.addEventListener("keydown", (event) => {
-            if (event.key == 'Escape' || event.key == 'Backspace') {
-                this.CloseTarget();
-                $.post(`https://qb-target/closeTarget`);
-            }
-        });
-    },
-    methods: {
-        OpenTarget() {
-            this.TargetHTML = "";
-            this.Show = true;
-            this.TargetEyeStyleObject.color = this.StandardColor;
-        },
-
-        CloseTarget() {
-            this.TargetHTML = "";
-            this.TargetEyeStyleObject.color = this.StandardColor;
-            this.Show = false;
-            this.CurrentIcon = this.StandardEyeIcon;
-        },
-
-        FoundTarget(item) {
-            if (item.data) {
-                this.CurrentIcon = item.data;
-            } else {
-                this.CurrentIcon = this.SuccessIcon;
-            }
-            this.TargetEyeStyleObject.color = this.SuccessColor;
-        },
-
-        ValidTarget(item) {
-            this.TargetHTML = "";
-            let TargetLabel = this.TargetHTML;
-            const FoundColor = this.SuccessColor;
-            const ResetColor = this.StandardColor;
-            const AlsoChangeTextIconColor = this.ChangeTextIconColor;
-            item.data.forEach(function(item, index) {
-                if (AlsoChangeTextIconColor) {
-                    TargetLabel += "<div style='transition: all 0.3s; user-select: none; white-space: nowrap; text-overflow: ellipsis; margin: 0.1vw; border-radius: 0.2667vw; background: linear-gradient(180deg, rgba(10, 30, 31, 0.48) 0%, rgba(10, 30, 31, 0.58) 11.98%, rgba(14, 44, 44, 0.59) 44.27%, rgba(4, 73, 69, 0.64) 100%);' id='target-" + index + "' style='margin-bottom: 1vh;'><span id='target-icon-" + index + "' style='color: " + ResetColor + "'><i style='margin-left: .35vw; color: #10CC9F;' class='" + item.icon + "'></i></span>&nbsp" + item.label + "</div>";
-                } else {
-                    TargetLabel += "<div style='transition: all 0.3s; user-select: none; white-space: nowrap; text-overflow: ellipsis; margin: 0.1vw; border-radius: 0.2667vw; background: linear-gradient(180deg, rgba(10, 30, 31, 0.48) 0%, rgba(10, 30, 31, 0.58) 11.98%, rgba(14, 44, 44, 0.59) 44.27%, rgba(4, 73, 69, 0.64) 100%);' id='target-" + index + "' style='margin-bottom: 1vh;'><span id='target-icon-" + index + "' style='color: " + FoundColor + "'><i style='margin-left: .35vw; color: #10CC9F;' class='" + item.icon + "'></i></span>&nbsp" + item.label + "</div>";
-                };
-
-                setTimeout(function() {
-                    const hoverelem = document.getElementById("target-" + index);
-
-                    hoverelem.addEventListener("mouseenter", function(event) {
-                        event.target.style.background = '#34C3A6';
-                    });
-
-                    hoverelem.addEventListener("mouseleave", function(event) {
-                        event.target.style.background = 'linear-gradient(180deg, rgba(17, 41, 43, 0.3) 0%, rgba(7, 87, 63, 0.3) 100%)';;
-                    });
-                }, 10)
-            });
-            this.TargetHTML = TargetLabel;
-        },
-
-        LeftTarget() {
-            this.TargetHTML = "";
-            this.CurrentIcon = this.StandardEyeIcon;
-            this.TargetEyeStyleObject.color = this.StandardColor;
+    function createTargetOption(index, itemData) {
+        if (itemData !== null) {
+            index = Number(index) + 1;
+            const targetOption = document.createElement("div");
+            targetOption.id = `target-option-${index}`;
+            targetOption.style.marginBottom = "0.2vh";
+            targetOption.style.borderRadius = "0.15rem";
+            targetOption.style.padding = "0.45rem";
+            targetOption.style.background = "rgba(23, 23, 23, 0%)";
+            targetOption.style.color = config.StandardColor;
+            const targetIcon = document.createElement("span");
+            targetIcon.id = `target-icon-${index}`;
+            const icon = document.createElement("i");
+            icon.className = itemData.icon;
+            icon.style.color = "rgba(0, 255, 206, 100%)";
+            targetIcon.appendChild(icon);
+            targetIcon.appendChild(document.createTextNode(" "));
+            targetOption.appendChild(targetIcon);
+            targetOption.appendChild(document.createTextNode(itemData.label));
+            targetLabel.appendChild(targetOption);
         }
     }
-});
 
-Targeting.use(Quasar, {
-    config: {
-        loadingBar: { skipHijack: true }
+    function FoundTarget(item) {
+        if (item.data) {
+            targetEye.className = item.data;
+        }
+        TargetEyeStyleObject.color = config.SuccessColor;
+        targetLabel.textContent = "";
+        for (let [index, itemData] of Object.entries(item.options)) {
+            createTargetOption(index, itemData);
+        }
     }
-});
-Targeting.mount("#target-wrapper");
 
-function OpenCircle(x, y, id) {
-    $(".circle").append(`
-        <img id="circle-${id}" style="display: none; top: 25vw; left: 50vw; position: absolute; width: 30px; height: 30px;" src="css/circle.svg" alt="">
-    `);
-    $("#circle-"+id).css('left', x*100+"%");
-    $("#circle-"+id).css('right', (100 - x*100)+"%");
-    $("#circle-"+id).css('top', y*100+"%");
-    $("#circle-"+id).css('bottom',(100 - y*100)+"%");
-    FadeIn("#circle-"+id, 200)
-}
+    function ValidTarget(item) {
+        targetLabel.textContent = "";
+        for (let [index, itemData] of Object.entries(item.data)) {
+            createTargetOption(index, itemData);
+        }
+    }
+
+    function LeftTarget() {
+        targetLabel.textContent = "";
+        TargetEyeStyleObject.color = config.StandardColor;
+        targetEye.className = config.StandardEyeIcon;
+    }
+
+    function handleMouseDown(event) {
+        const element = event.target; // use const instead of let
+        if (element.id) {
+            const split = element.id.split("-");
+            if (split[0] === "target" && split[1] !== "eye" && event.button === 0) {
+                fetch(`https://${GetParentResourceName()}/selectTarget`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json; charset=UTF-8" },
+                    body: JSON.stringify(split[2]),
+                }).catch((error) => console.error("Error:", error));
+                targetLabel.textContent = "";
+            }
+        }
+        if (event.button === 2) {
+            LeftTarget();
+            fetch(`https://${GetParentResourceName()}/leftTarget`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json; charset=UTF-8" },
+                body: "",
+            }).catch((error) => console.error("Error:", error));
+        }
+    }
+
+    function handleKeyDown(event) {
+        if (event.key === "Escape" || event.key === "Backspace") {
+            CloseTarget();
+            fetch(`https://${GetParentResourceName()}/closeTarget`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json; charset=UTF-8" },
+                body: "",
+            }).catch((error) => console.error("Error:", error));
+        }
+    }
+
+    function handleMouseOver(event) {
+        const element = event.target;
+        if (element.id) {
+            const split = element.id.split("-");
+            if (split[0] === "target" && split[1] === "option") {
+                element.style.transform = "translateX(10px)";
+                element.style.transition = "transform 0.3s ease";
+            }
+        }
+    }
+
+    function handleMouseOut(event) {
+        const element = event.target;
+        if (element.id) {
+            const split = element.id.split("-");
+            if (split[0] === "target" && split[1] === "option") {
+                element.style.transform = "translateX(0)";
+            }
+        }
+    }
+
+    window.addEventListener("message", function (event) {
+        switch (event.data.response) {
+            case "openTarget":
+                OpenTarget();
+                break;
+            case "closeTarget":
+                CloseTarget();
+                break;
+            case "foundTarget":
+                FoundTarget(event.data);
+                break;
+            case "validTarget":
+                ValidTarget(event.data);
+                break;
+            case "leftTarget":
+                LeftTarget();
+                break;
+        }
+    });
+
+    window.addEventListener("mousedown", handleMouseDown);
+    window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("mouseover", handleMouseOver);
+    window.addEventListener("mouseout", handleMouseOut);
+
+    window.addEventListener("unload", function () {
+        window.removeEventListener("mousedown", handleMouseDown);
+        window.removeEventListener("keydown", handleKeyDown);
+        window.removeEventListener("mouseover", handleMouseOver);
+        window.removeEventListener("mouseout", handleMouseOut);
+    });
+});
