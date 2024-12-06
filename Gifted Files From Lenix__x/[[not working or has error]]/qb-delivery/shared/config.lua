@@ -190,8 +190,8 @@ Config.Commands         = {
 
 --[[ You can set Commands.tabletCommand' command to use with item. ]]
 Config.Tablet          = {
-    active = true,
-    itemName = "delivery_tablet",
+    active = false,
+    itemName = "tablet",
 }
 
 Config.AcceptableTasks = {
@@ -607,6 +607,6 @@ Config.AcceptableTasks = {
 -- $$ |\$$$ |$$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |  $$ |
 -- $$ | \$$ |\$$$$$$  |$$ |  $$ |\$$$$$$  |$$$$$$$  |
 -- \__|  \__| \______/ \__|  \__| \______/ \_______/  
--- discord.gg/sgx & Patreon.com/NCHub
+-- discord.gg/zarevstore & Patreon.com/NCHub
 ]]
 Config.HasTowTruck = true

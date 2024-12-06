@@ -6,7 +6,7 @@
 -- $$ |\$$$ |$$ |  $$\ $$ |  $$ |$$ |  $$ |$$ |  $$ |
 -- $$ | \$$ |\$$$$$$  |$$ |  $$ |\$$$$$$  |$$$$$$$  |
 -- \__|  \__| \______/ \__|  \__| \______/ \_______/  
--- discord.gg/sgx & Patreon.com/NCHub
+-- discord.gg/zarevstore & Patreon.com/NCHub
 --[[ FX Information ]]
 fx_version "cerulean"
 game "gta5"
