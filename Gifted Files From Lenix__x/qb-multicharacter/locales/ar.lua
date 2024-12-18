@@ -1,80 +1,70 @@
 local Translations = {
+    ui = {
+        -- Main
+        male = "Male",
+        female = "Female",
+        error_title = "Error!",
+        characters_header = "Character Selector",
+        characters_count = "characters",
+      
+         --Setup Characters
+       default_image = 'image/action_dot.gif',
+       create_new_character = "Create new character",
+       default_right_image = 'image/action_key.png',
+
+        --Create character
+        create_header = "Identity Creation",
+        header_detail = "Enter your character detalls",
+        gender_marker = "Gender Marker",
+        
+        missing_information = "You wrote missing information.",
+        badword = "You have used a bad word, try again!",
+       
+        create_firstname = "Name",
+        create_lastname = "Lastname",
+        create_nationality = "Nationality",
+        create_birthday = "Birthday",
+
+        -- Buttons
+        select = "Select",
+        create = "Create",
+        spawn = "Spawn",
+        delete = "Delete",
+        cancel = "Cancel",
+        confirm = "Confirm",
+        close = "Close",
+    },
+
     notifications = {
-        ["char_deleted"] = "تم حذف الشخصية!",
-        ["deleted_other_char"] = "لقد قمت بحذف الشخصية رقم الايدي  %{citizenid}.",
-        ["forgot_citizenid"] = "لقد نسيت ادخال رقم الايدي الخاص بالشخصية citizenid!",
+        ["char_deleted"] = "Character deleted!",
+        ["deleted_other_char"] = "You successfully deleted the character with citizen id %{citizenid}.",
+        ["forgot_citizenid"] = "You forgot to input a citizen id!",
     },
 
     commands = {
         -- /deletechar
-        ["deletechar_description"] = "حذف شخصية لاعب آخر",
-        ["citizenid"] = "ايدي الشخصية",
-        ["citizenid_help"] = "ايدي الشخصية للاعب الذي تريد حذف شخصيته",
+        ["deletechar_description"] = "Deletes another players character",
+        ["citizenid"] = "Citizen ID",
+        ["citizenid_help"] = "The Citizen ID of the character you want to delete",
 
+        --Loaded
+       
         -- /logout
-        ["logout_description"] = "تسجيل خروج الشخصية (Admin Only)",
+        ["logout_description"] = "Logout of Character (Admin Only)",
 
         -- /closeNUI
-        ["closeNUI_description"] = "إغلاق النوافذ المتعددة"
+        ["closeNUI_description"] = "Close Multi NUI"
     },
 
     misc = {
-        ["droppedplayer"] = "انقطع الاتصال مع السيرفر"
+        ["succes_loaded"] = '^2[qb-core]^7 %{value} has succesfully loaded!',
+        ["droppedplayer"] = "You have disconnected from QBCore"
     },
 
-    ui = {
-        -- Main
-        characters_header = "شخصياتي",
-        emptyslot = "فارغة",
-        play_button = "إبدا",
-        create_button = "إنشاء شخصية",
-        delete_button = "حذف شخصية",
 
-        -- Character Information
-        charinfo_header = "معلومات الشخصية",
-        charinfo_description = "اختر الشخصية لترى جميع المعلومات المتعلقة بهته الشخصية.",
-        name = "الإسم",
-        male = "رجل",
-        female = "إمرأة",
-        firstname = "الإسم الأول",
-        lastname = "اسم العائلة",
-        nationality = "الجنسية",
-        gender = "الجنس",
-        birthdate = "الميلاد",
-        job = "الوظيفة",
-        jobgrade = "رتبة الوظيفة",
-        cash = "الأموال",
-        bank = "اموال البنك",
-        phonenumber = "رقم الهاتف",
-        accountnumber = "رقم الحساب",
-
-        chardel_header = "تسجيل سخصية",
-
-        -- Delete character
-        deletechar_header = "حذف شخصية",
-        deletechar_description = "هل أنت متاكد من حذفك للشخصية?",
-
-        -- Buttons
-        cancel = "الغاء",
-        confirm = "تاكيد",
-
-        -- Loading Text
-        retrieving_playerdata = "جلب معلومات اللاعب",
-        validating_playerdata = "تأكيد معلومات اللاعب",
-        retrieving_characters = "جلب الشخصيات",
-        validating_characters = "تاكيد الشخصيات",
-
-        -- Notifications
-        ran_into_issue = "واجهتنا مشكلة",
-        profanity = "يبدو انك تحاول استخدام اسم غير لائق في اسمك او جنسيتك حاول مرة اخرى!",
-        forgotten_field = "يبدو أنك نسيت ادخال بعض المعلومات تحقق مرة اخرى!"
-    }
 }
 
-if GetConvar('qb_locale', 'en') == 'ar' then
-    Lang = Locale:new({
-        phrases = Translations,
-        warnOnMissing = true,
-        fallbackLang = Lang,
-    })
-end
+Lang = Lang or Locale:new({
+    phrases = Translations,
+    warnOnMissing = true
+})

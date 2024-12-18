@@ -1,8 +1,8 @@
 local Translations = {
     ui = {
-        last_location = "اخر موقع",
+        last_location = "أخر موقع",
         confirm = "تأكيد",
-        where_would_you_like_to_start = "اين تريد البدء",
+        where_would_you_like_to_start = "أين تود النزول",
     }
 }
 

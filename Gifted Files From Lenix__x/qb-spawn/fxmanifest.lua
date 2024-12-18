@@ -1,7 +1,8 @@
 fx_version 'cerulean'
 game 'gta5'
-
-description 'QB-Spawn'
+lua54 'yes'
+author 'Lenix__x'
+description 'Allows players to select a spawn point from a list of available locations'
 version '1.2.0'
 
 shared_scripts {
@@ -27,6 +28,3 @@ files {
     'html/vue.js',
     'html/reset.css'
 }
-
-lua54 'yes'
-server_scripts { '@mysql-async/lib/MySQL.lua' }server_scripts { '@mysql-async/lib/MySQL.lua' }server_scripts { '@mysql-async/lib/MySQL.lua' }
