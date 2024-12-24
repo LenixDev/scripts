@@ -1,0 +1,125 @@
+Config = Config or {}
+
+Config.blipsShow = false
+
+Config.Locations = {
+--[[ [] = {
+    vector = vector3(0, 0, 0),
+    text = "Blip Name", 
+    color = 3, 
+    sprite = Blip ID, 
+    scale = size,
+}, ]]
+[0] = {
+    vector = vector3(415.39, -1909.68, 25.47),
+    text = "ATM Tacos", 
+    color = 28, 
+    sprite = 628, 
+    scale = 0.8,
+},
+[1] = {
+    vector = vector3(82.86, 279.51, 110.24),
+    text = "Up-N-Atom Burger", 
+    color = 64, 
+    sprite = 628, 
+    scale = 0.8,
+},
+[2] = {
+    vector = vector3(1242.77, -361.56, 69.18),
+    text = "Wing Stop", 
+    color = 25, 
+    sprite = 628, 
+    scale = 0.8,
+},
+[3] = {
+    vector = vector3(-581.33, -1065.76, 22.35),
+    text = "Cat Cafe", 
+    color = 8, 
+    sprite = 628, 
+    scale = 0.8,
+},
+[4] = {
+    vector = vector3(1591.28, 6453.7, 26.01),
+    text = "Pops Diner", 
+    color = 75, 
+    sprite = 628, 
+    scale = 0.8,
+},
+[5] = {
+    vector = vector3(-1458.44, -350.17, 44.78),
+    text = "Italian Restaurant", 
+    color = 30, 
+    sprite = 628, 
+    scale = 0.8,
+},
+[6] = {
+    vector = vector3(86.19, -228.17, 54.66),
+    text = "Cluckin'Bell", 
+    color = 73, 
+    sprite = 628, 
+    scale = 0.8,
+},
+[7] = {
+    vector = vector3(-1250.23, -289.21, 37.35),
+    text = "Subway", 
+    color = 2, 
+    sprite = 628, 
+    scale = 0.8,
+},
+[8] = {
+    vector = vector3(134.97, -1465.42, 29.36),
+    text = "KFC", 
+    color = 49, 
+    sprite = 628, 
+    scale = 0.8,
+},
+[9] = {
+    vector = vector3(1702.78, 3782.13, 34.74),
+    text = "McDonald's", 
+    color = 46, 
+    sprite = 628, 
+    scale = 0.8,
+},
+[10] = {
+    vector = vector3(-406.58, 6069.97, 32.58),
+    text = "McDonald's", 
+    color = 46,  
+    sprite = 628, 
+    scale = 0.8,
+},
+[11] = {
+    vector = vector3(-689.05, 5804.81, 17.33),
+    text = "Bayview Lodge", 
+    color = 21, 
+    sprite = 628, 
+    scale = 0.8,
+},
+[12] = {
+    vector = vector3(289.73, -971.38, 30.17),
+    text = "Pizza Hut", 
+    color = 79, 
+    sprite = 628, 
+    scale = 0.8,
+},
+[13] = {
+    vector = vector3(-159.41, 285.41, 93.76),
+    text = "The Rosters Rest", 
+    color = 56, 
+    sprite = 628, 
+    scale = 0.8,
+},
+[14] = {
+    vector = vector3(-584.71, -887.41, 25.72),
+    text = "Pizzeria Maldini's Restaurant", 
+    color = 31, 
+    sprite = 628, 
+    scale = 0.8,
+},
+[15] = {
+    vector = vector3(341.77, -878.28, 29.34),
+    text = "KFC", 
+    color = 59, 
+    sprite = 628, 
+    scale = 0.8,
+},
+}
