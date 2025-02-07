@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <img src="assets/bg.png" class="bg-img">
+
+        <div class="close-btn" id="close">
+            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 1L5 5M1 9L5 5M5 5L1 1L9 9" stroke="white" stroke-opacity="0.29" stroke-width="1.5"/>
+            </svg>
+        </div>
+
+        <div class="header">
+            <div class="icon"><img src="assets/title-icon.png"></div>
+            <div class="title-wrapper">
+                <div class="text-1">CLEANING</div>
+                <div class="text-2">JOB</div>
+            </div>
+            <div class="subtitle">Here you can begin your work and manage your profile or team, enjoy!</div>
+        </div>
+
+        <div class="main-container">
+            <div class="left">
+                <div class="user-profile">
+                    <div class="image-wrapper">
+                        <img src="assets/img-default.png" class="pp" id="playerImage">
+                        <img src="assets/pp-blur.png" class="blur">
+                        <img src="assets/pp-box.png" class="box">
+                        <div class="change-pp-btn">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.03695 0.0231912C1.48129 0.133757 0.917109 0.472657 0.566962 0.906154C0.382754 1.13424 0.196889 1.48118 0.0935099 1.78996L0.0201137 2.00915L0.0114623 5.20238L0.00277971 8.39559L1.26076 7.14322C2.63243 5.77763 2.68561 5.73455 3.23705 5.54207C3.4713 5.46031 3.51915 5.45486 4.00225 5.45486C4.48535 5.45486 4.5332 5.46031 4.76744 5.54207C5.30161 5.72851 5.3965 5.80272 6.49232 6.89106L7.49881 7.89073L8.00778 7.39235C8.56246 6.84923 8.76907 6.70625 9.23368 6.54408C9.46793 6.46232 9.51577 6.45688 9.99888 6.45688C10.482 6.45688 10.5298 6.46232 10.7641 6.54408C11.2729 6.72166 11.416 6.82825 12.2406 7.64389L12.9989 8.39383L12.9902 5.20148L12.9816 2.00915L12.9082 1.78996C12.7407 1.28983 12.4459 0.848162 12.0829 0.553382C11.8554 0.368698 11.5093 0.182355 11.2013 0.0787091L10.9827 0.00512366L6.57892 0.000395372C4.15363 -0.00217229 2.11306 0.00803575 2.03695 0.0231912ZM9.23315 2.08725C9.84556 2.29848 10.2294 2.84145 10.2294 3.49652C10.2294 4.15171 9.85183 4.686 9.23115 4.90917C9.09186 4.95927 8.97314 4.97565 8.74958 4.97565C8.41661 4.97565 8.19183 4.91261 7.93463 4.74716C7.2825 4.32759 7.07071 3.43198 7.46168 2.74698C7.81029 2.13619 8.56268 1.85597 9.23315 2.08725ZM3.63574 6.45691C3.2513 6.56071 3.22703 6.58159 1.57168 8.23564L0 9.80608L0.0129615 10.401C0.0240802 10.9097 0.0361672 11.0278 0.0964146 11.2152C0.366856 12.0564 0.977325 12.6639 1.81598 12.9266L2.05022 13H6.50084H10.9515L11.1857 12.9266C12.0244 12.6639 12.6348 12.0564 12.9053 11.2152C12.9657 11.0272 12.9775 10.9113 12.9879 10.401L13 9.80608L11.9584 8.75691C10.8463 7.63662 10.7549 7.56257 10.3567 7.45858C10.0125 7.36871 9.64579 7.41314 9.30555 7.58602C9.19523 7.64204 8.91727 7.88735 8.42701 8.36127L7.70982 9.05457H7.49806H7.28628L6.10494 7.87955C4.84346 6.62478 4.76769 6.563 4.36011 6.45656C4.13552 6.39791 3.85371 6.39804 3.63574 6.45691Z" fill="black" fill-opacity="0.55"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="info-wrapper">
+                        <div class="title">Nickname</div>
+                        <div class="name" id="playerName">Romario Richardson</div>
+                        <div class="level-wrapper">
+                            <img src="assets/level-icon.png">
+                            <div class="level" id="playerLevel">14 Level</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="toggle-invite">
+                    <div class="text">Toggle Invites</div>
+                    <label class="switch">
+                        <input type="checkbox" id="toggle-invite-input">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="squad">
+                    <div class="title-wrapper">
+                        <div class="title">Squad Section</div>
+                        <div class="subtitle">Here you can see your teammates</div>
+                    </div>
+                    <div class="squad-members"></div>
+                </div>
+            </div>
+            <div class="missions"></div>
+        </div>
+
+        <div class="input-wrapper">
+            <div class="invite-box box-1">
+                <img src="assets/close-btn-pop.png" class="closebtn">
+    
+                <div class="title-wrapper">
+                    <div class="title">Invite Players</div>
+                    <div class="subtitle">Enter the id of the player that you want to invite</div>
+                </div>
+    
+                <input type="number" id="invite-input">
+                <div class="btn" id="invite-btn">Invite</div>
+            </div>
+
+            <div class="invite-box box-2">
+                <img src="assets/close-btn-pop.png" class="closebtn">
+    
+                <div class="title-wrapper">
+                    <div class="title">Change Picture</div>
+                    <div class="subtitle">Change your profile picture.</div>
+                </div>
+    
+                <input type="text" placeholder="URL" id="change-input">
+                <div class="btn" id="change-btn">Change</div>
+            </div>
+        </div>
+
+        <div class="start-btn">
+            <img src="assets/start-btn.png" class="btn-bg">
+            <img src="assets/start-icon-group.png" class="icon">
+            <span>Start Mission</span>
+            <img src="assets/start-icon-group.png" class="icon-2">
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

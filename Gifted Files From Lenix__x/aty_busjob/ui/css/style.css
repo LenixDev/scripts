@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.timer {
+  position: absolute;
+  top: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  height: fit-content;
+  display: none;
+  padding: 0.5vw 5vw;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 20px;
+  border-radius: 2px;
+}
+.timer::after {
+  content: "";
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  position: absolute;
+  width: 200%;
+  height: 400%;
+  border-radius: 50%;
+  background: radial-gradient(49.84% 49.84% at 50% 50.16%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.stops-box {
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 20px 30px;
+  width: 15vw;
+  display: none;
+}
+.stops-box::after {
+  content: "";
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  position: absolute;
+  width: 400%;
+  height: 300%;
+  border-radius: 50%;
+  background: radial-gradient(49.84% 49.84% at 50% 50.16%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+.stops-box .title {
+  color: #EEE;
+  font-size: 24px;
+  font-weight: 700;
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+.stops-box .stops {
+  display: flex;
+  flex-direction: column;
+}
+.stops-box .stops #stop-next {
+  opacity: 0.5;
+}
+.stops-box .stops .stop {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 10px;
+  opacity: 0.4;
+  position: relative;
+  line-height: 100%;
+}
+.stops-box .stops .stop::after {
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.stops-box .stops .stop.active {
+  color: #F90;
+  font-size: 14px;
+  opacity: 1;
+  font-weight: 600;
+}
+.stops-box .stops .stop.active::after {
+  width: 5px;
+  height: 5px;
+  background-color: #F90;
+}
+
+main {
+  width: 35vw;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: linear-gradient(270deg, #000 -19.93%, #000 -19.92%, rgba(0, 0, 0, 0) 100%);
+  display: none;
+  flex-direction: column;
+  align-items: end;
+  padding: 3vh 3vw;
+}
+main .lines {
+  position: absolute;
+  display: flex;
+  gap: 1vw;
+  transform: rotate(-25.5deg);
+  right: -15%;
+  top: -15%;
+  z-index: -1;
+}
+main .lines .line-a {
+  width: 2vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #F90 0%, rgba(255, 153, 0, 0) 100%);
+}
+main .lines .line-b {
+  width: 5vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #F90 0%, rgba(255, 153, 0, 0) 100%);
+}
+main .lines .line-c {
+  width: 7vw;
+  height: 100vh;
+  background: linear-gradient(180deg, #F90 0%, rgba(255, 153, 0, 0) 100%);
+}
+main .header {
+  margin-bottom: 4vh;
+}
+main .header .title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-bottom: 2vh;
+  gap: 20px;
+}
+main .header .title-wrapper img {
+  height: 40px;
+}
+main .header .title-wrapper span {
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 1.92px;
+  display: flex;
+  gap: 10px;
+}
+main .header .title-wrapper span p {
+  color: #F90;
+}
+main .header .desc {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: right;
+  font-size: 12px;
+  font-weight: 300;
+  padding-left: 16%;
+  margin-bottom: 2vh;
+}
+main .header .user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+main .header .user-info .title {
+  color: #FFF;
+  text-align: right;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+main .header .user-info .user {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+main .header .user-info .user .name-wrapper {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: right;
+}
+main .header .user-info .user .name-wrapper .name {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+}
+main .header .user-info .user .name-wrapper .level {
+  color: #9D9D9D;
+  font-size: 10px;
+  font-weight: 500;
+}
+main .header .user-info .user .name-wrapper .level span {
+  color: #F90;
+}
+main .header .user-info .user .pp {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 10px 0 rgba(255, 255, 255, 0.3), inset 0px 0px 10px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding: 2px;
+}
+main .header .user-info .user .pp img {
+  border-radius: 50%;
+  width: 100%;
+}
+main .section {
+  position: relative;
+  padding-bottom: 35px;
+  padding-right: 15px;
+  margin-bottom: 4vh;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: 17vw;
+  gap: 15px;
+}
+main .section#stops-sec {
+  display: none;
+}
+main .section#stops-sec .box {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+}
+main .section#routes-sec .box:hover {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  transform: translateX(-10px);
+}
+main .section#routes-sec .box.active {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  transform: translateX(-10px);
+}
+main .section .section {
+  position: absolute;
+  right: 110%;
+  width: 17vw;
+  top: 0;
+}
+main .section .section .image-box {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20vw;
+  height: auto;
+  padding: 10px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  display: none;
+}
+main .section .section .image-box img {
+  width: 100%;
+}
+main .section .section::after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 150%;
+  background: #6C6C6C;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 95%);
+}
+main .section .section .content {
+  max-height: 35vh;
+  overflow: visible;
+  width: 100%;
+}
+main .section .section .content .box-wrapper {
+  max-height: 26vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  position: relative;
+}
+main .section .section .content .start-btn {
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px 45px;
+  width: fit-content;
+  color: #FFF;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -0.26px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+main .section .section .content .start-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+main .section .bottom-icon {
+  position: absolute;
+  bottom: 4px;
+  right: 12px;
+}
+main .section::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #6C6C6C;
+  bottom: 0;
+  right: 0;
+  border-radius: 2px;
+}
+main .section .sec-title {
+  text-align: right;
+  display: flex;
+  gap: 10px;
+  align-items: end;
+}
+main .section .sec-title .title {
+  color: #F0F0F0;
+  font-size: 24px;
+  font-weight: 600;
+}
+main .section .sec-title .counter {
+  color: #F90;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 7px;
+}
+main .section .sec-title .counter::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: #1AE022;
+  top: -1px;
+  right: -3px;
+  border-radius: 50%;
+}
+main .section .sec-title .counter::after {
+  content: "";
+  position: absolute;
+  bottom: 4px;
+  left: -10%;
+  width: 120%;
+  height: 1px;
+  background: #6C6C6C;
+}
+main .section .content {
+  text-align: right;
+  max-height: 12.5vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+  width: 100%;
+}
+main .section .content .users {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 13px;
+}
+main .section .content .users .user {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+main .section .content .users .user .name-wrapper {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: right;
+}
+main .section .content .users .user .name-wrapper .name {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+}
+main .section .content .users .user .name-wrapper .current-place {
+  color: #9D9D9D;
+  font-size: 10px;
+  font-weight: 500;
+}
+main .section .content .users .user .name-wrapper .current-place span {
+  color: #F90;
+}
+main .section .content .users .user .pp {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 10px 0 rgba(255, 255, 255, 0.3), inset 0px 0px 10px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding: 2px;
+}
+main .section .content .users .user .pp img {
+  border-radius: 50%;
+  width: 100%;
+}
+main .section .content .box {
+  width: 100%;
+  padding: 10px;
+  border-radius: 2px;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.2s;
+}
+main .section .content .box.disabled {
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.07) 0%, rgba(255, 255, 255, 0) 100%) !important;
+  pointer-events: none;
+}
+main .section .content .box.disabled .box-header, main .section .content .box.disabled .box-content {
+  opacity: 0.2;
+}
+main .section .content .box .box-header {
+  display: flex;
+  gap: 14px;
+}
+main .section .content .box .box-header .item {
+  color: rgba(198, 198, 198, 0.7);
+  font-size: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+main .section .content .box .box-header .item.salary, main .section .content .box .box-header .item.level {
+  display: flex;
+  gap: 3px;
+}
+main .section .content .box .box-header .item.salary span, main .section .content .box .box-header .item.level span {
+  color: #F90;
+}
+main .section .content .box .box-header .item.title {
+  color: #C6C6C6;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+main .section .content .box .box-content {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #9D9D9D;
+}
+main .section .content .box .box-content span {
+  color: #F90;
+}
+
+/*# sourceMappingURL=style.css.map */
