@@ -1,2 +1,0 @@
-SvConfig = {}
-SvConfig.Webhook = ""
