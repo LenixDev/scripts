@@ -1,0 +1,1032 @@
+body {
+    /* background-image: url("https://media.discordapp.net/attachments/1180729025665171530/1185282535962464397/image.png");  */
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Gravitica';
+    src: url('https://res.cloudinary.com/davecbj4z/raw/upload/v1686655001/ckhans-fonts-gravitica-light-demo_xrit7c.otf');
+}
+
+/* Hud Container CSS !! DO NOT CHANGE !! */
+
+.container {
+    display: flex; 
+    position: absolute;
+    bottom: 1.0vh;
+    left: .7vh;
+}
+
+.hudcont {
+    margin-left: .5vh;
+}
+
+.borderhudvoice {
+    height: 3.9vh;
+    width:4.1vh;
+    background: #ffffff4c;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    rotate: -90deg;
+}
+
+.borderhudradio {
+    height: 3.9vh;
+    width:4.1vh;
+    background: #ffffff4c;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    rotate: -90deg;
+}
+
+.borderhudnitrous {
+    height: 3.9vh;
+    width:4.1vh;
+    background: #aa00ff7a;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    rotate: -90deg;
+}
+
+.borderhudharness {
+    height: 3.9vh;
+    width:4.1vh;
+    background: #ff009d7a;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    rotate: -90deg;
+}
+
+.borderhudarmor {
+    height: 3.9vh;
+    width:4.1vh;
+    background: #247bc263;
+    /* background: #2b6ea477; */
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    rotate: -90deg;
+}
+
+.borderhudhealth {
+    height: 3.9vh;
+    width:4.1vh;
+    background: #24ab6542;
+    /* background: #2fb37576; */
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    rotate: -90deg;
+}
+
+.borderhudhunger {
+    height: 3.9vh;
+    width:4.1vh;
+    background: #F4A05363;
+    /* background: #FFA04776; */
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    rotate: -90deg;
+}
+
+.borderhudthirst {
+    height: 3.9vh;
+    width:4.1vh;
+    background: #1db3ae63;
+    /* background: #18B5B876; */
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    rotate: -90deg;
+}
+
+.borderhudstress {
+    height: 3.9vh;
+    width:4.1vh;
+    background: #ff000045;
+    /* background: #ff000036; */
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    rotate: -90deg;
+}
+
+.borderhudoxygen {
+    height: 3.9vh;
+    width:4.1vh;
+    background: #0b98d945;
+    /* background: #bceaff36; */
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    rotate: -90deg;
+}
+
+.borderhudsprint {
+    height: 3.9vh;
+    width:4.1vh;
+    background: #bceaff45;
+    /* background: #bceaff36; */
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    rotate: -90deg;
+}
+
+.borderhudweapon {
+    height: 3.9vh;
+    width:4.1vh;
+    background: radial-gradient(#00000050, #d9586982);
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    rotate: -90deg;
+}
+
+.borderhuddev {
+    height: 3.9vh;
+    width:4.1vh;
+    background: #00000076;
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+    rotate: -90deg;
+}
+
+
+.borderhud {
+    height: 3.9vh;
+    width:4.1vh;
+    /* background: radial-gradient(#28282850, #ffffff83); */
+    /* clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%); */
+    rotate: -90deg;
+}
+
+.hud {
+    height: 3vh;
+    bottom: -.45vh;
+    left: .5vh;
+    width:3.1vh;
+    /* background: radial-gradient(#ffffff20, #ffffff20); */
+    margin-right: .7vh;
+    position: relative;
+    /* box-shadow: 0 .1vh .2vh rgba(0, 0, 0, 0.2); */
+    /* rotate: -90deg; */
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+/* Icons CSS */
+
+.harnessimg {
+    width: 27px;
+    rotate: 90deg;
+    position: absolute;
+    bottom: .3vh;
+    left: .3vh;
+}
+
+.settingsiconcss {
+    color:#00F8BC;
+    text-align: center;
+    position: relative;
+    top: 1.03vh;
+    font-size: 1.2vh;
+    /* text-shadow: 0 0 .1vh rgba(0, 0, 0, 1); */
+}
+
+.iconcss {
+    color: white;
+    position: absolute;
+    left: .85vh;
+    bottom: .95vh;
+    rotate: 90deg;
+    font-size: 1.2vh;
+    /* text-shadow: 0 0 .1vh rgba(0, 0, 0, 1); */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@900&display=swap');
+p {
+    font-family: 'Rethink Sans', sans-serif;
+    color: white;
+    position: absolute;
+    left: 1vh;
+    bottom: -.3vh;
+    font-weight: 900;
+    rotate: 90deg;
+    font-size: 1.2vh;
+}
+
+.fa-heart {
+    left: .8vh;
+    bottom: 1vh;
+}
+
+.fa-shield {
+    left: .8vh;
+    bottom: .91vh;
+}
+
+.fa-head-side-cough {
+    font-size: 1vh;
+}
+
+.fa-droplet {
+    left: 1vh;
+    bottom: 1vh;
+}
+
+.fa-brain {
+    left: 1vh;
+    bottom: 1vh;  
+    font-size: 1.1vh;
+}
+
+.fa-lungs {
+    left: 1vh;
+    bottom: 1vh;  
+    font-size: 1.1vh;
+}
+
+.fa-user-large-slash {
+    left: .9vh;
+    bottom: 1vh;  
+    font-size: 1.1vh;
+}
+
+/* Bar Fill Color CSS */
+
+/* Health */
+
+.health > .barfill {
+    background: #24AB65;
+}
+
+.health {
+    background: radial-gradient(transparent, #24AB6599);
+}
+
+/* Radio */
+
+.radio > #barfillradio {
+    background: #d6d6d6ca;
+}
+
+.radio {
+    background: radial-gradient(transparent, #d6d6d6ca);
+}
+
+/* Voice */
+
+.voice > #barfillvoice {
+    background: #d6d6d6ca;
+}
+
+.voice {
+    background: radial-gradient(transparent, #d6d6d6ca);
+}
+
+/* Armor */
+
+.armor > .barfill {
+    background: #1c85da;
+}
+
+.armor {
+    background: radial-gradient(#6c079e5e, #008cff99);
+}
+
+/* Hunger */
+
+.hunger > .barfill {
+    background: #F4A053;
+}
+
+.hunger {
+    background: radial-gradient(transparent, #F4A05399);
+}
+
+/* Thirst */
+
+.thirst > .barfill {
+    background: #1DB3AD;
+}
+
+.thirst { 
+    background: radial-gradient(transparent, #1db3ae99);
+}
+
+/* Stress */
+
+.stress > .barfill {
+    background: #ff0000;
+}
+
+.stress {
+    background: radial-gradient(transparent, #ff000088);
+}
+
+/* Oxygen */
+
+.oxygen > .barfill {
+    background: #0b98d9;
+}
+
+.oxygen {
+    background: radial-gradient(transparent, #0b98d999);
+}
+
+
+/* Sprint */
+
+.sprint > .barfill {
+    background: #bceaffb3;
+}
+
+.sprint {
+    background: radial-gradient(transparent, #bceaff99);
+}
+
+
+/* Nitrous */
+
+.nitrous > .barfill {
+    background:#aa00ff;
+}
+
+.nitrous {
+    background: radial-gradient(#1500ff44, #cc00ff99);
+}
+
+/* Harness */
+
+.harness > .barfill {
+    background:#ff009d;
+}
+
+.harness {
+    background: radial-gradient(transparent, #ff009d99);
+}
+
+.barfill {
+    height: 100%;
+    width: 50%;
+    bottom: 1;
+    /* background-color: rgb(255, 255, 255); */
+    transition: .5s;
+}
+
+#barfillvoice {
+    height: 100%;
+    width: 66%;
+    bottom: 1;
+    transition: .1s;
+}
+
+#barfillradio {
+    height: 100%;
+    width: 66%;
+    transition: .1s;
+}
+
+.barfilled {
+    height: 100%;
+    width: 100%;
+    bottom: 1;
+    background-color: rgb(0, 0, 0);
+    transition: .5s;
+}
+
+.barfilledweap {
+    height: 100%;
+    width: 100%;
+    bottom: 1;
+    background-color: #b84e5c;
+    transition: .5s;
+}
+
+/* Hud Animation CSS */
+
+.flash {
+    animation: flash .7s;
+  }
+  
+  @keyframes flash {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.2;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* Hud Settings Menu */
+
+.settingscontainer {
+    display: flex; 
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translate(-50%, -25%)
+}
+
+.hudsettings {
+    width: 63.3vh;
+    height: 60vh;
+    flex-shrink: 0;
+    border-radius: 1.2vh;
+    background: #222532;
+}
+
+.header {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.headimg {
+    position: relative;
+    width: 2.4vh;
+    height: 2.4vh;
+    left: 3.1vh;
+    rotate: 27deg;
+    top: 2vh;
+    color: #00F8BC;
+}
+
+.hudsettings h1 {
+    position: relative;
+    color: #00F8BC;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    left: 4.5vh;
+    top: .7vh;
+    font-size: 1.4vh;
+    letter-spacing: .03vh;
+}
+
+.hudsettings h2 {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, .5);
+    font-weight: 400;
+    letter-spacing: .02vh;
+    left: -5vh;
+    top: 2.5vh;
+    font-size: 1.1vh;
+}
+
+.buttons {
+    display: flex;
+    margin-left:18vh;
+}
+
+.button {
+    position: relative;
+    border-radius: .5vh;
+    height: 3vh;
+    width: 3.1vh;
+    margin-right:1vh;
+    text-align: center;
+    /* padding: .3vh; */
+    background: rgba(0, 248, 188, 0.20);
+    /* left: 22.5vh; */
+    top: 1.7vh;
+    line-height: 2.7vh;
+    border: solid .1vh transparent;
+    transition: .2s;
+}
+
+.button:hover {
+    border: solid .1vh #00f8ba52;
+    cursor: pointer;
+}
+
+.button a {
+    color: #00F8BC;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1vh;
+    font-style: normal;
+    font-weight:500;
+    letter-spacing: .05vh;
+    line-height: 3vh;
+}
+
+hr {
+    position: relative;
+    top: 1.5vh;
+    border-width: .1vh;
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+.sidebar {
+    top: 1.6vh;
+    left: 2vh;
+    position: relative;
+    display: block;
+}
+
+.selection {
+    width: 13.3vh;
+    height: 15.4vh;
+    background: radial-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.2));
+    border-radius: .2vh;
+    margin-top: 1.5vh;
+    transition: .2s;
+    border-bottom: solid .3vh rgba(255, 255, 255, 0.32);
+    border-top: solid .1vh transparent;
+    border-left: solid .1vh transparent;
+    border-right: solid .1vh transparent;
+}
+
+.selected {
+    background: radial-gradient(rgba(0, 114, 87, 1), rgba(0, 248, 188, 0.1));
+    border-color: #00F8BC;
+    border-bottom: solid .3vh#00F8BC;
+    border-top: solid .1vh transparent;
+    border-left: solid .1vh transparent;
+    border-right: solid .1vh transparent;
+}
+
+.selection:hover {
+    background: radial-gradient(rgba(0, 114, 87, 1), rgba(0, 248, 188, 0.1));
+    cursor: pointer;
+    position: relative;
+    /* border-color: #00F8BC; */
+    /* border-top: solid .1vh #00f8ba84; */
+    /* border-left: solid .1vh #00f8ba84; */
+    /* border-right: solid .1vh #00f8ba84; */
+}
+
+.sidebar h1 {
+    font-size: 1.3vh;
+    top: 4.5vh;
+    left: 2vh;
+    position: relative;
+    color: white;
+    font-weight: 500;
+}
+
+.sidebar h2 {
+    font-size: 1.1vh;
+    top: 3.5vh;
+    left: 2vh;
+    position: relative;
+    font-weight: 500;
+}
+
+.img {
+    position: relative;
+    width: 5vh;
+    left: 4vh;
+    top: 4.5vh;
+}
+
+.menuitemsguide {
+    position: relative;
+    left: 17vh;
+    bottom: 49.55vh;
+    display: block; 
+}
+
+.menuitems {
+    position: relative;
+    left: 17vh;
+    bottom: 49vh;
+    display: block;
+}
+/* style vertical scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 20px;
+  }
+.itemguide {
+    border-radius: .2vh;
+    background: radial-gradient(rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.2));
+    width: 44.5vh;
+    height: 4.5vh;
+    margin-bottom: 1.16vh;
+}
+
+.item {
+    border-radius: .2vh;
+    background: radial-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.2));
+    width: 44.5vh;
+    height: 4.5vh;
+    margin-bottom: 1.2vh;
+}
+
+.item h1 {
+    position: relative;
+    font-size: 1.2vh;
+    left: 1vh;
+    top: .9vh;
+}
+
+.item h2 {
+    position: relative;
+    font-size: 1vh;
+    left: 1vh;
+    top: 0vh;
+}
+
+.toggle-container {
+    position: relative;
+    display: inline-block;
+    width: 5vh;
+    height: 2.5vh;
+    left: 38.5vh;
+    bottom: 3.3vh;
+    border-radius: 15vh;
+    pointer-events: none;
+}
+
+.toggle-container input {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: #ae60637e;
+    transition: 0.4s;
+    pointer-events: none;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 1.95vh;
+    width: 2vh;
+    left: .25vh;
+    bottom: .3vh;
+    background-color: #AE6062;
+    box-shadow: 0px 0px 8.3px 0px rgba(0, 0, 0, 0.73) inset;
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+input[type=checkbox]:checked + .slider::before {
+    background-color: #00F8BC;
+}
+
+input:checked + .slider::after {
+    background-color: #00F8BC;
+}
+
+input:checked + .slider {
+    background-color: #00f8ba39;
+}
+
+input:checked + .slider:before {
+    transform: translateX(2.45vh);
+}
+
+.slider.round {
+    border-radius: .3vh;
+}
+  
+.slider.round:before {
+    border-radius: .3vh;
+}
+
+/* CSS Tooltip */
+
+.css-tooltip{
+    position: relative;
+}
+
+.css-tooltip:hover:after{
+    content:attr(data-tooltip);
+    background:#222532;
+    padding:.1vh;
+    border: solid .1vh #ffffff6a;
+    border-radius:.7vh; 
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    transform: translate(-50%,-100%); 
+    font-size: 1.1vh;
+    color:#ffffffcc;
+    min-width:10vh;
+    top:-1vh;
+    left: 50%;
+    text-align:center;
+    animation: fadeIn .2s ;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Cinematic Mode */
+
+.topbar {
+    position: absolute;
+    background-color: black;
+    top: 0;
+    left: -5%;
+    width: 110%;
+    height: 12%;
+    z-index: 100;
+}
+
+.bottombar {
+    position: absolute;
+    background-color: black;
+    bottom: 0;
+    left: -5%;
+    width: 110%;
+    height: 12%;
+    z-index: 100;
+}
+
+@import url("https://fonts.cdnfonts.com/css/pricedown");
+
+/* Money HUD */
+.moneyhud {
+    position: absolute;
+    margin-top: 7vh;
+    right: 1vh;
+    display: block;
+    text-align: center;
+    font-family: "Pricedown Bl", sans-serif;
+    font-weight: bold;
+    letter-spacing: .1vh;
+    font-size: 2.2vh;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
+}
+
+.cash {
+    position: absolute;
+    right: 1vh;
+    width: auto;
+    color:#00F8BC;
+}
+
+.bank {
+    position: absolute;
+    right: 1vh;
+    width: auto;
+    color:#ffffff;
+}
+
+/* Compass HUD */
+
+.compass {
+    /* background: linear-gradient(to right, transparent, #00000086, transparent); */
+    width: 150vh;
+    height: 5vh;
+    transform: translate(-50%, 0%);
+    top: 1%;
+    left: 50%;
+    position: absolute;
+}
+
+.compassbg {
+    left: 50%;
+    transform: translate(-50%, 0%);
+    position: absolute;
+    background: linear-gradient(to right, transparent, #00000063, transparent);
+    filter: blur(.3vh);
+    width: 90vh;
+    height: 5vh;
+    top: -1.5vh;
+}
+
+.compassstreetname {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    top: .4vh;
+    left: 94vh;
+    position: absolute;
+    color: #00DDA7;
+    text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
+    font-size: 1.3vh;
+}
+
+.compasslocation {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    top: .4vh;
+    right: 94vh;
+    position: absolute;
+    color: #00DDA7;
+    text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
+    font-size: 1.3vh;
+}
+
+.ui {
+    margin: .8vh auto;
+      width: 32vh;
+    height: 30vh;
+    z-index: 1000;
+    overflow: hidden;
+  }
+  
+  .bar {
+    margin: 0 auto;
+    position: relative;
+    color:rgba(255,255,255, 1);
+    text-shadow: #000 0px 0px 1px#000 0px 0px 1px#000 0px 0px 1px;
+    z-index: 1000;
+  }
+  
+  .svg {
+    transform: scale(1.2);
+    display: block;
+    width:100%;
+    height: 7.4vh;
+    font-size: 5px;
+    z-index: 1000;
+  }
+  
+  .compasspoint {
+    transform: translate(-50%, -25%);
+    top: 1.3vh;
+    left: 50%;
+    position: absolute;
+    width: .8vh;
+    height: .8vh;
+    border-radius: .2vh;
+    background: #00DDA7;
+    rotate: 45deg;
+    box-shadow: .2vh .2vh .6vh #00DDA7;
+    z-index: 1000;
+  }
+
+/* Vehicle HUD */
+
+.vehiclecontainer {
+    /* display: flex;  */
+    position: absolute;
+    bottom: 7vh;
+    left: 28.3vh;
+    width: 17.5vh;
+    height: 10vh;
+}
+
+.bars {
+    height: 10vh;
+    width: 4vh;
+    left: 13.5vh;
+    position: relative;
+    display: flex;
+    float: left;
+}
+
+.iconcsss {
+    color: white;
+    position: absolute;
+    font-size: 1.1vh;
+    bottom: 8.5vh;
+    margin-left: .5vh;
+}
+
+.fa-user-large-slash {
+    font-size: 1vh; 
+    margin-left: .2vh;
+}
+
+.carhud {
+    border: solid 2px #3b3b3b;
+    height: 7vh;
+    top: 2.2vh;
+    left: .5vh;
+    width:.4vh;
+    margin-right: 1.2vh;
+    position: relative;
+    background: rgba(0, 0, 0, 0.394);
+    rotate: 180deg;
+}
+
+.speedtype {
+    position: relative;
+    font-family: 'gilroy', sans-serif;
+    font-size: 1.2vh;
+    color: rgba(255, 255, 255, .7);
+    font-weight: 500;
+    left: 6.3vh;
+    letter-spacing: .1vh;
+}
+
+.gears {
+    position: relative;
+    top: .3vh;
+    font-family: 'gilroy', sans-serif;
+    font-size: 1.5vh;
+    width: 2.6vh;
+    height: 3.7vh;
+    font-weight: bold;
+    color: rgba(35, 28, 28, 0.6);
+    background: radial-gradient(#00ffc3 -1vh, #016950);
+    border: solid 2px #008868;
+    text-align: center;
+}
+
+.gearico {
+    position: relative;
+    bottom: 8.2vh;
+    font-size: 1.1vh;
+    color: rgb(52, 46, 46);
+}
+
+#gearscount {
+    position: relative;
+    bottom: 8vh;
+    font-size: 1.6vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(52, 46, 46);
+}
+
+.speed {
+    position: relative;
+    bottom:4.8vh;
+    color: #636363;
+    font-family: 'Gravitica', sans-serif;
+    padding: .2vh;
+    width: 13vh;
+    text-align: center;
+    font-weight: 600;
+    font-size: 5vh;
+    letter-spacing: .2vh;
+    text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+}
+
+
+.fuel > .fillbar {
+    background: #ffffff;
+}
+
+.engine > .fillbar {
+    background: #ffffff;
+}
+
+.harness > .fillbar {
+    background: #a424ff;
+}
+
+
+.fillbar {
+    height: 50%;
+    width: 100%;
+    background: #ffffff;
+    transition: .5s;
+}
+
+.seatbelt img {
+    margin-left: 0.5vh;
+    width: 2.0vh !important;
+    animation: blinker 1s linear infinite;
+    margin-bottom: 1vh;
+}
+
+.vehicleiconso {
+    position: absolute;
+    display: block;
+    bottom: 9vh;
+    left: .7vh;
+}
+
+.vehicleoil {
+    color: #A64F5E;
+    font-size: 1.3vh;
+}
+
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1.0; }
+  }
+  
+
+.rpmcontainer {
+    /* bottom: 4vh;
+    margin-left: -12.7vh; */
+    width: 100%;
+    position: relative;
+}
+
+.filled {
+    background-color: #01b68c !important;
+}
+
+.critical {
+    background-color: #cc4d53 !important;
+    margin-top: -.2vh;
+}
+
+.itemcar {
+    width: 4px;
+    background-color: rgba(120, 120, 120, 0.3);
+    border-radius: 2px;
+    margin-left:.35vh;
+    float: left;
+    display: block;
+    height: 2.6vh;
+    box-shadow: -0.5px 0 rgba(0, 0, 0, 0.4), 0 0.5px rgba(0, 0, 0, 0.4), 0.5px 0 rgba(0, 0, 0, 0.4), 0 -0.5px rgba(0, 0, 0, 0.4);
+}
