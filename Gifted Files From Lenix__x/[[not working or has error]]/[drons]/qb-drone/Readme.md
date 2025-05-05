@@ -1,2 +1,0 @@
-Installation
-    drone_flyer_1                             = { name = 'drone_flyer_1', label = 'درون, weight = 5000, type = 'item', image = 'جيب صورة:).png', unique = false, useable = true, shouldClose = true, combinable = nil, description = 'Flyer Drone'},
