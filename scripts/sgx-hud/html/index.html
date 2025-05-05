@@ -1,0 +1,316 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+        <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/sharp-solid.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    </head>
+    <body>
+        <div class="moneyhud">
+            <div style="display: none;" id="cash" class="cash"></div>
+            <div style="display: none;" id="bank" class="bank"></div>
+        </div>
+
+        <div class="cinematicmode" style="display: none;">
+            <div class="topbar"></div>
+            <div class="bottombar"></div>    
+        </div>
+
+        <div class="cinhudcar">
+            <div class="speedometerui" style="display: none;">
+                <div class="vehiclecontainer">
+                    <div class="bars">
+                        <div class="hudcont">
+                            <i class="fa-solid fa-gas-pump iconcsss"></i>
+                            <div class="fuel carhud">
+                                <div class="fillbar"></div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="speedtype">MPH</div>
+            
+                    <div class="gears">
+                        <div id="gearscount">N</div>
+                        <div><i class="fa-solid fa-gear gearico"></i></div>
+                    </div>
+            
+                    <div class="speed">000</div>
+
+                    <div id="rpmBar" class="rpmcontainer" style="width: 100%; left: -2%;bottom: 50%;"></div>
+                    <div class="vehicleiconso" style="width: 100%; left: -0%;bottom: 85%;">
+                        <div class="seatbelt"><img src="https://media.discordapp.net/attachments/1177705461303218187/1271509219039907850/seatbelt.png?ex=66b798bd&is=66b6473d&hm=3022c15a1977d1464403bb1d5660ccd546759bde532560cbf346abce988196be&=&format=webp&quality=lossless"></div>
+                        <div style="display: none;" class="vehicleoil"><i class="fa-solid fa-oil-can"></i></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="compassui">
+                <div class="ui">
+                    <svg class="svg">
+                        <text x="0" y="-2" fill="rgba(255, 255, 255, 1)" style="font-size:.5vh; font-family: 'Montserrat', sans-serif; font-weight: 500;" text-anchor="middle">N</text>
+                        <text x="360" y="-2" fill="rgba(255, 255, 255, 1)" style="font-size:.5vh; font-family: 'Montserrat', sans-serif; font-weight: 500;" text-anchor="middle">N</text>
+                        <text x="315" y="-4" fill="rgba(255, 255, 255, 1)" style="font-size:.4vh; font-family: 'Montserrat', sans-serif; font-weight: 500;" text-anchor="middle">NW</text>
+                        <text x="-45" y="-4" fill="rgba(255, 255, 255, 1)" style="font-size:.4vh; font-family: 'Montserrat', sans-serif; font-weight: 500;" text-anchor="middle">NW</text>
+                        <text x="45" y="-4" fill="rgba(255, 255, 255, 1)" style="font-size:.4vh; font-family: 'Montserrat', sans-serif; font-weight: 500;" text-anchor="middle">NE</text>
+                        <text x="405" y="-4" fill="rgba(255, 255, 255, 1)" style="font-size:.4vh; font-family: 'Montserrat', sans-serif; font-weight: 500;" text-anchor="middle">NE</text>
+                        <text x="90" y="-2" fill="rgba(255, 255, 255, 1)" style="font-size:.5vh; font-family: 'Montserrat', sans-serif; font-weight: 500;" text-anchor="middle">E</text>
+                        <text x="135" y="-4" fill="rgba(255, 255, 255, 1)" style="font-size:.4vh; font-family: 'Montserrat', sans-serif; font-weight: 500;" text-anchor="middle">SE</text>
+                        <text x="180" y="-2" fill="rgba(255, 255, 255, 1)" style="font-size:.5vh; font-family: 'Montserrat', sans-serif; font-weight: 500;" text-anchor="middle">S</text>
+                        <text x="225" y="-4" fill="rgba(255, 255, 255, 1)" style="font-size:.4vh; font-family: 'Montserrat', sans-serif; font-weight: 500;" text-anchor="middle">SW</text>
+                        <text x="270" y="-2" fill="rgba(255, 255, 255, 1)" style="font-size:.5vh; font-family: 'Montserrat', sans-serif; font-weight: 500;" text-anchor="middle">W</text>
+                    </svg>
+                    <div style="margin-top: -11vh" class="bar"><svg class="svg">
+                        <rect width="1" fill="white" height="5" x="-90"/>
+                        <rect width="1" fill="rgba(255, 255, 255, 1)" height="4" x="-45"/>
+                        <rect width="1" fill="white" height="5" x="0"/>
+                        <rect width="1" fill="rgba(255, 255, 255, 1)" height="4" x="45"/>
+                        <rect width="1" fill="white" height="5" x="90"/>
+                        <rect width="1" fill="rgba(255, 255, 255, 1)" height="4" x="135"/>
+                        <rect width="1" fill="white" height="5" x="180"/>
+                        <rect width="1" fill="rgba(255, 255, 255, 1)" height="4" x="225"/>
+                        <rect width="1" fill="white" height="5" x="270"/>
+                        <rect width="1" fill="rgba(255, 255, 255, 1)" height="4" x="315"/>
+                        <rect width="1" fill="white" height="5" x="360"/>
+                        <rect width="1" fill="rgba(255, 255, 255, 1)" height="4" x="405"/>
+                        <rect width="1" fill="white" height="5" x="450"/>
+                        <rect width="1" fill="rgba(255, 255, 255, 0.5)" height="4" x="23.5"/>
+                        <rect width="1" fill="rgba(255, 255, 255, 0.5)" height="4" x="68"/>
+                        <rect width="1" fill="rgba(255, 255, 255, 0.5)" height="4" x="113"/>
+                        <rect width="1" fill="rgba(255, 255, 255, 0.5)" height="4" x="157"/>
+                        <rect width="1" fill="rgba(255, 255, 255, 0.5)" height="4" x="202"/>
+                        <rect width="1" fill="rgba(255, 255, 255, 0.5)" height="4" x="248"/>
+                        <rect width="1" fill="rgba(255, 255, 255, 0.5)" height="4" x="293"/>
+                        <rect width="1" fill="rgba(255, 255, 255, 0.5)" height="4" x="337"/>
+                        <rect width="1" fill="rgba(255, 255, 255, 0.5)" height="4" x="-23"/>
+                        </svg>
+                    </div>
+                    <div class="compasspoint"></div>
+                </div>
+                <div class="compass" style="display: none;">
+                    <div class="compassbg"></div>
+                    <div class="compasslocation"></div>
+                    <div class="compassstreetname"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="settingscontainer" style="display: none;">
+            <div class="hudsettings">
+                <div class="header">
+                    <img class="headimg" src="https://media.discordapp.net/attachments/1231148412871643148/1259857701861593119/124.png?ex=66b7656b&is=66b613eb&hm=b49f0733a3085c43bffd7023506890b7fdc9cc0fc6648abecb96d2110ca7416d&=&format=webp&quality=lossless"></img>
+                    <h1>Hud Settings</h1>
+                    <h2>The elements of hud is saved automaticly</h2>
+                    <div class="buttons">
+                        <div class="button css-tooltip" onclick="restartHud()" data-tooltip="Restart HUD"><i class="fa-solid fa-arrows-rotate settingsiconcss"></i></div>
+                        <div class="button" onclick="closeMenu()"><i class="fa-sharp fa-solid fa-xmark settingsiconcss"> </i></div>
+                    </div>
+                </div>
+    
+                <hr>
+    
+                <div class="sidebar">
+                    <div id="hudesttingsid" class="hudsettings selection selected" onclick="hudSettings()">
+                        <img class="img disabled-icon1" style="display: none" src="https://images-ext-1.discordapp.net/external/f97O-whu9X62e1jf42PATAnDwHL3s7ZQhlhYydBvzB0/https/i.imgur.com/6ghfFJ4.png?format=webp&quality=lossless&width=704&height=704">
+                        <img class="img selected-icon1" src="https://images-ext-1.discordapp.net/external/f97O-whu9X62e1jf42PATAnDwHL3s7ZQhlhYydBvzB0/https/i.imgur.com/6ghfFJ4.png?format=webp&quality=lossless&width=704&height=704">
+                        <h1>Hud</h1>
+                        <h2>Settings</h2>
+                    </div>
+                    <div id="helpguideid" class="helpguide selection" onclick="helpGuide()">
+                        <img class="img disabled-icon2" src="https://media.discordapp.net/attachments/1231148412871643148/1259857701526179840/Untitled-1.png?ex=66b7656b&is=66b613eb&hm=d99bf570bb01c2155b336bb1085ba35854e9e1135a08ecac489477881ce35bf0&=&format=webp&quality=lossless">
+                        <img class="img selected-icon2" style="display: none;" src="https://media.discordapp.net/attachments/1231148412871643148/1259857701526179840/Untitled-1.png?ex=66b7656b&is=66b613eb&hm=d99bf570bb01c2155b336bb1085ba35854e9e1135a08ecac489477881ce35bf0&=&format=webp&quality=lossless">
+                        <h1>Help Guides</h1>
+                        <h2>Settings</h2>
+                    </div>
+                    <div class="gamesettings selection" onclick="openSettings()">
+                        <img class="img" src="https://media.discordapp.net/attachments/1231148412871643148/1259857701861593119/124.png?ex=66b7656b&is=66b613eb&hm=b49f0733a3085c43bffd7023506890b7fdc9cc0fc6648abecb96d2110ca7416d&=&format=webp&quality=lossless">
+                        <h1>Game</h1>
+                        <h2>Settings</h2>
+                    </div>
+                </div>
+    
+                <div class="menuitems" id="hudsetitems" style="overflow-y: scroll; height:50vh;">
+                    <div class="item">
+                        <h1>Show Stamina when relevant</h1>
+                        <h2>Toggle the stamina bar</h2>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="oxygenbox" onclick="showOxy()"/>
+                            <div class="slider round"></div>
+                       </div>
+                    </div>
+                    <div class="item">
+                        <h1>Show Stress when relevant</h1>
+                        <h2>Toggle the stress bar</h2>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="stressbox" onclick="showStress()"/>
+                            <div class="slider round"></div>
+                       </div>
+                    </div>
+                    <div class="item">
+                        <h1>Show Health when relevant</h1>
+                        <h2>Toggle the health bar</h2>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="healthbox" onclick="showHealth()"/>
+                            <div class="slider round"></div>
+                       </div>
+                    </div>
+                    <div class="item">
+                        <h1>Show Armor when relevant</h1>
+                        <h2>Toggle the armor bar</h2>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="armorbox" onclick="showArmor()"/>
+                            <div class="slider round"></div>
+                       </div>
+                    </div>
+                    <div class="item">
+                        <h1>Compass Enabled</h1>
+                        <h2>Toggle the compass</h2>
+                        <div class="toggle-container">
+                            <input checked type="checkbox" id="radar" onclick="hideRadar()"/>
+                            <div class="slider round"></div>
+                       </div>
+                    </div>
+                    <div class="item">
+                        <h1>Show Nitours level</h1>
+                        <h2>Toggle the nitrous level</h2>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="shownitro" onclick="showNitrous()"/>
+                            <div class="slider round"></div>
+                       </div>
+                    </div>
+                    <div class="item">
+                        <h1>Show Hud UI</h1>
+                        <h2>Toggle hud UI</h2>
+                        <div class="toggle-container">
+                            <input checked type="checkbox" id="showhud" onclick="hideplayerhud()"/>
+                            <div class="slider round"></div>
+                       </div>
+                    </div>
+                    <div class="item">
+                        <h1>Show Cinematic Mode</h1>
+                        <h2>Toggle the cinematic mode</h2>
+                        <div class="toggle-container">
+                            <input type="checkbox" id="cinematic" onclick="cinematicMode()"/>
+                            <div class="slider round"></div>
+                       </div>
+                    </div>
+                    <div class="item">
+                        <h1>Show Minimap In Vehcile</h1>
+                        <h2>Toggle the minimap radar in vehicle</h2>
+                        <div class="toggle-container">
+                            <input checked type="checkbox" id="map" onclick="hideMap()"/>
+                            <div class="slider round"></div>
+                       </div>
+                    </div>
+                </div>
+                <div class="menuitemsguide" id="guidehelp" style="display: none;">
+                    <div class="item">
+                        <h1>Finding your Windows Communication Device</h1>
+                        <h2>https://discord.gg/vPwaW3rpUk</h2>
+                    </div>
+                    <div class="item">
+                        <h1>FPS Capping for UI lag:</h1>
+                        <h2>https://discord.gg/vPwaW3rpUk</h2>
+                    </div>
+                    <div class="item">
+                        <h1>Fix resolutions for UI in-game:</h1>
+                        <h2>https://discord.gg/vPwaW3rpUk</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="playerhud">
+            <div class="container">
+
+                <div id="bgg" class="hudcont borderhudradio" style="display: none;">
+                    <div id="bs" class="radio hud">
+                        <i class="fa-solid fa-headset iconcss"></i>
+                        <div id="barfillradio"></div>
+                    </div>
+                </div>
+                
+                <div id="bggg" class="hudcont borderhudvoice">
+                    <div id="ps" class="voice hud">
+                        <i class="fa-solid fa-head-side-cough iconcss"></i>
+                        <!-- <i class="fa-solid fa-headset iconcss"></i> -->
+                        <div id="barfillvoice" class="vcbar"></div>
+                    </div>
+                </div>
+    
+                <div class="hudcont borderhudhealth" style="display: none;">
+                    <div class="health hud">
+                        <i class="fa-sharp fa-heart iconcss"></i>
+                        <div class="barfill"></div>
+                    </div>
+                </div>
+    
+                <div class="hudcont borderhudarmor" style="display: none;">
+                    <div class="armor hud">
+                        <i class="fa-sharp fa-shield iconcss"></i>
+                        <div class="barfill"></div>
+                    </div>
+                </div>
+    
+                <div class="hudcont borderhudhunger">
+                    <div class="hunger hud">
+                        <i class="fa-solid fa-burger iconcss"></i>
+                        <div class="barfill"></div>
+                    </div>
+                </div>
+    
+                <div class="hudcont borderhudthirst">
+                    <div class="thirst hud">
+                        <i class="fa-sharp fa-droplet iconcss"></i>
+                        <div class="barfill"></div>
+                    </div>
+                </div>
+    
+                <div class="hudcont borderhudstress" style="display: none;">
+                    <div class="stress hud">
+                        <i class="fa-sharp fa-brain iconcss"></i>
+                        <div class="barfill"></div>
+                    </div>
+                </div>
+
+                <div class="hudcont borderhudsprint" style="display: none;">
+                    <div class="sprint hud">
+                        <i class="fa-solid fa-person-running iconcss"></i>
+                        <div class="barfill"></div>
+                    </div>
+                </div>
+                
+                <div class="hudcont borderhudoxygen" style="display: none;">
+                    <div class="oxygen hud">
+                        <i class="fa-sharp fa-lungs iconcss"></i>
+                        <div class="barfill"></div>
+                    </div>
+                </div>
+
+                <div class="hudcont borderhudnitrous" style="display: none;">
+                    <div class="nitrous hud">
+                        <i class="fa-solid fa-wine-bottle iconcss"></i>
+                        <div class="barfill"></div>
+                    </div>
+                </div>
+    
+                <div class="hudcont borderhuddev" style="display: none;">
+                    <div class="dev hud">
+                        <p>>_</p>
+                        <div class="barfilled"></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    
+        <script src="javascript.js" type="text/javascript"></script>
+    </body>
+</html>
