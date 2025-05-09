@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+body {
+    overflow: hidden;
+}
+
+.container {
+    display: none;
+    height: 30vh;
+}
+
+.cityhall-main-container {
+    position: relative;
+    background-position: center center;
+    backface-visibility: hidden;
+    width: 100vh;
+    height: 45vh;
+    margin: 0 auto;
+    top: 29vh;
+    background-size: cover;
+    background-image: linear-gradient(to top ,#6e6e64d9,#222222d9);
+    border-radius: 4vh;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.226);
+}
+
+.cityhall-header {
+    position: relative;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 400;
+    font-size: 6vh;
+    color: #cccccc;
+    text-shadow:0px 0px calc(.092592592vh * 11.1) #ffffff;
+    line-height: 10vh;
+    width: 97vh;
+    top: 2vh;
+    left: 1.5vh;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    height: 13vh;
+    background-image: linear-gradient(to bottom,#00fcedcb, transparent);
+
+}
+
+.cityhall-option-blocks {
+    position: relative;
+    height: 33vh;
+    width: 65vh;
+    margin: 0 auto;
+    top: 5vh;
+    border-radius: 1vh;
+    /*background: rgba(37, 37, 37, 0.418)*/
+}
+
+.cityhall-identity-page {
+    display: none;
+    position: relative;
+    height: 20vh;
+    width: 95vh;
+    margin: 0 auto;
+    top: 5vh;
+    border-radius: 1vh;
+    background-image: linear-gradient(to top ,#6e6e64,#222222);
+    box-shadow: 0 0 0.5rem 0.1rem #00ffce;
+}
+
+.cityhall-job-page {
+    display: none;
+    position: relative;
+    height: 25vh;
+    width: 95vh;
+    margin: 0 auto;
+    top: 5vh;
+    border-radius: 1vh;
+    overflow-x: auto;
+    background-image: linear-gradient(to top ,#6e6e64,#222222);
+    box-shadow: 0 0 0.5rem 0.1rem #00ffce;
+}
+
+.cityhall-job-page::-webkit-scrollbar-track {
+    background: #001f17; /* color of the tracking area */
+}
+.cityhall-job-page::-webkit-scrollbar-thumb {
+    background-color: #00ffce; /* color of the scroll thumb */
+}
+.cityhall-job-page::-webkit-scrollbar {
+    width: 2vh;
+}
+.cityhall-job-page::-webkit-scrollbar-track {
+    border-radius: 20px;
+    border: 3px solid #001f17;
+}
+.cityhall-job-page::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    border: 3px solid #001f17;
+}
+.cityhall-option-block {
+    background-color: #6e6e64d9;
+    position: relative;
+    width: 30vh;
+    height: 10vh;
+    display: inline-block;
+    margin-right: 2vh;
+    margin-bottom: 2vh;
+    left: 1vh;
+    top: 1vh;
+    text-align: center;
+    transition: all 0.1s linear;
+    border-radius: 1vh;
+    box-shadow: 0 0 0.5rem 0.05rem #000;
+}
+
+.cityhall-option-block:hover {
+    letter-spacing: 1px;
+    transform: translateY(-0.3rem);
+    cursor: pointer;
+}
+
+.cityhall-option-block > i {
+    font-size: 16vh;
+    line-height: 21vh;
+    color: #00ffce;
+}
+
+.cityhall-option-block > p {
+    color: #00ffbf;
+    text-shadow: 0 0 4rem #00ffce;
+    text-transform: uppercase;
+    font-family: 'Cairo', sans-serif;
+    font-size: 2.6vh;
+}
+
+.identity-page-blocks {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 76%;
+    padding: 1vh;
+}
+
+.identity-page-block {
+    width: 100%;
+    height: 30%;
+    background: #7e7e7e;
+    transition: all 0.2s ease-in-out;
+    border-radius: 0.5vh;
+    margin-right: 15px;
+    /* border-bottom: 2px solid rgba(255, 255, 255, 0); */
+    color: #fff;
+    box-shadow: 0 0 0.5rem 0.01rem #0000009f;}
+
+.identity-page-block:hover {
+    background: radial-gradient(circle, rgba(126, 126, 126, 0.989) 0%, rgba(255, 255, 255, 0.877) 100%) ;
+    transition: ease 0.2s;
+    cursor: pointer;
+    box-shadow: 0 -0.2rem 0.3rem 0.2rem #00ffce;
+    transform: translateY(0.2rem);
+    letter-spacing: 1px;
+}
+
+.identity-page-block:active {
+    box-shadow: 0 0 0.3rem 0.4rem #00ffce;
+    transform: translateY(0.25rem);
+}
+
+/*.identity-page-block > p:hover {
+    transition: ease-in 0.2s;
+    color: #ffffff;
+    text-shadow: 0 0 2rem white;
+}*/
+
+.identity-page-block > p {
+    position: relative;
+    text-align: center;
+    line-height: 3vh;
+    font-family: 'Cairo', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.6vh;
+}
+
+.hover-description {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1vh;
+    margin: 4vh;
+    background: rgba(34, 34, 34, 0.75);
+    border-radius: 1vh;
+}
+
+.hover-description > p {
+    color: white;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.3vh;
+}
+
+.identity-selected {
+    border-bottom: 0px solid #fff;
+}
+
+.request-identity-button {
+    display: none;
+    position: absolute;
+    top: 6vh;
+    right: 0;
+    margin: 1vh;
+    width: 20vh;
+    height: 5vh;
+    background: #00ffce;
+    border-radius: 0.5vh;
+    
+}
+
+.request-identity-button > p {
+    color: #3a3a3a;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.9vh;
+    line-height: 1.3vh;
+    cursor: pointer;
+}
+
+.job-page-blocks {
+    position: relative;
+    padding: 1vh;
+    padding-right: 2vh;
+    display: grid;
+    grid-template-columns: 23vh 23vh 23vh;
+    column-gap: 1.5vh;
+    row-gap: 1vh;
+}
+
+.job-page-block {
+    width: 100%;
+    background: #7e7e7e;
+    transition: all 0.1s ease-in-out;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    box-shadow: 0 0 0.5rem 0.01rem #0000009f;
+}
+
+.job-page-block:hover {
+    background: radial-gradient(circle, rgba(126, 126, 126, 0.989) 0%, rgba(255, 255, 255, 0.877) 100%) ;
+    box-shadow: 0 -0.2rem 0.3rem 0.2rem #00ffce;
+}
+
+.job-page-block:active {
+    box-shadow: 0 0 0.3rem 0.4rem #00ffce;
+    transform: translateY(0.25rem);
+}
+
+/*.job-page-block > p:hover {
+    color: #00ffce;
+}*/
+
+.job-page-block > p {
+    position: relative;
+    text-align: center;
+    line-height: 2.5vh;
+    font-family: 'Cairo', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff;
+    font-size: 1.6vh;
+}
+
+.apply-job-button {
+    display: none;
+    position: absolute;
+    top: 6vh;
+    right: 0;
+    margin: 1vh;
+    width: 20vh;
+    height: 5vh;
+    background: radial-gradient(circle, #3a3a3a 0%, #00ffce 100%) ;
+    border-radius: 0.5vh;
+    cursor: pointer;
+    box-shadow: 0 0 0.5rem 0.01rem #0000009f;    
+    transition: all 0.3s ease;
+}
+
+.apply-job-button:hover {
+    background: #00ffce;
+    transform: translateY(-0.3rem);
+}
+
+.apply-job-button:active {
+    box-shadow: 0 0 0.5rem 0.05rem #00ffce;
+    transform: translateY(0.1rem);
+}
+
+.apply-job-button > p {
+    color: #fff;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    text-shadow: white;
+    text-transform: uppercase;
+    font-size: 2vh;
+    font-weight: 400;
+    line-height: 1vh;
+}
+
+/*.job-selected {
+}*/
+
+.back-to-main {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 1vh;
+    width: 20vh;
+    height: 5vh;
+    background-image: linear-gradient(to right ,#3a3a3a,#00ffce);
+    border-radius: 0.5vh;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.back-to-main > p {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    text-transform: uppercase;
+    font-size: 2vh;
+    font-weight: 400;
+    line-height: 1vh;
+}
+.back-to-main:hover {
+    background-image: linear-gradient(to right ,#00ffce,#00ffce);
+    transform: translateX(-0.3rem);
+    transition: all 0.1s ease;
+}
+/*.back-to-main > p:hover {
+    color: #00ffce;
+}*/
