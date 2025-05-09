@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap');
+
+*,*:focus,*:hover{
+	outline:none;
+}
+
+html {
+	font-size: calc(16 / 19.2 * 1vw);
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+	html {
+		font-size: calc(16 / 10.8 * 1vh);
+	}
+}
+
+body {
+	font-family: 'Noto Naskh Arabic', sans-serif;
+	background: none;
+	user-select: none;
+}
+
+.card-body {
+	background-color: #005043;
+	color: rgb(255, 255, 255);
+	font-size: 1.125rem;
+	font-weight: 500;
+}
+
+#title {
+	color: #676768;
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+.contract1 {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.contract1-card {
+	width: 31.25rem !important;
+	height: 46.875rem !important;
+	border: none;
+	box-shadow: 0rem 0rem 0.3125rem 0rem rgba(10, 10, 10, 0.3);
+	background-color: transparent;
+}
+
+.contract1-card:before, .contract1-card:after{
+	content: '';
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0rem 0rem 0.1875rem rgba(0, 0, 0, 0.3);
+	background-color: #fff;
+}
+
+.contract1-card:before{
+	transform: rotate(2deg);
+}
+
+.contract1-card::after{
+	transform: rotate(-1deg);
+}
+
+.vehicleInformation {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 1.25rem;
+	width: 25rem;
+}
+
+.vehicleInformation-card {
+	/*width: 31.25rem !important;*/
+	border: none;
+	box-shadow: 0rem 0rem 0.3125rem 0rem rgba(10, 10, 10, 0.3);
+	border-radius: 1.25rem;
+	background-color: transparent;
+}
+
+.vehicleInformation-card-body {
+	border-radius: 1.25rem;
+}
+
+.menutitle {
+	color: #00ffd5;
+	font-weight: 600;
+	font-size: 1.75rem;
+}
+
+.btn {
+	font-weight: 500;
+	font-size: 1.125rem;
+	padding: 0.813rem 1.063rem;
+	border: none;
+	transition: .25s;
+	letter-spacing: 0.013rem;
+	border-radius: 0.625rem;
+}
+
+.btn-blue {
+	background-color: #00ffd5;
+	color: #000000;
+	transition: .25s;
+}
+
+.btn-blue:hover {
+	background-color: #00ffd5;
+	transition: .25s;
+}
+
+.btn:focus {
+	background-color: grey;
+	box-shadow: none;
+}
+
+input {
+	border-radius: 0.625rem !important;
+	height: 3.3125rem;
+	background-color: #f2f3f7 !important;
+	border: none !important;
+	font-weight: 500 !important;
+}
+
+input:focus {
+	box-shadow: none !important;
+	color: #212529;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+	opacity: 0;
+}
+
+.input-group-text {
+	background-color: #f2f3f7 !important;
+	border: none;
+	border-top-right-radius: 0.625rem;
+	border-bottom-right-radius: 0.625rem;
+	font-weight: 500;
+}
+
+.form-control {
+	background-color: #f2f3f7;
+}
+
+.close-button {
+	color: #00ffd5;
+	position: absolute;
+	right: 1.25rem; 
+	top: 0.9rem;
+	transition: .25s;
+	font-size: 1.6rem;
+	line-height: 1;
+}
+
+.close-button:hover {
+	color: #000000;
+	transition: .25s;
+	cursor: pointer;
+}
+
+#vehicle_price {
+	border-top-right-radius: 0rem !important;
+	border-bottom-right-radius: 0rem !important;
+}
+
+#submitContractInfo {
+	border-radius: 0.625rem;
+	flex-basis: 100%;
+}
+
+.desc {
+	font-size: 0.9rem;
+}
+
+#source_name, #target_name, #vehicle_model, #plate_number, #description, #date, #price, .cur, .pm {
+	color: #2f3037;
+	font-weight: 600;
+}
+
+#description {
+	text-transform: lowercase;
+}
+
+.col-md-4 {
+	width: 13.75rem;
+}
+
+.mb625 {
+	margin-bottom: 6.25rem;
+}
+
+.mb125 {
+	margin-bottom: 1.25rem;
+}
+
+#signtest, #signtest2 {
+	font-size: 0.875rem;
+	margin-top: 0.3125rem;
+	border-bottom: 0.0625rem solid #2f3037;
+}
+
+.signature-t {
+	font-size: 0.875rem;
+	margin-top: 0.3125rem;
+}
+
+#signContract1, #signContract2 {
+	border-radius: 0.625rem;
+}
+
+hr:not([size]) {
+    height: 0.0625rem !important;
+}
+
+#vehicle_description, #vehicle_price {
+	font-size: 1.125rem;
+}
