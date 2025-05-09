@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&family=Roboto:wght@700&display=swap');
+
+.container {
+  height: 100vh;
+  font-family: 'Cairo', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.scoreboard-block {
+  display: none;
+  border-radius: 3px;
+/*   border-bottom-left-radius: 3vh;
+  border-bottom-right-radius: 3vh; */
+  position: absolute;
+  height: fit-content;
+  width: 27vh;
+  background:rgba(0, 255, 204, 0.082);   
+  box-shadow: 0 0 1ch 1rem rgba(0, 255, 204, 0.082); 
+  right: 8vh;
+  top: -11px;
+  margin: 1vh;
+}
+
+.scoreboard-header {
+  position: relative;
+  width: 88%;
+  height: 3vh;
+  margin: 1.7vh 1.3vh 0vh 1.7vh;
+  margin-bottom: 3vh;
+  padding-bottom: 5px;
+  border-bottom: 4px solid rgb(0, 255, 206);
+}
+
+.scoreboard-header > p {
+  text-align: center;
+  color: #00ffce;
+  text-shadow:0px 0px calc(.092592592vh * 11.1) #00ffce;
+  font-family: 'Cairo', sans-serif;
+  font-size: 2.5vh;
+}
+#status-tab-label {
+  position: absolute;
+  font-family: 'Cairo', sans-serif;
+  right: 3vh;
+}
+
+.info-beam-title {
+  position: absolute;
+  font-family: 'Cairo', sans-serif;
+  font-size: 1.3vh;
+  left: 2.7vh;
+  line-height: 4vh;
+  color: #ededed;
+  text-shadow: 0 0 40px;
+}
+
+.info-beam-title-players {
+  position: absolute;
+  font-family: 'Cairo', sans-serif;
+  font-size: 1.3vh;
+  left: 2.4vh;
+  line-height: 4vh;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-shadow: 0 0 40px;
+}
+
+.info-beam-status {
+  position: absolute;
+  font-family: 'Cairo', sans-serif;
+  right: 3vh;
+  float: left;
+  text-align: left;
+  text-shadow: 0 0 40px;  
+  line-height: 4.25vh;
+}
+
+.scoreboard-info-beam {
+  margin-bottom: 0.7vh;
+  position: relative;
+  height: 4.25vh;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0.5rem #00ffce;
+  border: 1px solid #00ffce;
+}
+
+.scoreboard-info-beams {
+  background: linear-gradient(360deg,rgba(0, 255, 204, 0.815) 0,rgba(0, 255, 204, 0.719) 50%,rgb(0, 255, 206) 100%);
+  margin-top: 0.3vh;
+  position: relative;
+  height: 4.25vh;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: inset 0 0 0.5rem rgb(27, 32, 37);
+  border: 1px solid rgb(27, 32, 37);
+  font-weight: bold;
+  /*   border-bottom-left-radius: 3vh;
+  border-bottom-right-radius: 3vh;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px; */
+}
+
+.fa-times {
+  color: #fff;
+  box-shadow: 0 0 40px;
+}
+
+.fa-check {
+  color: #5eff00;
+}
+
+.fa-clock {
+  color: #2873a7;
+}
