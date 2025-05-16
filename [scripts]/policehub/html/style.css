@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lalezar&family=Rowdies:wght@300;400;700&display=swap');
+
+* {
+    position: absolute;
+    align-items: center;
+    justify-content: space-around;
+    flex: content;
+    cursor: default;
+}
+
+
+::-webkit-scrollbar {
+    width: 1.5vh;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 1.9390581717451523vh 1.9390581717451523vh #828585c4;
+    border: solid 0.554016620498615vh transparent;
+    border-top: none;
+    border-radius: 0.6925207756232687vh;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+
+.dispatch {
+    border-radius: 100%;
+    border: .3vh solid rgb(254, 254, 254);
+    left: 0.1vh !important;
+    top: 0.3vh !important;
+}
+
+.container {
+    display: none;
+    top: 25vh;
+    left: 150vh;
+}
+
+.hub {
+    height: 2vh; /* Consider increasing this if needed for better interaction */
+    width: 24vh; /* Ensure this is appropriate for your content */
+    border-radius: 0.3vh;
+    box-shadow: rgba(23, 26, 68, 0.25) 0px 50px 100px -20px, rgba(18, 16, 43, 0.3) 0px 30px 60px -30px, rgba(10, 14, 64, 0.35) 0px -2px 6px 0px inset;
+    background: #828585c4; /* Background color */
+    border: #49b3ae46 solid 0.13850415512465375vh; /* Border styling */
+    z-index: 1000; /* Ensure it's on top */
+    position: absolute; /* Required for draggable to function correctly */
+    cursor: move; /* Change cursor to indicate draggable functionality */
+}
+
+.policehub {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1vh;
+    left: 0.7vh;
+    top: 0.4vh;
+    color: #ffffffd7;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.boxOptions {
+    position: relative;
+    margin-right: 0.3vh;
+    float: right;
+    height: 1.6vh;
+    width: 1.8vh;
+    left: 0.1vh;
+    top: 0.1vh;
+    border-radius: 0.3vh;
+    border: #0d80882c solid 0.13850415512465375vh;
+    background: #82858598;
+}
+
+.icon {
+    color: #ffffff;
+    left: 0.3vh;
+    top: 0.3vh;
+    opacity: 70%;
+    font-size: 1.1vh;
+}
+
+.boxOptions:hover .icon {
+    color: #4fffffe7;
+    cursor: pointer;
+}
+
+.boxOptions:hover {
+    cursor: pointer;
+}
+
+.icon2:hover {
+    cursor: pointer;
+}
+
+#closeicon:hover {
+    cursor: pointer;
+}
+
+.ofiro {
+    top: 2.4vh;
+    z-index: -1;
+}
+
+.IMG {
+    top: .3vh;
+    left: 0.4vh;
+    width: 8.6vh;
+    height: 7vh;
+}
+
+.nambrpolice {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3vh;
+    left: 0.4vh;
+    top: 0.1vh;
+    color: #ffffffd7;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.Playrbox {
+    position: relative;
+    margin-top: 0.1vh;
+    height: 2.28vh;
+    left: -0.1vh;
+    width: 24vh;
+    /* top: 2.2vh; */
+    border-radius: 0.3vh;
+    box-shadow: rgba(23, 26, 68, 0.25) 0px 50px 100px -20px, rgba(18, 16, 43, 0.3) 0px 30px 60px -30px, rgba(10, 14, 64, 0.35) 0px -2px 6px 0px inset;
+    background: #000000d7;
+    border: #8b8b8b42 solid 0.13850415512465375vh;
+}
+
+.fa-circle {
+    color: #00ffce;
+    font-size: 1vh;
+    left: 0.5vh;
+    top: 0.6vh;
+    opacity: 70%;
+}
+
+.callsin-namepolice {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1vh;
+    left: 2vh;
+    top: 0.4vh;
+    color: #ffffffd7;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.radio {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1vh;
+    left: 18vh;
+    top: 0.4vh;
+    color: #ffffffd7;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.icon2 {
+    position: relative;
+    margin-right: 1.2vh;
+    float: left;
+    color: #ffffff;
+    left: 20vh;
+    top: 0.5vh;
+    opacity: 70%;
+    font-size: 1.1vh;
+}
+
+.icon2:hover {
+    opacity: 60%;
+    color: #4cffffe7;
+}
+
+.dropdown {
+    position: relative;
+    margin-right: 0.3vh;
+    margin-top: .2vh;
+    float: right;
+    height: 1.9vh;
+    width: 12vh;
+    left: 0.1vh;
+    top: 0.1vh;
+    border-radius: 0.3vh;
+    border: #0d80882c solid 0.13850415512465375vh;
+    background: #82858598;
+}
+
+.Hoverd {
+    display: none;
+    margin-top: 2.2vh;
+}
+
+.droptxt {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3vh;
+    left: 2vh;
+    top: 0.1vh;
+    color: #ffffffd7;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.switch {
+    left: 8.6vh;
+    TOP: 0.4vh;
+    width: 2.9vh;
+    height: 1.3vh;
+    background-color: #e9e9eb;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+
+.slider {
+    width: 1.5vh;
+    height: 1.3vh;
+    position: absolute;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 0.13850415512465375vh rgba(0, 0, 0, 0.06);
+    transition: left 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#ChangeSign:hover {
+    cursor: pointer;
+}
+
+.callsigninput {
+    height: 2.28vh;
+    width: 13vh;
+    border-radius: 0.3vh;
+    border: #880d0d2c solid 0.13850415512465375vh;
+    background: #82858598;
+    right: 8.6vh;
+    color: white;
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+#input {
+    display: none;
+}
+
+input[type=name]:focus {
+    border: #0d80882c solid 0.13850415512465375vh;
+}
+
+::placeholder {
+    color: white;
+}
+
+.confirm {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.3vh;
+    left: 4vh;
+    color: #ffffffd7;
+    background-color: #82858598;
+    width: 6.5vh;
+    height: 1.9vh;
+    border-radius: 0.3vh;
+    border: #0d80882c solid 0.13850415512465375vh;
+    text-align: center;
+}
+
+.confirm:hover {
+    cursor: pointer;
+}
+
+
+.taskmangar {
+    height: 2.5vh;
+    width: 100%;
+    left: 0vh;
+    top: 0vh;
+    background: radial-gradient(ellipse at center bottom, #000000b2 -10%, rgba(20, 20, 20, 0.767) 90%), #000000ee;
+    border-bottom: #272727 1px solid;
+    border-radius: 0.5vh 0.5vh 0vh 0vh;
+}
+
+.fa-circle-xmark {
+    left: 98%;
+    font-size: 1.6vh;
+    top: 18%;
+    color: #cacaca;
+}
+
+.boxicon {
+    width: 8vh;
+    height: 7vh;
+    top: 0.7vh;
+    left: 6.5vh;
+    border: solid 0.1vh #636363b0;
+    border-radius: 0.1vh;
+    box-shadow: rgba(136, 136, 136, 0.13) 0px 2px 8px 0px;
+    background: radial-gradient(ellipse at center bottom, #000000b4 -10%, rgb(20, 20, 20) 90%), #0f0f0fee;
+}
+
+
+.icon3 {
+    color: #ffffff;
+    left: 2.28vh;
+    top: 1.5vh;
+    opacity: 70%;
+    font-size: 3.5vh;
+    text-shadow: 0 0 0.6925207756232687vh #ffffff69, 0 0 0.6925207756232687vh #ffffff41, 0 0 0.6925207756232687vh #ffffff57, 0 0 0.6925207756232687vh #ffffff44;
+}
+
+.policealeat {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.4vh;
+    left: 1.6vh;
+    top: 0.4vh;
+    color: #ffffffd7;
+    width: 6.5vh;
+    height: 1.9vh;
+    border-radius: 0.3vh;
+    border: #880d0d2c solid 0.13850415512465375vh;
+    text-shadow: 0 0 0.6925207756232687vh #ffffff28, 0 0 0.6925207756232687vh #ffffff1c, 0 0 0.6925207756232687vh #ffffff17, 0 0 0.6925207756232687vh #ffffff0e;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.description {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1vh;
+    left: -6vh;
+    top: 8.8vh;
+    color: #ffffffd7;
+    width: 20vh;
+    height: 1.9vh;
+    border-radius: 0.3vh;
+    text-shadow: 0 0 0.6925207756232687vh #ffffff28, 0 0 0.6925207756232687vh #ffffff1c, 0 0 0.6925207756232687vh #ffffff17, 0 0 0.6925207756232687vh #ffffff0e;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: initial;
+}
+
+.policealeat:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.policealeatbox {
+    width: 10vh;
+    height: 2.4vh;
+    top: 14.6vh;
+    left: -1vh;
+    border-top: solid 0.1vh #636363b0;
+    border-left: solid 0.1vh #636363b0;
+    border-right: solid 0.1vh #636363b0;
+    border-radius: 0.1vh;
+    box-shadow: rgba(136, 136, 136, 0.13) 0px 2px 8px 0px;
+    background: radial-gradient(ellipse at center bottom, #000000b4 -10%, rgb(20, 20, 20) 90%), #0f0f0fee;
+}
