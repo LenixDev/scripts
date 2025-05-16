@@ -1,0 +1,15 @@
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 60">
+<rect id="Rectangle 94" width="70" height="70" fill="#000" fill-opacity="0.6"/>
+<g id="Group 57">
+<rect id="Rectangle 100" width="12" height="3" fill="#f9fcfd" fill-opacity="0.4"/>
+<rect id="Rectangle 101" y="3" width="3" height="9" fill="#f9fcfd" fill-opacity="0.4"/>
+<rect id="Rectangle 102" width="12" height="3" transform="matrix(-1 0 0 1 70 0)" fill="#f9fcfd" fill-opacity="0.4"/>
+<rect id="Rectangle 103" width="3" height="9" transform="matrix(-1 0 0 1 70 3)" fill="#f9fcfd" fill-opacity="0.4"/>
+<rect id="Rectangle 104" width="12" height="3" transform="matrix(1 0 0 -1 0 70)" fill="#f9fcfd" fill-opacity="0.4"/>
+<rect id="Rectangle 105" width="3" height="9" transform="matrix(1 0 0 -1 0 67)" fill="#f9fcfd" fill-opacity="0.4"/>
+<rect id="Rectangle 106" x="70" y="70" width="12" height="3" transform="rotate(180 70 70)" fill="#f9fcfd" fill-opacity="0.4"/>
+<rect id="Rectangle 107" x="70" y="67" width="3" height="9" transform="rotate(180 70 67)" fill="#f9fcfd" fill-opacity="0.4"/>
+</g>
+</g>
+</svg>

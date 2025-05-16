@@ -1,0 +1,18 @@
+.half-hexagon
+    clip-path: polygon(70% 0, 100% 0%, 100% 100%, 70% 100%, 0 80%, 0 20%)
+
+.volta
+    overflow: auto
+    direction: rtl
+    padding-left: 10px
+    > div
+        direction: ltr
+    &::-webkit-scrollbar
+        width: 3px
+        background: #444
+    &::-webkit-scrollbar-thumb
+        background-color: white
+    &.ltr
+        direction: ltr
+        padding-left: 0px
+        padding-right: 10px
