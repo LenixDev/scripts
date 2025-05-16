@@ -1,0 +1,38 @@
+IF You Haven't Installed Mine Fleeca Bank MLO Then (Press E) Interacts Might Not Be Visible For You..
+So Use The Code Given Below As Example And Change The Coords On Line 7 And 24 And Put It Inside Client/Main.lua One By One With Each Line Of Space At The Bottom after line 29 Or 64
+
+Eg-
+
+exports.interact:AddInteraction({
+    coords = vector3(314.2, -279.53, 54.18),
+    distance = 4.0, -- optional
+    interactDst = 1.0, -- optional
+    id = 'Bank Account', -- needed for removing interactions
+    name = 'Bank Account', -- optional
+    options = {
+         {
+            label = 'Access Your Bank Account',
+            event = "sgx-banking:Client:BankMenu:Show",
+            action = function(entity, coords, args)
+            TriggerEvent("sgx-banking:Client:BankMenu:Show")
+            end,
+        },
+    }
+})
+
+exports.interact:AddInteraction({
+    coords = vector3(312.39, -278.86, 54.18),
+    distance = 4.0, -- optional
+    interactDst = 1.0, -- optional
+    id = 'Bank Account', -- needed for removing interactions
+    name = 'Bank Account', -- optional
+    options = {
+         {
+            label = 'Access Your Bank Account',
+            event = "sgx-banking:Client:BankMenu:Show",
+            action = function(entity, coords, args)
+            TriggerEvent("sgx-banking:Client:BankMenu:Show")
+            end,
+        },
+    }
+})
