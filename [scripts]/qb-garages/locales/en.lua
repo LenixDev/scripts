@@ -21,12 +21,13 @@ local Translations = {
         house = 'House',
     },
     info = {
-        car_e = 'E - Garage',
-        sea_e = 'E - Boathouse',
-        air_e = 'E - Hangar',
-        rig_e = 'E - Rig Lot',
-        depot_e = 'E - Depot',
-        house_garage = 'E - House Garage',
+        car_e = 'Garage',
+        sea_e = 'Boathouse',
+        air_e = 'Hangar',
+        rig_e = 'Rig Lot',
+        depot_e = 'Depot',
+        house_garage = 'House Garage',
+        house = 'الحجز'
     }
 }
 
