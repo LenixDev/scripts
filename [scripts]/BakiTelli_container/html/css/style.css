@@ -1,0 +1,694 @@
+@font-face {
+  font-family: Sorren-Black;
+  src: url("../fonts/Sorren-Black.otf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-drag: none;
+  letter-spacing: 0.04em;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  animation: opacity 0.7s ease-in-out;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.bg-color {
+  position: absolute;
+  background: rgba(21, 18, 24, 0.98);
+  width: 100%;
+  height: 100%;
+}
+
+.TopSideShadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0.0521vw solid rgba(255, 255, 255, 0.06);
+  background: radial-gradient(
+    37.76% 67.13% at 48.93% -1.94%,
+    rgba(173, 84, 255, 0.38) 0%,
+    rgba(173, 84, 255, 0) 100%
+  );
+}
+
+.CaseSystem {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../imgs/details.png");
+  width: 100%;
+  height: 100%;
+}
+
+.CaseUI {
+  width: 82.8646vw;
+  height: 51.5104vw;
+  margin-top: 1.7438vw;
+  margin-left: 9.0125vw;
+  position: relative;
+}
+
+.TopSide {
+  width: 100%;
+  display: flex;
+}
+
+.NameSide {
+  background: radial-gradient(
+    111.9% 111.9% at 50% 50%,
+    #ad54ff 0%,
+    #12071c 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px 1.8229vw rgba(139, 67, 205, 0.4);
+  font-family: Sorren-Black;
+  font-size: 3.6041vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  width: 18.6063vw;
+}
+
+.NameSide t {
+  color: #fff;
+  background: transparent;
+  text-shadow: 0px 0px 1.8229vw rgba(255, 255, 255, 0.35);
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: initial;
+}
+
+.LoremSide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: left;
+  width: 18.8229vw;
+  color: rgba(255, 255, 255, 0.24);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.7292vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.0219vw;
+}
+
+.Close {
+  display: flex;
+  width: 6.1458vw;
+  height: 1.7708vw;
+  margin-top: 1.1458vw;
+  color: rgba(255, 255, 255, 0.56);
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  position: absolute;
+  right: 0;
+}
+
+.CloseText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.375vw;
+  height: 1.7708vw;
+  border-radius: 0.2604vw 0px 0px 0.2604vw;
+  border: 0.0521vw solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 0.7292vw;
+  transition: 0.5s;
+}
+
+.CloseIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7708vw;
+  height: 1.7708vw;
+  border-radius: 0px 0.2604vw 0.2604vw 0px;
+  border: 0.0521vw solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 84, 84, 0.35) 0%,
+    rgba(153, 50, 50, 0.35) 100%
+  );
+  font-size: 1.1vw;
+  font-weight: 500;
+  color: #e8eaed;
+}
+
+.PriceSide {
+  display: flex;
+  margin-top: 1.1458vw;
+  position: absolute;
+  right: 9vw;
+}
+
+.KeyIcon {
+  width: 1.8229vw;
+  height: 1.8229vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../imgs/keyIcon.svg");
+}
+
+.KeyAmount {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.0417vw;
+  font-weight: 500;
+  letter-spacing: -0.0313vw;
+  margin-top: 0.3vw;
+  margin-left: 0.4688vw;
+}
+
+.MoneyIcon {
+  width: 1.8229vw;
+  height: 1.8229vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../imgs/MoneyIcon.svg");
+  margin-left: 0.9375vw;
+}
+
+.MoneyAmount {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.0417vw;
+  font-weight: 500;
+  letter-spacing: -0.0313vw;
+  margin-top: 0.3vw;
+  margin-left: 0.4688vw;
+}
+
+.Close:hover > .CloseText {
+  cursor: pointer;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 84, 84, 0.35) 0%,
+    rgba(153, 50, 50, 0.35) 100%
+  );
+  border: 0.0521vw solid rgba(255, 255, 255, 0);
+  border-left: 0.0521vw solid rgba(255, 255, 255, 0.1);
+  border-top: 0.0521vw solid rgba(255, 255, 255, 0.1);
+  border-bottom: 0.0521vw solid rgba(255, 255, 255, 0.1);
+  scale: 0.95;
+}
+
+.Close:hover > .CloseIcon {
+  cursor: pointer;
+  border: 0.0521vw solid rgba(255, 255, 255, 0);
+  border-right: 0.0521vw solid rgba(255, 255, 255, 0.1);
+  border-top: 0.0521vw solid rgba(255, 255, 255, 0.1);
+  border-bottom: 0.0521vw solid rgba(255, 255, 255, 0.1);
+}
+
+.Close:hover {
+  scale: 0.95;
+}
+
+.Products {
+  margin-top: 0.5vw;
+  width: 44.2458vw;
+  height: 47.4479vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.Product {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 43.6458vw;
+  height: 6.0667vw;
+  margin-top: 0.8333vw;
+  border-radius: 0.4167vw;
+  border: 0.0521vw solid rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.01);
+  transition: 0.5s;
+}
+
+.Product:nth-child(1) {
+  margin-top: 0;
+}
+
+.Product:hover {
+  border: 0.0521vw solid #ad54ff;
+  background: radial-gradient(
+    531.44% 73.87% at 50% 50%,
+    rgba(173, 84, 255, 0.12) 0%,
+    rgba(104, 50, 153, 0.12) 100%
+  );
+  cursor: pointer;
+  scale: 0.99;
+}
+
+.ProductImage {
+  position: absolute;
+  width: 10.9079vw;
+  height: 6.7951vw;
+  margin-left: -1.1vw;
+  margin-top: 0.8vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../imgs/epiccase.svg");
+}
+
+.ProductLabel {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-family: Sorren-Black;
+  font-size: 6.0351vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #ad54ff 0%, #12071c 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 4vw;
+  margin-top: -1.2vw;
+  -webkit-text-stroke-width: 0.0281vw;
+  -webkit-text-stroke-color: #ad54ff;
+}
+
+.ProductAltLabel {
+  position: absolute;
+  color: #fff;
+  text-shadow: 0px 0px 0.413vw rgba(255, 255, 255, 0.5);
+  font-family: Sorren-Black;
+  font-size: 1.9299vw;
+  margin-top: 4vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: initial;
+  -webkit-text-stroke-color: transparent;
+}
+
+.OpenProduct {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7.3958vw;
+  height: 2.2917vw;
+  border-radius: 0.3125vw;
+  border: 0.0521vw solid #ad54ff;
+  background: linear-gradient(
+    0deg,
+    rgba(104, 50, 153, 0.2) -42.49%,
+    rgba(173, 84, 255, 0.2) 100%
+  );
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.7292vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.0219vw;
+  transition: 0.5s;
+  margin-left: 34.25vw;
+}
+
+.OpenProduct:hover {
+  border: 0.0521vw solid #601f9d;
+  background: #ad54ff;
+}
+
+.ProductDetail {
+  margin-left: 1vw;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.0417vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: -0.4vw;
+  letter-spacing: -0.0313vw;
+}
+
+.ProductDetail p {
+  width: 19.229vw;
+  color: rgba(255, 255, 255, 0.24);
+  font-family: "Manrope", sans-serif;
+  font-size: 0.7292vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.0219vw;
+  margin-top: 0.4vw;
+}
+
+.CaseDetail {
+  position: fixed;
+  width: 36.6146vw;
+  height: 47.4479vw;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 0.0521vw solid rgba(173, 84, 255, 0.57);
+  background: linear-gradient(
+    180deg,
+    rgba(173, 84, 255, 0.1) 0%,
+    rgba(104, 50, 153, 0.1) 100%
+  );
+  margin-top: 0.4733vw;
+  margin-left: 46.2vw;
+}
+
+::-webkit-scrollbar {
+  width: 0.0521vw;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 0.3125vw rgba(255, 255, 255, 0.15);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.DetailImage {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.65vw;
+  scale: 1.1;
+}
+
+.DetailProductImage {
+  position: absolute;
+  width: 23.5417vw;
+  height: 13.5938vw;
+  margin-left: -4.35vw;
+  margin-top: 0.8vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../imgs/epiccase.svg");
+}
+
+.DetailProductLabel {
+  display: flex;
+  justify-content: center;
+  font-family: Sorren-Black;
+  font-size: 11.3914vw;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #ad54ff 0%, #12071c 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 6.85vw;
+  margin-top: -1.2vw;
+  -webkit-text-stroke-width: 0.0681vw;
+  -webkit-text-stroke-color: #ad54ff;
+}
+
+.DetailProductAltLabel {
+  position: absolute;
+  color: #fff;
+  text-shadow: 0px 0px 0.413vw rgba(255, 255, 255, 0.5);
+  font-family: Sorren-Black;
+  font-size: 4.602vw;
+  margin-top: 6.4vw;
+  margin-left: 1.6vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: initial;
+  -webkit-text-stroke-color: transparent;
+}
+
+.DetailCaseLabel {
+  width: 100%;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.0417vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.0313vw;
+  text-align: center;
+  margin-top: 1.8417vw;
+}
+
+.DetailCaseLabel p {
+  width: 21.8229vw;
+  height: 4.0625vw;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.24);
+  font-size: 0.7292vw;
+  letter-spacing: -0.0219vw;
+  text-align: center;
+  margin-left: 7.7vw;
+  margin-top: 0.5208vw;
+}
+
+.OpenDetailCase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.3125vw;
+  border: 0.0521vw solid #fff647;
+  background: var(--1, linear-gradient(0deg, #9c972c -42.49%, #fff647 100%));
+  box-shadow: 0px 0px 3.2135vw 0px rgba(255, 246, 71, 0.35);
+  width: 11.6667vw;
+  height: 2.2917vw;
+  color: #68651e;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.7292vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.0219vw;
+  transition: 0.5s;
+  margin-left: 12.7vw;
+  margin-top: 0.1vw;
+}
+
+.OpenDetailCase:hover {
+  cursor: pointer;
+  color: #fff;
+  background: rgba(255, 246, 71, 0.5);
+  scale: 1.05;
+}
+
+.ProductItems {
+  width: 33.3729vw;
+  height: 19.5313vw;
+  margin-left: 1.558vw;
+  margin-top: 2.4vw;
+  overflow: scroll;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0.733vw;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  justify-content: center;
+}
+
+.ProductItem {
+  position: relative;
+  width: 5.9896vw;
+  height: 5.9896vw;
+  border-radius: 0.3125vw;
+  border: 0.0521vw solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.ProductItemLine {
+  position: absolute;
+  width: 1.4063vw;
+  height: 0.2083vw;
+  margin-left: 0.4688vw;
+  margin-top: 0.4688vw;
+  border-radius: 1.3021vw;
+  background: #c446ff;
+  box-shadow: 0px 0px 0.6198vw 0px rgba(196, 70, 255, 0.5);
+}
+
+.ProductItemImage {
+  width: 5.1563vw;
+  height: 3.4375vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 0.4167vw;
+  margin-top: 1.0938vw;
+}
+
+.ProductItemLabel {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.625vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.0187vw;
+  text-align: center;
+  margin-top: 0.12vw;
+}
+
+.ui-2 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.away-detail {
+  width: 23.0208vw;
+  height: 24.6354vw;
+}
+
+.away-text {
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.0417vw;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.away-line {
+  width: 3.2813vw;
+  height: 0.2083vw;
+  border-radius: 0.3125vw;
+  background: #ad54ff;
+  box-shadow: 0px 0px 0.9323vw 0px #ad54ff;
+  margin-top: 1.1807vw;
+  margin-left: 10vw;
+}
+
+.away-label {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Sorren-Black;
+  font-size: 3.9063vw;
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 0.25vw;
+}
+
+.away-count {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.8333vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  margin-top: 0.45vw;
+}
+
+.away-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 12.1875vw;
+  width: 23.0208vw;
+  margin-top: 0.75vw;
+}
+
+.away-open {
+  display: flex;
+  width: 11.6667vw;
+  height: 2.2917vw;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3125vw;
+  border: 0.0521vw solid #ad54ff;
+  background: linear-gradient(0deg, #683299 -42.49%, #ad54ff 100%);
+  box-shadow: 0px 0px 3.2135vw 0px rgba(173, 84, 255, 0.35);
+  margin-top: 0.6vw;
+  margin-left: 5.48vw;
+  color: #fff;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.7292vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.5s;
+}
+
+.away-open:hover {
+  background: #ac54ff3a;
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.ui-3 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.skip-anim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 1vw;
+  width: 8.6667vw;
+  height: 1.8917vw;
+  border-radius: 0.3125vw;
+  border: 0.0521vw solid #919191;
+  background: linear-gradient(0deg, #919191 -42.49%, #595858 100%);
+  box-shadow: 0px 0px 3.2135vw 0px rgba(130, 130, 130, 0.35);
+  margin-top: 0.6vw;
+  margin-left: 5.48vw;
+  color: #212121;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.7292vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.5s;
+}
+
+.skip-anim:hover {
+  background: #91919149;
+  cursor: pointer;
+}
